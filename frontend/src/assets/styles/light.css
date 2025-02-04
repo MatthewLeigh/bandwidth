@@ -1,0 +1,32 @@
+@import url(./colors.css);
+
+:root {
+    --c-text: var(--c-black);
+    --c-text-secondary: var(--c-grey-dark);
+    --c-text-muted: var(--c-grey-light);
+    --c-text-featured: var(--c-red);
+    --c-text-warning: var(--c-red-light);
+    --c-text-warning-lvl2: var(--c-red);
+    --c-text-liked: var(--c-dark-blue);
+
+    --c-bg: var(--c-white);
+    --c-bg-secondary: var(--c-grey-lightest);
+    --c-bg-bold: var(--c-grey-light);
+    --c-bg-featured: var(--c-red-lightest);
+    --c-bg-subtle-highlight: #f5f5f5;
+    --c-bg-header: var(--c-white-offwhite);
+    --c-bg-footer: #333333;
+    --c-bg-user-banner: var(--c-blue);
+
+    --c-border: var(--c-grey);
+    --c-border-secondary: var(--c-grey-light);
+
+    --c-button: var(--c-red);
+    --c-button-hover: var(--c-red-dark);
+
+    --c-bg-icon: var(--c-white-80pc);
+    --c-bg-icon-hover: var(--c-white);
+    --c-icon: var(--c-black);
+    --c-icon-favourite: var(--c-red);
+
+}

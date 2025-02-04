@@ -1,0 +1,21 @@
+:root {
+    --c-black: #000;
+    --c-white: #fff;
+    --c-white-80pc: #FFFFFF80;
+    --c-white-offwhite: #f2f2f2;
+
+    --c-grey-darkest: #3f3f3f;
+    --c-grey-dark: #616161;
+    --c-grey: #858585;
+    --c-grey-light: #c4c4c4;
+    --c-grey-lightest: #e4e1e1;
+
+    --c-red-darkest: #610404;
+    --c-red-dark: #9b2c2c;
+    --c-red: #c53030;
+    --c-red-light: #f56565;
+    --c-red-lightest: #f9acac;
+
+    --c-dark-blue: #4d68b3;
+    --c-blue: #9fafda;
+}
