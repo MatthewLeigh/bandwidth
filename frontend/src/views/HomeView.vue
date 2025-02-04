@@ -10,7 +10,7 @@
             <div class="page-title">
                 <div class="hero-image-wrapper" @click="goTo('event')">
                     <div class="hero-image-text">
-                        <h1>TEST</h1>
+                        <h1>Bandwidth</h1>
                         <h2>Explore gigs now!</h2>
                     </div>
                     <img
