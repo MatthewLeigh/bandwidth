@@ -10,14 +10,14 @@ export enum SocialPlatform {
 }
 
 export const platformIcons: { [key in SocialPlatform]: string } = {
-    [SocialPlatform.Website]: '/icons/website.svg',
-    [SocialPlatform.Facebook]: '/icons/facebook.svg',
-    [SocialPlatform.Instagram]: '/icons/instagram.svg',
-    [SocialPlatform.Twitter]: '/icons/twitter.svg',
-    [SocialPlatform.YouTube]: '/icons/youtube.svg',
-    [SocialPlatform.Bandcamp]: '/icons/bandcamp.svg',
-    [SocialPlatform.SoundCloud]: '/icons/soundcloud.svg',
-    [SocialPlatform.TikTok]: '/icons/tiktok.svg'
+    [SocialPlatform.Website]: '/bandwidth/icons/website.svg',
+    [SocialPlatform.Facebook]: '/bandwidth/icons/facebook.svg',
+    [SocialPlatform.Instagram]: '/bandwidth/icons/instagram.svg',
+    [SocialPlatform.Twitter]: '/bandwidth/icons/twitter.svg',
+    [SocialPlatform.YouTube]: '/bandwidth/icons/youtube.svg',
+    [SocialPlatform.Bandcamp]: '/bandwidth/icons/bandcamp.svg',
+    [SocialPlatform.SoundCloud]: '/bandwidth/icons/soundcloud.svg',
+    [SocialPlatform.TikTok]: '/bandwidth/icons/tiktok.svg'
 };
 
 export class SocialsDetail {
