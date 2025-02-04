@@ -16,7 +16,7 @@ export async function loadFonts () {
             'Poppins-ExtraLight',
             'Poppins-Thin'
         ],
-        urls: ['/fonts/fonts.css']
+        urls: ['/bandwidth/fonts/fonts.css']
     }
   })
 }
