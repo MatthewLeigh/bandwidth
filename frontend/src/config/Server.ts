@@ -1,3 +1,3 @@
-export const Server = "https://bandwidth-22xp.onrender.com" ;
+export const Server = "https://bandwidth-22xp.onrender.com/api" ;
 
 
