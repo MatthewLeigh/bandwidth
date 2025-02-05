@@ -5,7 +5,7 @@ const postSignup = `
 
 const postSignupImage = `
     INSERT INTO UserImage (UserID, ImageID)
-    VALUES (?, 26);
+    VALUES (?, 254);
 `
 
 module.exports = { postSignup, postSignupImage };
