@@ -1080,15 +1080,14 @@ app.get('/api/get/login/:email/:password', (req, res) => {
 const { postSignup, postSignupImage } = require('./queries/postSignup');
 app.post('/api/post/signup', (req, res) => {
     const { firstName, lastName, email, password, country, state } = req.body;
-    let newUserId = -1;
 
-    db.all(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
+    db.run(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
 
         } else {
-            newUserId = result.insertId;
+            const newUserId = this.lastID;
 
             db.all(postSignupImage, [newUserId], (err, result) => {
                 if (err) {
