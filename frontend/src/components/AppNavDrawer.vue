@@ -6,7 +6,6 @@
         location="left"
         :width="350"
     >
-
         <!-- User Profile -->
         <v-card
             v-if="user"
@@ -14,10 +13,7 @@
             @click="goTo('user', undefined); drawer = false"
             flat
         >
-            <v-avatar
-                size="48"
-                class="mx-auto"
-            >
+            <v-avatar size="48" class="mx-auto">
                 <v-img :src="userImg" :alt="userFirstName + ' Profile'" />
             </v-avatar>
             <v-card-text>
@@ -46,45 +42,31 @@
 
         <!-- Middle List -->
         <v-list class="middle-list">
-
-            <!-- If Logged In -->
-            <v-list-item
-                v-if="user"
-                @click="goTo('user', undefined); drawer = false"
-                :value="user.name"
-            >
+            <v-list-item v-if="user" @click="goTo('user', undefined); drawer = false" :value="user.name">
                 <template v-slot:prepend>
                     <v-icon icon="mdi-account-circle"></v-icon>
                 </template>
                 <v-list-item-title>Profile</v-list-item-title>
             </v-list-item>
 
-            <!-- If Not Logged In -->
-
             <!-- Log In -->
-            <v-list-item
-                v-if="!user"
-                @click="goTo('login', undefined); drawer = false"
-                value="Login"
-            >
+            <v-list-item v-if="!user" @click="goTo('login', undefined); drawer = false" value="Login">
                 <template v-slot:prepend>
                     <v-icon icon="mdi-login"></v-icon>
                 </template>
                 <v-list-item-title>Login / Signup</v-list-item-title>
             </v-list-item>
 
-            <!-- Sign Up
-            <v-list-item
-                v-if="!user"
-                @click="goTo('login', undefined); drawer = false"
-                value="Sign Up"
-            >
+            <!-- Toggle Theme -->
+            <v-list-item>
                 <template v-slot:prepend>
-                    <v-icon icon="mdi-account-plus-outline"></v-icon>
+                    <v-icon icon="mdi-theme-light-dark"></v-icon>
                 </template>
-                <v-list-item-title>Sign Up</v-list-item-title>
-            </v-list-item> -->
-
+                <v-list-item-title>Dark Mode</v-list-item-title>
+                <template v-slot:append>
+                    <v-switch v-model="isDark" @change="toggleTheme"></v-switch>
+                </template>
+            </v-list-item>
         </v-list>
 
         <!-- Divider -->
@@ -92,16 +74,9 @@
 
         <!-- Lower List -->
         <template v-if="user" v-slot:append>
-
-            <!-- Divider -->
             <hr>
-
-            <!-- Sign Out -->
             <v-list class="lower-list">
-                <v-list-item
-                    @click="handleLogout(); drawer = false"
-                    value="Sign Out"
-                >
+                <v-list-item @click="handleLogout(); drawer = false" value="Sign Out">
                     <template v-slot:prepend>
                         <v-icon icon="mdi-logout"></v-icon>
                     </template>
@@ -110,18 +85,17 @@
             </v-list>
         </template>
 
-
     </v-navigation-drawer>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent, computed, ref, onMounted } from 'vue';
 import { useNavigation } from '../composables/useNavigation';
 import { storeToRefs } from 'pinia';
 import { useSessionStore } from '@/stores/session';
 import { useSnackbarStore } from '@/stores/showSnackbar';
 import { Server } from '@/config/Server';
-
+import { useTheme } from 'vuetify';
 
 export default defineComponent({
     name: 'AppNavDrawer',
@@ -133,12 +107,9 @@ export default defineComponent({
     emits: ['update:isDrawerActive'],
 
     setup(props, { emit }) {
-
         const { goTo } = useNavigation();
-
         const sessionStore = useSessionStore();
         const { getUser: user } = storeToRefs(sessionStore);
-
         const snackbar = useSnackbarStore();
 
         const drawer = computed({
@@ -154,7 +125,21 @@ export default defineComponent({
             { name: 'about', label: 'About', icon: 'mdi-information' }
         ];
 
-        return { goTo, sessionStore, user, snackbar, drawer, routes };
+        // Theme Toggle Logic
+        const theme = useTheme();
+        const isDark = ref(localStorage.getItem('theme') === 'dark');
+
+        const toggleTheme = () => {
+            isDark.value = !isDark.value;
+            theme.global.name.value = isDark.value ? 'dark' : 'light';
+            localStorage.setItem('theme', isDark.value ? 'dark' : 'light');
+        };
+
+        onMounted(() => {
+            theme.global.name.value = isDark.value ? 'dark' : 'light';
+        });
+
+        return { goTo, sessionStore, user, snackbar, drawer, routes, isDark, toggleTheme };
     },
 
     data() {
@@ -164,11 +149,10 @@ export default defineComponent({
             userLastName: '',
             userCountry: '',
             userState: ''
-        }
+        };
     },
 
     methods: {
-
         handleLogout() {
             this.sessionStore.logout();
             this.snackbar.showSnackbar('Sign Out Successful.');
@@ -192,11 +176,9 @@ export default defineComponent({
                 this.userLastName = userImgData[0].LastName;
                 this.userCountry = userImgData[0].Country;
                 this.userState = userImgData[0].State;
-
             } catch (error) {
                 console.error(error);
                 this.clearUserDetails();
-
             }
         }
     },
@@ -248,17 +230,5 @@ export default defineComponent({
         border-bottom: 1px solid var(--c-border);
         border-radius: 0;
     }
-
-    .user-profile .v-list-item-title {
-        font-family: 'Poppins-SemiBold', sans-serif;
-        font-size: 1.1rem;
-    }
-
-    .user-profile .v-list-item-subtitle {
-        font-family: 'Poppins-ExtraLight', sans-serif;
-        font-size: .8rem;
-        font-weight: 900;
-    }
-
 
 </style>
