@@ -210,7 +210,7 @@ app.get('/api/all-banner-details', (req, res) => {
 const { singleVenueFocusCardDetails } = require('./queries/singleVenueFocusCardDetails');
 
 app.get('/api/single-venue-focus-card-details/:id', (req, res) => {
-    const venueId = req.params.id;
+    const venueId = parseInt(req.params.id, 10);
 
     db.all(singleVenueFocusCardDetails, [venueId], (err, result) => {
         if (err) {
@@ -226,7 +226,7 @@ app.get('/api/single-venue-focus-card-details/:id', (req, res) => {
 const { singleArtistFocusCardDetails } = require('./queries/singleArtistFocusCardDetails');
 
 app.get('/api/single-artist-focus-card-details/:id', (req, res) => {
-    const artistId = req.params.id;
+    const artistId = parseInt(req.params.id, 10);
 
     db.all(singleArtistFocusCardDetails, [artistId], (err, result) => {
         if (err) {
@@ -242,7 +242,7 @@ app.get('/api/single-artist-focus-card-details/:id', (req, res) => {
 const { singleEventFocusCardDetails } = require('./queries/singleEventFocusCardDetails');
 
 app.get('/api/single-event-focus-card-details/:id', (req, res) => {
-    const eventId = req.params.id;
+    const eventId = parseInt(req.params.id, 10);
 
     db.all(singleEventFocusCardDetails, [eventId], (err, result) => {
         if (err) {
