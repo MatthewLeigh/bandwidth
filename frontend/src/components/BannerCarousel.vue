@@ -118,7 +118,7 @@
                 const data = await response.json();
 
                 this.banners = data.map((item: any) => new ImageDetails(
-                    item.ImgUrl,
+                    item.ImageURL,
                     new Focus(item.FocusId, item.FocusType)
                 ));
 

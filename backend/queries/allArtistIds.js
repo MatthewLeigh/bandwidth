@@ -15,7 +15,7 @@ const allArtistIds = `
                     Event ON Event.EventID = Performance.EventID
                 WHERE
                     Performance.ArtistID = Artist.ArtistID
-                    AND Event.Date > CURDATE()
+                    AND Event.Date > DATE('now')
             ) THEN TRUE ELSE FALSE
         END AS hasUpcomingEvent
     FROM

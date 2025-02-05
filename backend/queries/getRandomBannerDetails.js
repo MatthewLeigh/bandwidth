@@ -1,6 +1,6 @@
 const getRandomBannerDetails = `
     SELECT
-        Image.URL AS ImgUrl,
+        Image.URL AS ImageURL,
         Banner.FocusType,
         Banner.FocusId
     FROM
