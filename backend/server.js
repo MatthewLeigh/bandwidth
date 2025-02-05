@@ -567,7 +567,7 @@ app.post('/api/post/venue/is-favourite/:userId/:venueId', (req, res) => {
     const userId = req.params.userId;
     const venueId = req.params.venueId;
 
-    db.all(postIsFavouriteVenue, [userId, venueId], (err, result) => {
+    db.run(postIsFavouriteVenue, [userId, venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -618,7 +618,7 @@ app.post('/api/post/artist/is-favourite/:userId/:artistId', (req, res) => {
     const userId = req.params.userId;
     const artistId = req.params.artistId;
 
-    db.all(postIsFavouriteArtist, [userId, artistId], (err, result) => {
+    db.run(postIsFavouriteArtist, [userId, artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -669,7 +669,7 @@ app.post('/api/post/event/is-saved/:userId/:eventId', (req, res) => {
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.all(postIsSavedEvent, [userId, eventId], (err, result) => {
+    db.run(postIsSavedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -711,7 +711,7 @@ app.post('/api/post/artist/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.all(postArtistComment, [artistId, userId, comment], (err, result) => {
+    db.run(postArtistComment, [artistId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -730,7 +730,7 @@ app.post('/api/post/venue/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.all(postVenueComment, [venueId, userId, comment], (err, result) => {
+    db.run(postVenueComment, [venueId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -749,7 +749,7 @@ app.post('/api/post/event/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.all(postEventComment, [eventId, userId, comment], (err, result) => {
+    db.run(postEventComment, [eventId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -852,7 +852,7 @@ app.post('/api/post/artist/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.all(postArtistCommentLike, [commentId, userId], (err, result) => {
+    db.run(postArtistCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -866,7 +866,7 @@ app.post('/api/post/venue/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.all(postVenueCommentLike, [commentId, userId], (err, result) => {
+    db.run(postVenueCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -880,7 +880,7 @@ app.post('/api/post/event/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.all(postEventCommentLike, [commentId, userId], (err, result) => {
+    db.run(postEventCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1070,7 +1070,7 @@ app.post('/api/post/signup', (req, res) => {
     const { firstName, lastName, email, password, country, state } = req.body;
     let newUserId = -1;
 
-    db.all(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
+    db.run(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1097,7 +1097,7 @@ app.post('/api/post/user-recently-viewed-event/:userId/:eventId', (req, res) => 
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.all(postUserRecentlyViewedEvent, [userId, eventId], (err, result) => {
+    db.run(postUserRecentlyViewedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
