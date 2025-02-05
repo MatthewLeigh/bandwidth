@@ -1,0 +1,208 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS User (
+    UserID INTEGER PRIMARY KEY,
+    FirstName TEXT NOT NULL,
+    LastName TEXT NOT NULL,
+    Email TEXT NOT NULL UNIQUE,
+    Password TEXT NOT NULL,
+    Country TEXT NOT NULL,
+    State TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Venue (
+    VenueID INTEGER PRIMARY KEY,
+    Title TEXT NOT NULL,
+    Description TEXT,
+    StreetAddress TEXT NOT NULL,
+    City TEXT NOT NULL,
+    State TEXT NOT NULL,
+    PostCode TEXT NOT NULL,
+    Website TEXT,
+    Featured INTEGER NOT NULL CHECK (Featured IN (0,1))
+);
+
+CREATE TABLE IF NOT EXISTS Stage (
+    StageID INTEGER PRIMARY KEY,
+    VenueID INTEGER NOT NULL,
+    Title TEXT NOT NULL,
+    Description TEXT,
+    Capacity INTEGER NOT NULL,
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS VenueSocials (
+    VenueID INTEGER NOT NULL,
+    Platform TEXT NOT NULL CHECK (Platform IN (
+        'Website', 'Facebook', 'Twitter', 'Instagram', 'TikTok',
+        'SoundCloud', 'Spotify', 'Bandcamp', 'YouTube'
+    )),
+    Handle TEXT NOT NULL,
+    URL TEXT NOT NULL,
+    PRIMARY KEY (VenueID, Platform),
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS VenueOpeningHours (
+    VenueID INTEGER NOT NULL PRIMARY KEY,
+    MonOpen TEXT, MonClose TEXT,
+    TueOpen TEXT, TueClose TEXT,
+    WedOpen TEXT, WedClose TEXT,
+    ThurOpen TEXT, ThurClose TEXT,
+    FriOpen TEXT, FriClose TEXT,
+    SatOpen TEXT, SatClose TEXT,
+    SunOpen TEXT, SunClose TEXT,
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Artist (
+    ArtistID INTEGER PRIMARY KEY,
+    Title TEXT NOT NULL,
+    Country TEXT NOT NULL,
+    State TEXT NOT NULL,
+    YearFounded INTEGER,
+    Description TEXT,
+    SpotifyEmbed TEXT,
+    YouTubeEmbed TEXT,
+    Featured INTEGER NOT NULL CHECK (Featured IN (0,1))
+);
+
+CREATE TABLE IF NOT EXISTS ArtistSocials (
+    ArtistID INTEGER NOT NULL,
+    Platform TEXT NOT NULL CHECK (Platform IN (
+        'Website', 'Facebook', 'Twitter', 'Instagram', 'TikTok',
+        'SoundCloud', 'Spotify', 'Bandcamp', 'YouTube'
+    )),
+    Handle TEXT NOT NULL,
+    URL TEXT NOT NULL,
+    PRIMARY KEY (ArtistID, Platform),
+    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Event (
+    EventID INTEGER PRIMARY KEY,
+    VenueID INTEGER NOT NULL,
+    StageID INTEGER NOT NULL,
+    Title TEXT NOT NULL,
+    Description TEXT,
+    Date TEXT NOT NULL,
+    StartTime TEXT NOT NULL,
+    EndTime TEXT NOT NULL,
+    Featured INTEGER NOT NULL CHECK (Featured IN (0,1)),
+    Verified INTEGER NOT NULL CHECK (Verified IN (0,1)),
+    OriginalPostURL TEXT NOT NULL,
+    TicketSaleURL TEXT NOT NULL,
+    Hits INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE,
+    FOREIGN KEY (StageID) REFERENCES Stage(StageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS EventPrice (
+    EventID INTEGER NOT NULL,
+    TicketType TEXT NOT NULL,
+    Price REAL NOT NULL,
+    PRIMARY KEY (EventID, TicketType),
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Performance (
+    EventID INTEGER NOT NULL,
+    ArtistID INTEGER NOT NULL,
+    SetListPosition INTEGER NOT NULL,
+    PerformanceStartTime TEXT,
+    PRIMARY KEY (EventID, ArtistID),
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE,
+    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS UserSavedEvent (
+    UserID INTEGER NOT NULL,
+    EventID INTEGER NOT NULL,
+    PRIMARY KEY (UserID, EventID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS UserRecentlyViewedEvent (
+    UserID INTEGER NOT NULL,
+    EventID INTEGER NOT NULL,
+    DateTimeViewed TEXT NOT NULL,
+    PRIMARY KEY (UserID, EventID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS UserFavouriteArtist (
+    UserID INTEGER NOT NULL,
+    ArtistID INTEGER NOT NULL,
+    PRIMARY KEY (UserID, ArtistID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS UserFavouriteVenue (
+    UserID INTEGER NOT NULL,
+    VenueID INTEGER NOT NULL,
+    PRIMARY KEY (UserID, VenueID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Image (
+    ImageID INTEGER PRIMARY KEY,
+    URL TEXT
+);
+
+CREATE TABLE IF NOT EXISTS EventImage (
+    EventID INTEGER NOT NULL,
+    ImageID INTEGER NOT NULL,
+    DisplayOrder INTEGER NOT NULL,
+    PRIMARY KEY (EventID, ImageID),
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE,
+    FOREIGN KEY (ImageID) REFERENCES Image(ImageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS VenueImage (
+    VenueID INTEGER NOT NULL,
+    ImageID INTEGER NOT NULL,
+    DisplayOrder INTEGER NOT NULL,
+    PRIMARY KEY (VenueID, ImageID),
+    FOREIGN KEY (VenueID) REFERENCES Venue(VenueID) ON DELETE CASCADE,
+    FOREIGN KEY (ImageID) REFERENCES Image(ImageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS ArtistImage (
+    ArtistID INTEGER NOT NULL,
+    ImageID INTEGER NOT NULL,
+    DisplayOrder INTEGER NOT NULL,
+    PRIMARY KEY (ArtistID, ImageID),
+    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID) ON DELETE CASCADE,
+    FOREIGN KEY (ImageID) REFERENCES Image(ImageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS UserImage (
+    UserID INTEGER NOT NULL,
+    ImageID INTEGER NOT NULL,
+    PRIMARY KEY (UserID, ImageID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ImageID) REFERENCES Image(ImageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Banner (
+    BannerID INTEGER PRIMARY KEY,
+    ImageID INTEGER NOT NULL,
+    FocusType TEXT NOT NULL CHECK (FocusType IN ('event', 'artist', 'venue')),
+    FocusID INTEGER NOT NULL,
+    FOREIGN KEY (ImageID) REFERENCES Image(ImageID) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS EventComment (
+    EventCommentID INTEGER PRIMARY KEY,
+    EventID INTEGER NOT NULL,
+    UserID INTEGER NOT NULL,
+    DateTime TEXT NOT NULL,
+    Comment TEXT NOT NULL,
+    IsEdited INTEGER DEFAULT 0 CHECK (IsEdited IN (0,1)),
+    FOREIGN KEY (EventID) REFERENCES Event(EventID) ON DELETE CASCADE,
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE
+);

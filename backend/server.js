@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql2');
+const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
 const PORT = 3000;
@@ -25,21 +25,14 @@ app.use(express.static('public', {
     }
 }));
 
-// Connect to the database
-const db = mysql.createConnection({
-    host: 'feenix-mariadb.swin.edu.au',
-    user: 's101828627',
-    password: 'securepassword',
-    database: 's101828627_db'
-})
-
-db.connect(err => {
+// Connect to the SQLite database
+const db = new sqlite3.Database('./database/bandwidth-db.db', (err) => {
     if (err) {
-        console.error('Error connecting to the database: ', err);
+        console.error('Error connecting to the database: ', err.message);
         return;
     }
-    console.log('Connected to the database');
-})
+    console.log('Connected to the SQLite database');
+});
 
 // GET: All Artist IDs
 const { allArtistIds } = require('./queries/allArtistIds');
