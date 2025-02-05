@@ -18,7 +18,7 @@ const singleArtistFocusCardDetails = `
     LEFT JOIN
         Image ON Image.ImageID = ArtistImage.ImageID
     WHERE
-        Artist.ArtistID = 1
+        Artist.ArtistID = ?
     ORDER BY
         ArtistImage.DisplayOrder
     LIMIT 1;
