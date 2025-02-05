@@ -3,7 +3,7 @@ const singleArtistFocusCardDetails = `
         Artist.Title,
         Artist.Country,
         Artist.State,
-        Image.URL AS ImageURL,
+        COALESCE(Image.URL, '') AS ImageURL,
         (
             SELECT COUNT(DISTINCT Performance.EventID)
             FROM Performance

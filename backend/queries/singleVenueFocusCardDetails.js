@@ -5,7 +5,7 @@ const singleVenueFocusCardDetails = `
         Venue.City,
         Venue.State,
         Venue.PostCode,
-        Image.URL AS ImageURL,
+        COALESCE(Image.URL, '') AS ImageURL,
         (
             SELECT COUNT(DISTINCT Event.EventID)
             FROM Event
