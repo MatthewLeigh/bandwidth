@@ -66,7 +66,7 @@ app.get('/api/all-venue-ids', (req, res) => {
 const { featuredEventIds } = require('./queries/featuredEventIds');
 
 app.get('/api/featured-event-ids', (req, res) => {
-    db.all(featuredEventIds, [1], (err, result) => {
+    db.all(featuredEventIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -81,7 +81,7 @@ app.get('/api/featured-event-ids', (req, res) => {
 const { featuredArtistIds } = require('./queries/featuredArtistIds');
 
 app.get('/api/featured-artist-ids', (req, res) => {
-    db.all(featuredArtistIds, [1], (err, result) => {
+    db.all(featuredArtistIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -96,7 +96,7 @@ app.get('/api/featured-artist-ids', (req, res) => {
 const { featuredVenueIds } = require('./queries/featuredVenueIds');
 
 app.get('/api/featured-venue-ids', (req, res) => {
-    db.all(featuredVenueIds, [1], (err, result) => {
+    db.all(featuredVenueIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
