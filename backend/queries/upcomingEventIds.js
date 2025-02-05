@@ -12,7 +12,7 @@ const upcomingEventIds = `
                 WHERE
                     UserFavouriteVenue.UserID = 1
                     AND UserFavouriteVenue.VenueID = Event.VenueID
-            ) THEN TRUE ELSE FALSE
+            ) THEN 1 ELSE 0
         END AS isUserFavouriteVenue,
         CASE
             WHEN EXISTS (
@@ -25,7 +25,7 @@ const upcomingEventIds = `
                 WHERE
                     UserFavouriteArtist.UserID = 1
                     AND Performance.EventID = Event.EventID
-            ) THEN TRUE ELSE FALSE
+            ) THEN 1 ELSE 0
         END AS isUserFavouriteArtist
     FROM
         Event
