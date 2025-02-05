@@ -4,6 +4,7 @@ const mysql = require('mysql2');
 
 const app = express();
 const PORT = 3000;
+const HOST = 'https://bandwidth-22xp.onrender.com';
 
 // Enable CORS
 app.use(cors());
@@ -1117,5 +1118,5 @@ app.post('/api/post/user-recently-viewed-event/:userId/:eventId', (req, res) => 
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on ${HOST}:${PORT}`);
 });
