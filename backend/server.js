@@ -1082,7 +1082,7 @@ app.post('/api/post/signup', (req, res) => {
     const { firstName, lastName, email, password, country, state } = req.body;
     let newUserId = -1;
 
-    db.run(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
+    db.all(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
