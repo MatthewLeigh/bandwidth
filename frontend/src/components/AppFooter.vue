@@ -141,9 +141,7 @@
         data() {
             return {
                 icons: [
-                    { icon: 'mdi-github', url: 'https://www.google.com/' }, // TODO: Make repo public
-                    { icon: 'mdi-linkedin', url: 'https://www.google.com/' },
-                    { icon: 'mdi-google-plus', url: 'https://www.google.com/' }
+                    { icon: 'mdi-github', url: 'https://github.com/MatthewLeigh/bandwidth/tree/main' }
                 ],
                 faqs: [
                     { title: 'What is Bandwidth?', text: 'Bandwidth is a Melbourne Gig Guide website.' },
