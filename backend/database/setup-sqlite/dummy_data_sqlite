@@ -2278,8 +2278,24 @@ INSERT INTO Image (URL) VALUES
     (null), -- 233: Artist: 21: ABIGAIL
     ('https://www.tolucacultural.com/assets/15805-INDIE-ROCK-NIGHT-THE-JAWAS-LES-BASTERDS-CHARACTERS-IN-MOTION-YOUTH-CULTURE-FUNKILLA.jpg'), -- 234: Event: 1: Indie Rock Night
     ('https://cdn.myportfolio.com/27a1e981ce82b09d5b6a6b0a5437daa8/d61bbded49f97a121ad43375f8e90d29096ebcf3674007d178035090b7a743152dcae1e0001886cc_rw_1920.jpg?h=712bd42e2cc47c9b6d5997732d180679'), -- 235: Event: 2: Acoustic Evening
-    ('https://img.freepik.com/free-photo/psychedelic-music-star-illustration_23-2151876827.jpg'); -- 236: Event: 3: Psychedelic Jam
-
+    ('https://img.freepik.com/free-photo/psychedelic-music-star-illustration_23-2151876827.jpg'), -- 236: Event: 3: Psychedelic Jam
+    ('https://maxwellswaterloo.com/wp-content/uploads/2023/06/IMG_6575-683x1024.jpeg'), -- 237: Event: 4: Emerging Artists Showcase
+    ('https://images.wisconsinhistory.org/700007130008/0713000039-l.jpg'), -- 238: Event: 5: Blues Revival
+    ('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm_RT1j-IRQ7HKbQ4gj6nDUP6_f0EfSCTQMvhEqx1mQLEDEWjAqUjwCbNqcmOVtBG56AFzhG7wa9l4jnrLvcN9yREkDVKHHPel3KBzJD2n56FCpUVO_kisevHFGYcWKDFSNvpxM2WNh5w/s1600/1385441_666845973334537_1851767255_n.jpg'), -- 239: Event: 6: Underground Metal Fest
+    ('https://blog.gleneaglehotel.com/wp-content/uploads/sites/10/2024/12/Folk-in-Fusion-Web-Images_1080-x-1080-Image-min-1024x1024.jpg'), -- 240: Event: 7: Folk Fusion Night
+    ('https://cdn.myportfolio.com/97e83fb424b8666d54900e5b04ae2ce6/9dec331c-4b7f-4d74-bb5c-48987ca54ba9_rw_1920.png?h=a25bb10af75d809ca172a5c48f19d8ad'), -- 241: Event: 8: Jazz & Wine
+    ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFShmJ4IQw53DYaqVZTnjF8WlSh6YbdFgf0lVZDRCjl6RBo_XArikB_6oVPFKr-XhskUM&usqp=CAU'), -- 242: Event: 9: Open Mic Night
+    ('https://res.cloudinary.com/electronic-beats/c_fit,q_auto,f_auto,w_1920/stage/uploads/2012/08/Poster_Zagreb_Web3.jpg'), -- 243: Event: 10: Electronic Beats
+    ('https://www.vegas24seven.com/wp-content/uploads/2024/12/reggae-in-the-desert.jpg'), -- 244: Event: 11: Reggae Rhythms
+    ('https://www.shutterstock.com/shutterstock/photos/676250194/display_1500/stock-vector-rock-night-party-poster-flyer-vintage-styled-vector-illustration-676250194.jpg'), -- 245: Event: 12: Alternative Rock Bash
+    ('https://jettylife.com/cdn/shop/articles/LBI_SSS_2024_IG_Assets_Static_Post_1100x.jpg?v=1706528582'), -- 246: Event: 13: Singer-Songwriter Showcase
+    ('https://i.pinimg.com/736x/57/5f/16/575f16397fdf8548562a91f6052d9220.jpg'), -- 247: Event: 14: Hip-Hop Night
+    ('https://malleusdelic.wordpress.com/wp-content/uploads/2012/04/malleus4jsbx.jpg'), -- 248: Event: 15: Blues Rock Explosion
+    ('https://visitcooma.com.au/wp-content/uploads/2023/11/latin-fiesta-welcome-party.jpg'), -- 249: Event: 16: Latin Fiesta
+    ('https://merryandblackjournals.com/wp-content/uploads/2024/11/DALL%C2%B7E-2024-11-24-10.29.39-A-serene-and-uplifting-scene-featuring-a-radiant-Black-woman-sitting-in-a-cozy-living-room-on-a-Sunday-morning-with-soft-sunlight-streaming-through-t.webp'), -- 250: Event: 17: Soulful Sundays
+    ('https://edit.org/img/blog/vfy-karaoke-night-template-party-promotion-free.webp'), -- 251: Event: 18: Karaoke Night
+    ('https://static.wixstatic.com/media/74bd68_7e0cbd6a1b4c440299d9c4480699ecd3~mv2.jpg/v1/fill/w_640,h_462,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/74bd68_7e0cbd6a1b4c440299d9c4480699ecd3~mv2.jpg'), -- 252: Event: 19: Rock Legends Tribute
+    ('https://static.wikia.nocookie.net/marvel_dc/images/5/58/The_Final_Night_1.jpg/revision/latest?cb=20070213182758'); -- 253: Event: 20: Final Night Unverified
 
 -- VenueImage
 INSERT INTO VenueImage (VenueID, ImageID, DisplayOrder) VALUES
@@ -2766,56 +2782,56 @@ INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
     (3, 236, 1),
 
     -- Event 4
-    (4, 31, 1),
+    (4, 237, 1),
 
     -- Event 5
-    (5, 32, 1),
+    (5, 238, 1),
 
     -- Event 6
-    (6, 33, 1),
+    (6, 239, 1),
 
     -- Event 7
-    (7, 34, 1),
+    (7, 240, 1),
 
     -- Event 8
-    (8, 35, 1),
+    (8, 241, 1),
 
     -- Event 9
-    (9, 36, 1),
+    (9, 242, 1),
 
     -- Event 10
-    (10, 37, 1),
-    (10, 38, 2),
+    (10, 243, 1),
 
     -- Event 11
-    (11, 39, 1),
+    (11, 244, 1),
 
     -- Event 12
-    (12, 40, 1),
+    (12, 245, 1),
 
     -- Event 13
-    (13, 41, 1),
+    (13, 246, 1),
 
     -- Event 14
-    (14, 42, 1),
+    (14, 247, 1),
 
     -- Event 15
-    (15, 43, 1),
+    (15, 248, 1),
 
     -- Event 16
-    (16, 44, 1),
+    (16, 249, 1),
 
     -- Event 17
-    (17, 45, 1),
+    (17, 250, 1),
 
     -- Event 18
-    (18, 46, 1),
+    (18, 251, 1),
 
-    -- Event 19 (No Images)
+    -- Event 19
+    (20, 252, 1),
 
     -- Event 20
-    (20, 47, 1),
-    (20, 48, 2);
+
+    (20, 253, 2);
 
 -- Banner
 INSERT INTO Banner (BannerID, ImageID, FocusType, FocusID) VALUES
