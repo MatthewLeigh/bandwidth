@@ -10,7 +10,7 @@ const singleVenueFocusCardDetails = `
             SELECT COUNT(DISTINCT Event.EventID)
             FROM Event
             WHERE Event.VenueID = Venue.VenueID
-            AND Event.Date >= CURDATE()
+            AND Event.Date >= DATE('now')
         ) AS EventCount
     FROM
         Venue

@@ -9,7 +9,7 @@ const singleArtistFocusCardDetails = `
             FROM Performance
             JOIN Event ON Performance.EventID = Event.EventID
             WHERE Performance.ArtistID = Artist.ArtistID
-            AND Event.Date >= CURDATE()
+            AND Event.Date >= DATE('now')
         ) AS EventCount
     FROM
         Artist
@@ -18,7 +18,7 @@ const singleArtistFocusCardDetails = `
     LEFT JOIN
         Image ON Image.ImageID = ArtistImage.ImageID
     WHERE
-        Artist.ArtistID = ?
+        Artist.ArtistID = 1
     ORDER BY
         ArtistImage.DisplayOrder
     LIMIT 1;
