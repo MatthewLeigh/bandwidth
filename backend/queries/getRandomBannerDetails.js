@@ -8,7 +8,7 @@ const getRandomBannerDetails = `
     LEFT JOIN
         Image ON Banner.ImageId = Image.ImageId
     ORDER BY
-        RAND()
+        RANDOM()
     LIMIT 1
 `;
 
