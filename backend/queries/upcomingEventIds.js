@@ -10,7 +10,7 @@ const upcomingEventIds = `
                 FROM
                     UserFavouriteVenue
                 WHERE
-                    UserFavouriteVenue.UserID = 1
+                    UserFavouriteVenue.UserID = ?
                     AND UserFavouriteVenue.VenueID = Event.VenueID
             ) THEN 1 ELSE 0
         END AS isUserFavouriteVenue,
@@ -23,7 +23,7 @@ const upcomingEventIds = `
                 JOIN
                     Performance ON Performance.ArtistID = UserFavouriteArtist.ArtistID
                 WHERE
-                    UserFavouriteArtist.UserID = 1
+                    UserFavouriteArtist.UserID = ?
                     AND Performance.EventID = Event.EventID
             ) THEN 1 ELSE 0
         END AS isUserFavouriteArtist
