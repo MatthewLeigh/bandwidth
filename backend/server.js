@@ -12,6 +12,15 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+// Enable Preflight Response
+app.options('*', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://matthewleigh.github.io');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.status(200).end();
+});
+
 // Enable JSON Parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
