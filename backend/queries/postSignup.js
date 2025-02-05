@@ -1,6 +1,6 @@
 const postSignup = `
     INSERT INTO User (FirstName, LastName, Email, Password, Country, State)
-    VALUES (?, ?, ?, ?, ?, ?);
+    VALUES (?, ?, ?, ?, ?, ?) RETURNING UserID;
 `;
 
 const postSignupImage = `

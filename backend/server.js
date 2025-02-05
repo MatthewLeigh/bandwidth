@@ -1081,24 +1081,22 @@ const { postSignup, postSignupImage } = require('./queries/postSignup');
 app.post('/api/post/signup', (req, res) => {
     const { firstName, lastName, email, password, country, state } = req.body;
 
-    db.run(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
+    db.run(postSignup, [firstName, lastName, email, password, country, state], function (err) {
         if (err) {
             console.error('Database query error:', err);
-            res.status(500).json({ error: "Database error" });
-
-        } else {
-            const newUserId = this.lastID;
-
-            db.all(postSignupImage, [newUserId], (err, result) => {
-                if (err) {
-                    console.error('Database query error:', err);
-                    res.status(500).json({ error: "Database error" });
-
-                } else {
-                    res.status(200).json({ userId: newUserId });
-                }
-            });
+            return res.status(500).json({ error: "Database error" });
         }
+
+        const newUserId = this.lastID;
+
+        db.run(postSignupImage, [newUserId], function (err) {
+            if (err) {
+                console.error('Database query error:', err);
+                return res.status(500).json({ error: "Database error" });
+            }
+
+            res.status(200).json({ userId: newUserId });
+        });
     });
 });
 
