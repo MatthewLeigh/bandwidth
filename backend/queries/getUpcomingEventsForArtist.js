@@ -7,7 +7,7 @@ const getUpcomingEventsForArtist = `
 		Performance ON Event.EventID = Performance.EventID
     WHERE
         Performance.ArtistID = ?
-        AND Event.Date > CURDATE()
+        AND Event.Date >= DATE('now')
     ORDER BY
         Event.Date ASC;
 `;

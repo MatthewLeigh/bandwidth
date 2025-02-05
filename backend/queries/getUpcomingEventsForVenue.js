@@ -5,7 +5,7 @@ const getUpcomingEventsForVenue = `
         Event
     WHERE
         VenueID = ?
-        AND Date > CURDATE()
+        AND Date >= DATE('now')
     ORDER BY
         Date ASC
     LIMIT 10;

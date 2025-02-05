@@ -14,7 +14,7 @@ const allVenueIds = `
                     Event ON Event.EventID = Performance.EventID
                 WHERE
                     Event.VenueID = Venue.VenueID
-                    AND Event.Date > CURDATE()
+                    AND Event.Date > DATE('now')
             ) THEN TRUE ELSE FALSE
         END AS hasUpcomingEvent
     FROM

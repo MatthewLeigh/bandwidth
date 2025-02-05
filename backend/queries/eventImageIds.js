@@ -4,7 +4,6 @@ const eventImageIds = `
         GROUP_CONCAT(
             DISTINCT Performance.ArtistID
             ORDER BY Performance.SetListPosition ASC
-            SEPARATOR ','
         ) AS ArtistIDs
     FROM
         Event
