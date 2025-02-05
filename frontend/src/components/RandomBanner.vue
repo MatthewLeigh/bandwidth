@@ -68,7 +68,7 @@
                 const flatData = data[0];
 
                 this.banner.imgUrl = flatData.ImageURL;
-                this.banner.focus = new Focus(flatData.FocusId, flatData.FocusType);
+                this.banner.focus = new Focus(flatData.FocusID, flatData.FocusType);
 
                 // Validate image URL
                 await this.validateImageUrl(this.banner.imgUrl);

@@ -119,7 +119,7 @@
 
                 this.banners = data.map((item: any) => new ImageDetails(
                     item.ImageURL,
-                    new Focus(item.FocusId, item.FocusType)
+                    new Focus(item.FocusID, item.FocusType)
                 ));
 
             } catch (error) {
