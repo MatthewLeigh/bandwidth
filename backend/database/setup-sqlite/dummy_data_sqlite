@@ -2088,11 +2088,11 @@ INSERT INTO Image (URL) VALUES
 
     -- Banners
 
-    ('./bandwidth/banners/1.png'), -- 48: Banner 1
-    ('./bandwidth/banners/2.png'), -- 49:Banner 2
-    ('./bandwidth/banners/3.png'), -- 50: Banner 3
-    ('./bandwidth/banners/4.png'), -- 51: Banner 4
-    ('./bandwidth/banners/5.png'), -- 52: Banner 5
+    ('.banners/1.png'), -- 48: Banner 1
+    ('.banners/2.png'), -- 49:Banner 2
+    ('.banners/3.png'), -- 50: Banner 3
+    ('.banners/4.png'), -- 51: Banner 4
+    ('.banners/5.png'), -- 52: Banner 5
 
     -- Artists Continued
     ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWP5mQmxSe6A0GhQUb72v3DDAcKU8PH2KTg&s'), -- 53: Artist: 22: STALKER
