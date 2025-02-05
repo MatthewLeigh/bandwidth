@@ -17,19 +17,16 @@
                 <p>
                     This website was created as a custom project by Matthew Cross for the Swinburne
                     University of Technology Online Course - COS30043 Interface Design and
-                    Development.
-                </p>
-                <p>
-                    The website is a Vue 3 application that uses the Vuetify Material Design
-                    Framework. The website is hosted on GitHub Pages and the source code is
-                    available on GitHub.
+                    Development. This page will provide an overview of the project, the technologies
+                    used, how the project meets the unit criteria, and what the next steps for the
+                    project are.
                 </p>
             </div>
         </div>
 
         <article>
 
-            <DividerBar :text="'Lorem Ipsum'" class="divider-bar"/>
+            <DividerBar :text="'Overview'" class="divider-bar"/>
 
             <section>
                 <h2>
@@ -37,9 +34,23 @@
                     <span>Introduction</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorem aliquam
-                    commodi sint minus modi sed necessitatibus, dolores ut quidem recusandae corporis
-                    suscipit earum nostrum, ducimus similique qui, ullam nemo.
+                    This is a project that I have been thinking about for a while now, and I am
+                    very glad that I was able to work on it as part of this unit. Bandwidth is a
+                    gig guide for the Melbourne music scene that will provide a complete list of
+                    upcoming events, venues, and artists in Melbourne. This initial version of the
+                    website is a proof of concept more than anything, showing the potential of the
+                    idea and what it could become with more time and resources.
+                </p>
+                <p>
+                    The website is built using Vue 3 and the Vuetify Material Design Framework.
+                    The website is hosted on GitHub Pages, while the server and sqlite database are
+                    hosted on Render. The website is a single page application that uses the Vue
+                    Router to navigate between different views. The website is fully responsive and
+                    supports mobile, tablet, and desktop devices. The website supports filtering and
+                    searching for events, venues, and artists. User's can create an account and login
+                    to save their favourite events, venues, and artists. Additionally, users can
+                    create, update, delete, and like comments on any event, venue, or artist once
+                    they are logged in.
                 </p>
             </section>
 
@@ -171,6 +182,43 @@
             </section>
 
         </article>
+
+        <article>
+
+            <DividerBar :text="'What\'s Next?'" class="divider-bar"/>
+
+            <section>
+                <h2>
+                    <v-icon icon="mdi-badminton" />
+                    <span>Admin Site</span>
+                </h2>
+                <p>
+                    The next stage of this project will be the development of a secondary admin
+                    website where events, artists, and venues can be added, updated, and deleted. My
+                    initial thoughts for this next stage was to develop web scrappers for each venue
+                    listed that could update the database directly, but research into similar sites
+                    has indicated that data cleaning can be a very involved process for this type of
+                    data.
+                </p>
+            </section>
+
+            <section>
+                <h2>
+                    <v-icon icon="mdi-pencil-ruler" />
+                    <span>Improved Design</span>
+                </h2>
+                <p>
+                    I am very proud of the design of this website. I think it is clean, modern, and
+                    easy to use. However, I am also very aware that I am not an experienced designer,
+                    and there is a lot that could be done to improve the design of the website. I
+                    am taking on-campus classes at Swinburne this year and will be on the look out
+                    for a design student who would like to collaborate on this project.
+                </p>
+            </section>
+
+        </article>
+
+
 
         <!-- Random Banner -->
         <RandomBanner />
