@@ -66,7 +66,7 @@ app.get('/api/all-venue-ids', (req, res) => {
 const { featuredEventIds } = require('./queries/featuredEventIds');
 
 app.get('/api/featured-event-ids', (req, res) => {
-    db.query(featuredEventIds, [1], (err, result) => {
+    db.all(featuredEventIds, [1], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -276,7 +276,7 @@ const { focusEventDetails } = require('./queries/focusEventDetails');
 app.get('/api/focus-event-details/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(focusEventDetails, [eventId], (err, result) => {
+    db.all(focusEventDetails, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -292,7 +292,7 @@ const { singleArtistImageURLs } = require('./queries/singleArtistImageURLs');
 app.get('/api/single-artist-image-urls/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(singleArtistImageURLs, [artistId], (err, result) => {
+    db.all(singleArtistImageURLs, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -309,7 +309,7 @@ const { singleEventImageURLs } = require('./queries/singleEventImageURLs');
 app.get('/api/single-event-image-urls/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(singleEventImageURLs, [eventId], (err, result) => {
+    db.all(singleEventImageURLs, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -326,7 +326,7 @@ const { singleVenueImageURLs } = require('./queries/singleVenueImageURLs');
 app.get('/api/single-venue-image-urls/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(singleVenueImageURLs, [venueId], (err, result) => {
+    db.all(singleVenueImageURLs, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -343,7 +343,7 @@ const { getTicketPricesForEvent } = require('./queries/getTicketPricesForEvent')
 app.get('/api/ticket-prices-for-event/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(getTicketPricesForEvent, [eventId], (err, result) => {
+    db.all(getTicketPricesForEvent, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -359,7 +359,7 @@ const { getEventAvatarCardArtistDetails } = require('./queries/getEventAvatarCar
 app.get('/api/event-avatar-card-artist-details/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(getEventAvatarCardArtistDetails, [eventId], (err, result) => {
+    db.all(getEventAvatarCardArtistDetails, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -375,7 +375,7 @@ const { getEventAvatarCardVenueDetails } = require('./queries/getEventAvatarCard
 app.get('/api/event-avatar-card-venue-details/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(getEventAvatarCardVenueDetails, [eventId], (err, result) => {
+    db.all(getEventAvatarCardVenueDetails, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -391,7 +391,7 @@ const { getFocusArtistDetails } = require('./queries/getFocusArtistDetails');
 app.get('/api/focus-artist-details/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(getFocusArtistDetails, [artistId], (err, result) => {
+    db.all(getFocusArtistDetails, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -407,7 +407,7 @@ const { getUpcomingEventsForArtist } = require('./queries/getUpcomingEventsForAr
 app.get('/api/upcoming-events-for-artist/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(getUpcomingEventsForArtist, [artistId], (err, result) => {
+    db.all(getUpcomingEventsForArtist, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -423,7 +423,7 @@ const { getArtistSocials } = require('./queries/getArtistSocials');
 app.get('/api/artist-socials/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(getArtistSocials, [artistId], (err, result) => {
+    db.all(getArtistSocials, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -439,7 +439,7 @@ const { getArtistEmbeds } = require('./queries/getArtistEmbeds');
 app.get('/api/artist-embeds/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(getArtistEmbeds, [artistId], (err, result) => {
+    db.all(getArtistEmbeds, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -453,7 +453,7 @@ app.get('/api/artist-embeds/:id', (req, res) => {
 const { getRandomBannerDetails } = require('./queries/getRandomBannerDetails');
 
 app.get('/api/random-banner-details', (req, res) => {
-    db.query(getRandomBannerDetails, (err, result) => {
+    db.all(getRandomBannerDetails, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -469,7 +469,7 @@ const { getFocusVenueDetails } = require('./queries/getFocusVenueDetails');
 app.get('/api/focus-venue-details/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(getFocusVenueDetails, [venueId], (err, result) => {
+    db.all(getFocusVenueDetails, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -485,7 +485,7 @@ const { getOpeningHours } = require('./queries/getOpeningHours');
 app.get('/api/venue-opening-hours/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(getOpeningHours, [venueId], (err, result) => {
+    db.all(getOpeningHours, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -501,7 +501,7 @@ const { getUpcomingEventsForVenue } = require('./queries/getUpcomingEventsForVen
 app.get('/api/upcoming-events-for-venue/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(getUpcomingEventsForVenue, [venueId], (err, result) => {
+    db.all(getUpcomingEventsForVenue, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -517,7 +517,7 @@ const { getVenueSocials } = require('./queries/getVenueSocials');
 app.get('/api/venue-socials/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(getVenueSocials, [venueId], (err, result) => {
+    db.all(getVenueSocials, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -533,7 +533,7 @@ const { getUserDetails } = require('./queries/getUserDetails');
 app.get('/api/user-details/:id', (req, res) => {
     const userId = req.params.id;
 
-    db.query(getUserDetails, [userId], (err, result) => {
+    db.all(getUserDetails, [userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -550,7 +550,7 @@ app.get('/api/get/venue/is-favourite/:userId/:venueId', (req, res) => {
     const userId = req.params.userId;
     const venueId = req.params.venueId;
 
-    db.query(getIsFavouriteVenue, [userId, venueId], (err, result) => {
+    db.all(getIsFavouriteVenue, [userId, venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -567,7 +567,7 @@ app.post('/api/post/venue/is-favourite/:userId/:venueId', (req, res) => {
     const userId = req.params.userId;
     const venueId = req.params.venueId;
 
-    db.query(postIsFavouriteVenue, [userId, venueId], (err, result) => {
+    db.all(postIsFavouriteVenue, [userId, venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -584,7 +584,7 @@ app.delete('/api/delete/venue/is-favourite/:userId/:venueId', (req, res) => {
     const userId = req.params.userId;
     const venueId = req.params.venueId;
 
-    db.query(deleteIsFavouriteVenue, [userId, venueId], (err, result) => {
+    db.all(deleteIsFavouriteVenue, [userId, venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -601,7 +601,7 @@ app.get('/api/get/artist/is-favourite/:userId/:artistId', (req, res) => {
     const userId = req.params.userId;
     const artistId = req.params.artistId;
 
-    db.query(getIsFavouriteArtist, [userId, artistId], (err, result) => {
+    db.all(getIsFavouriteArtist, [userId, artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -618,7 +618,7 @@ app.post('/api/post/artist/is-favourite/:userId/:artistId', (req, res) => {
     const userId = req.params.userId;
     const artistId = req.params.artistId;
 
-    db.query(postIsFavouriteArtist, [userId, artistId], (err, result) => {
+    db.all(postIsFavouriteArtist, [userId, artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -635,7 +635,7 @@ app.delete('/api/delete/artist/is-favourite/:userId/:artistId', (req, res) => {
     const userId = req.params.userId;
     const artistId = req.params.artistId;
 
-    db.query(deleteIsFavouriteArtist, [userId, artistId], (err, result) => {
+    db.all(deleteIsFavouriteArtist, [userId, artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -652,7 +652,7 @@ app.get('/api/get/event/is-saved/:userId/:eventId', (req, res) => {
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.query(getIsSavedEvent, [userId, eventId], (err, result) => {
+    db.all(getIsSavedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -669,7 +669,7 @@ app.post('/api/post/event/is-saved/:userId/:eventId', (req, res) => {
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.query(postIsSavedEvent, [userId, eventId], (err, result) => {
+    db.all(postIsSavedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -686,7 +686,7 @@ app.delete('/api/delete/event/is-saved/:userId/:eventId', (req, res) => {
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.query(deleteIsSavedEvent, [userId, eventId], (err, result) => {
+    db.all(deleteIsSavedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -711,7 +711,7 @@ app.post('/api/post/artist/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(postArtistComment, [artistId, userId, comment], (err, result) => {
+    db.all(postArtistComment, [artistId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -730,7 +730,7 @@ app.post('/api/post/venue/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(postVenueComment, [venueId, userId, comment], (err, result) => {
+    db.all(postVenueComment, [venueId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -749,7 +749,7 @@ app.post('/api/post/event/comment/:focusId/:userId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(postEventComment, [eventId, userId, comment], (err, result) => {
+    db.all(postEventComment, [eventId, userId, comment], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -765,7 +765,7 @@ const { getArtistComments, getVenueComments, getEventComments } = require('./que
 app.get('/api/get/artist/comments/:focusId', (req, res) => {
     const artistId = req.params.focusId;
 
-    db.query(getArtistComments, [artistId], (err, result) => {
+    db.all(getArtistComments, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -778,7 +778,7 @@ app.get('/api/get/artist/comments/:focusId', (req, res) => {
 app.get('/api/get/venue/comments/:focusId', (req, res) => {
     const venueId = req.params.focusId;
 
-    db.query(getVenueComments, [venueId], (err, result) => {
+    db.all(getVenueComments, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -791,7 +791,7 @@ app.get('/api/get/venue/comments/:focusId', (req, res) => {
 app.get('/api/get/event/comments/:focusId', (req, res) => {
     const eventId = req.params.focusId;
 
-    db.query(getEventComments, [eventId], (err, result) => {
+    db.all(getEventComments, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -808,7 +808,7 @@ const { deleteArtistComment, deleteVenueComment, deleteEventComment } = require(
 app.delete('/api/delete/artist/comment/:commentId', (req, res) => {
     const artistId = req.params.commentId;
 
-    db.query(deleteArtistComment, [artistId], (err, result) => {
+    db.all(deleteArtistComment, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -821,7 +821,7 @@ app.delete('/api/delete/artist/comment/:commentId', (req, res) => {
 app.delete('/api/delete/venue/comment/:commentId', (req, res) => {
     const venueId = req.params.commentId;
 
-    db.query(deleteVenueComment, [venueId], (err, result) => {
+    db.all(deleteVenueComment, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -834,7 +834,7 @@ app.delete('/api/delete/venue/comment/:commentId', (req, res) => {
 app.delete('/api/delete/event/comment/:commentId', (req, res) => {
     const eventId = req.params.commentId;
 
-    db.query(deleteEventComment, [eventId], (err, result) => {
+    db.all(deleteEventComment, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -852,7 +852,7 @@ app.post('/api/post/artist/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(postArtistCommentLike, [commentId, userId], (err, result) => {
+    db.all(postArtistCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -866,7 +866,7 @@ app.post('/api/post/venue/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(postVenueCommentLike, [commentId, userId], (err, result) => {
+    db.all(postVenueCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -880,7 +880,7 @@ app.post('/api/post/event/like-comment/:commentId/:userId', (req, res) => {
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(postEventCommentLike, [commentId, userId], (err, result) => {
+    db.all(postEventCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -900,7 +900,7 @@ app.delete('/api/delete/artist/unlike-comment/:commentId/:userId', (req, res) =>
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(deleteArtistCommentLike, [commentId, userId], (err, result) => {
+    db.all(deleteArtistCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -914,7 +914,7 @@ app.delete('/api/delete/venue/unlike-comment/:commentId/:userId', (req, res) => 
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(deleteVenueCommentLike, [commentId, userId], (err, result) => {
+    db.all(deleteVenueCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -928,7 +928,7 @@ app.delete('/api/delete/event/unlike-comment/:commentId/:userId', (req, res) => 
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(deleteEventCommentLike, [commentId, userId], (err, result) => {
+    db.all(deleteEventCommentLike, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -947,7 +947,7 @@ app.get('/api/get/artist/is-user-liked-comment/:commentId/:userId', (req, res) =
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(getIsUserLikedArtistComment, [commentId, userId], (err, result) => {
+    db.all(getIsUserLikedArtistComment, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -961,7 +961,7 @@ app.get('/api/get/venue/is-user-liked-comment/:commentId/:userId', (req, res) =>
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(getIsUserLikedVenueComment, [commentId, userId], (err, result) => {
+    db.all(getIsUserLikedVenueComment, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -975,7 +975,7 @@ app.get('/api/get/event/is-user-liked-comment/:commentId/:userId', (req, res) =>
     const commentId = req.params.commentId;
     const userId = req.params.userId;
 
-    db.query(getIsUserLikedEventComment, [commentId, userId], (err, result) => {
+    db.all(getIsUserLikedEventComment, [commentId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -998,7 +998,7 @@ app.put('/api/put/artist/comment/:commentId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(putArtistComment, [comment, commentId], (err, result) => {
+    db.all(putArtistComment, [comment, commentId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1016,7 +1016,7 @@ app.put('/api/put/venue/comment/:commentId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(putVenueComment, [comment, commentId], (err, result) => {
+    db.all(putVenueComment, [comment, commentId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1034,7 +1034,7 @@ app.put('/api/put/event/comment/:commentId', (req, res) => {
         return res.status(400).json({ error: "Comment is required." });
     }
 
-    db.query(putEventComment, [comment, commentId], (err, result) => {
+    db.all(putEventComment, [comment, commentId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1050,7 +1050,7 @@ app.get('/api/get/login/:email/:password', (req, res) => {
     const email = req.params.email;
     const password = req.params.password;
 
-    db.query(getLogin, [email, password], (err, result) => {
+    db.all(getLogin, [email, password], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1070,7 +1070,7 @@ app.post('/api/post/signup', (req, res) => {
     const { firstName, lastName, email, password, country, state } = req.body;
     let newUserId = -1;
 
-    db.query(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
+    db.all(postSignup, [firstName, lastName, email, password, country, state], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
@@ -1078,7 +1078,7 @@ app.post('/api/post/signup', (req, res) => {
         } else {
             newUserId = result.insertId;
 
-            db.query(postSignupImage, [newUserId], (err, result) => {
+            db.all(postSignupImage, [newUserId], (err, result) => {
                 if (err) {
                     console.error('Database query error:', err);
                     res.status(500).json({ error: "Database error" });
@@ -1097,7 +1097,7 @@ app.post('/api/post/user-recently-viewed-event/:userId/:eventId', (req, res) => 
     const userId = req.params.userId;
     const eventId = req.params.eventId;
 
-    db.query(postUserRecentlyViewedEvent, [userId, eventId], (err, result) => {
+    db.all(postUserRecentlyViewedEvent, [userId, eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).json({ error: "Database error" });
