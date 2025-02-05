@@ -2827,11 +2827,11 @@ INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
     (18, 251, 1),
 
     -- Event 19
-    (20, 252, 1),
+    (19, 252, 1),
 
     -- Event 20
 
-    (20, 253, 2);
+    (20, 253, 1);
 
 -- Banner
 INSERT INTO Banner (BannerID, ImageID, FocusType, FocusID) VALUES
