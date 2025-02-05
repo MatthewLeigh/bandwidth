@@ -162,7 +162,7 @@
 
     .container {
         padding: 0;
-        height: 50vh;
+        height: 60vh;
         max-height: 600px;
     }
 
