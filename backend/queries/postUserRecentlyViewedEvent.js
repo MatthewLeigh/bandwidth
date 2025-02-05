@@ -1,7 +1,6 @@
 const postUserRecentlyViewedEvent = `
-    INSERT INTO UserRecentlyViewedEvent (UserID, EventID, DateTimeViewed)
-    VALUES (?, ?, Date('now'))
-    ON DUPLICATE KEY UPDATE DateTimeViewed = VALUES(DateTimeViewed);
+    INSERT OR REPLACE INTO UserRecentlyViewedEvent (UserID, EventID, DateTimeViewed)
+    VALUES (?, ?, Date('now'));
 `;
 
 module.exports = { postUserRecentlyViewedEvent };
