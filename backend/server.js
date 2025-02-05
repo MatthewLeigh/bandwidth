@@ -38,7 +38,7 @@ const db = new sqlite3.Database('./database/bandwidth-db.db', (err) => {
 const { allArtistIds } = require('./queries/allArtistIds');
 
 app.get('/api/all-artist-ids', (req, res) => {
-    db.query(allArtistIds, (err, result) => {
+    db.all(allArtistIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -52,7 +52,7 @@ app.get('/api/all-artist-ids', (req, res) => {
 const { allVenueIds } = require('./queries/allVenueIds');
 
 app.get('/api/all-venue-ids', (req, res) => {
-    db.query(allVenueIds, (err, result) => {
+    db.all(allVenueIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -81,7 +81,7 @@ app.get('/api/featured-event-ids', (req, res) => {
 const { featuredArtistIds } = require('./queries/featuredArtistIds');
 
 app.get('/api/featured-artist-ids', (req, res) => {
-    db.query(featuredArtistIds, [1], (err, result) => {
+    db.all(featuredArtistIds, [1], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -96,7 +96,7 @@ app.get('/api/featured-artist-ids', (req, res) => {
 const { featuredVenueIds } = require('./queries/featuredVenueIds');
 
 app.get('/api/featured-venue-ids', (req, res) => {
-    db.query(featuredVenueIds, [1], (err, result) => {
+    db.all(featuredVenueIds, [1], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -113,7 +113,7 @@ const { upcomingEventIds } = require('./queries/upcomingEventIds');
 app.get('/api/upcoming-event-ids/:userId', (req, res) => {
     const userId = req.params.userId;
 
-    db.query(upcomingEventIds, [userId, userId], (err, result) => {
+    db.all(upcomingEventIds, [userId, userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -130,7 +130,7 @@ const { userSavedEventIds } = require('./queries/userSavedEventIds');
 app.get('/api/user-saved-event-ids/:userId', (req, res) => {
     const userId = req.params.userId;
 
-    db.query(userSavedEventIds, [userId], (err, result) => {
+    db.all(userSavedEventIds, [userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -147,7 +147,7 @@ const { userRecentlyViewedEventIds } = require('./queries/userRecentlyViewedEven
 app.get('/api/user-recently-viewed-event-ids/:userId', (req, res) => {
     const userId = req.params.userId;
 
-    db.query(userRecentlyViewedEventIds, [userId], (err, result) => {
+    db.all(userRecentlyViewedEventIds, [userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -164,7 +164,7 @@ const { userFavouriteArtistIds } = require('./queries/userFavouriteArtistIds');
 app.get('/api/user-favourite-artist-ids/:userId', (req, res) => {
     const userId = req.params.userId;
 
-    db.query(userFavouriteArtistIds, [userId], (err, result) => {
+    db.all(userFavouriteArtistIds, [userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -181,7 +181,7 @@ const { userFavouriteVenueIds } = require('./queries/userFavouriteVenueIds');
 app.get('/api/user-favourite-venue-ids/:userId', (req, res) => {
     const userId = req.params.userId;
 
-    db.query(userFavouriteVenueIds, [userId], (err, result) => {
+    db.all(userFavouriteVenueIds, [userId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -196,7 +196,7 @@ app.get('/api/user-favourite-venue-ids/:userId', (req, res) => {
 const { allBannerDetails } = require('./queries/allBannerDetails');
 
 app.get('/api/all-banner-details', (req, res) => {
-    db.query(allBannerDetails, (err, result) => {
+    db.all(allBannerDetails, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -212,7 +212,7 @@ const { singleVenueFocusCardDetails } = require('./queries/singleVenueFocusCardD
 app.get('/api/single-venue-focus-card-details/:id', (req, res) => {
     const venueId = req.params.id;
 
-    db.query(singleVenueFocusCardDetails, [venueId], (err, result) => {
+    db.all(singleVenueFocusCardDetails, [venueId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -228,7 +228,7 @@ const { singleArtistFocusCardDetails } = require('./queries/singleArtistFocusCar
 app.get('/api/single-artist-focus-card-details/:id', (req, res) => {
     const artistId = req.params.id;
 
-    db.query(singleArtistFocusCardDetails, [artistId], (err, result) => {
+    db.all(singleArtistFocusCardDetails, [artistId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -244,7 +244,7 @@ const { singleEventFocusCardDetails } = require('./queries/singleEventFocusCardD
 app.get('/api/single-event-focus-card-details/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(singleEventFocusCardDetails, [eventId], (err, result) => {
+    db.all(singleEventFocusCardDetails, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
@@ -260,7 +260,7 @@ const { eventImageIds } = require('./queries/eventImageIds');
 app.get('/api/event-image-ids/:id', (req, res) => {
     const eventId = req.params.id;
 
-    db.query(eventImageIds, [eventId], (err, result) => {
+    db.all(eventImageIds, [eventId], (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
