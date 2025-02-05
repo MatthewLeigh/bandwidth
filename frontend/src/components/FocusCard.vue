@@ -146,6 +146,10 @@
                 });
             },
 
+            formatCsv(list: string) {
+                return list.split(',').join(' · ');
+            },
+
             formatLocation(StreetAddress: string, City: string, State: string, PostCode: string) {
                 return `${StreetAddress}, ${City} ${State} ${PostCode}`;
             },
@@ -403,7 +407,7 @@
 
                     this.imgUrl = event.ImageURL;
                     this.title = event.Title;
-                    this.subtitle = event.ArtistList;
+                    this.subtitle = this.formatCsv(event.ArtistList);
                     this.topLeftString = event.VenueTitle;
                     this.topRightString = this.formatDate(event.Date);
 
