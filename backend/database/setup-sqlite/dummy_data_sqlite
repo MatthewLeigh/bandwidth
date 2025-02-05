@@ -2275,7 +2275,10 @@ INSERT INTO Image (URL) VALUES
     ('https://www.metal-archives.com/images/3/5/4/0/3540497300_photo.jpg?2537'), -- 230: Artist: 20: Sufferance
     ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvsmvvGsHnVLh3sLQ60OZ5JaK-znfFGuVKQqMU_w70lkPcEvsC_it5kT3hEt7X4PaJwk&usqp=CAU'), -- 231: Artist: 20: Sufferance
     (null), -- 232: Artist: 21: ABIGAIL
-    (null); -- 233: Artist: 21: ABIGAIL
+    (null), -- 233: Artist: 21: ABIGAIL
+    ('https://www.tolucacultural.com/assets/15805-INDIE-ROCK-NIGHT-THE-JAWAS-LES-BASTERDS-CHARACTERS-IN-MOTION-YOUTH-CULTURE-FUNKILLA.jpg'), -- 234: Event: 1: Indie Rock Night
+    ('https://cdn.myportfolio.com/27a1e981ce82b09d5b6a6b0a5437daa8/d61bbded49f97a121ad43375f8e90d29096ebcf3674007d178035090b7a743152dcae1e0001886cc_rw_1920.jpg?h=712bd42e2cc47c9b6d5997732d180679'), -- 234: Event: 2: Acoustic Evening
+    ('https://img.freepik.com/free-photo/psychedelic-music-star-illustration_23-2151876827.jpg'); -- 235: Event: 3: Psychedelic Jam
 
 
 -- VenueImage
@@ -2744,11 +2747,6 @@ INSERT INTO ArtistImage (ArtistID, ImageID, DisplayOrder) VALUES
     (110, 228, 1),
     (110, 229, 2);
 
-
-
-
-
-
 -- UserImage
 INSERT INTO UserImage (UserID, ImageID) VALUES
 
@@ -2759,7 +2757,7 @@ INSERT INTO UserImage (UserID, ImageID) VALUES
 INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
 
     -- Event 1
-    (1, 28, 1),
+    (1, 234, 1),
 
     -- Event 2
     (2, 29, 1),
