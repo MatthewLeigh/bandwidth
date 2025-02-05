@@ -110,10 +110,10 @@ app.get('/api/featured-venue-ids', (req, res) => {
 // GET: Upcoming Event IDs
 const { upcomingEventIds } = require('./queries/upcomingEventIds');
 
-app.get('/api/upcoming-event-ids/:userId', (req, res) => {
+app.get('/api/upcoming-event-ids', (req, res) => {
     const userId = req.params.userId;
 
-    db.all(upcomingEventIds, [userId, userId], (err, result) => {
+    db.all(upcomingEventIds, (err, result) => {
         if (err) {
             console.error('Database query error:', err);
             res.status(500).send(err);
