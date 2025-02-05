@@ -2295,7 +2295,7 @@ INSERT INTO Image (URL) VALUES
     ('https://merryandblackjournals.com/wp-content/uploads/2024/11/DALL%C2%B7E-2024-11-24-10.29.39-A-serene-and-uplifting-scene-featuring-a-radiant-Black-woman-sitting-in-a-cozy-living-room-on-a-Sunday-morning-with-soft-sunlight-streaming-through-t.webp'), -- 250: Event: 17: Soulful Sundays
     ('https://edit.org/img/blog/vfy-karaoke-night-template-party-promotion-free.webp'), -- 251: Event: 18: Karaoke Night
     ('https://static.wixstatic.com/media/74bd68_7e0cbd6a1b4c440299d9c4480699ecd3~mv2.jpg/v1/fill/w_640,h_462,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/74bd68_7e0cbd6a1b4c440299d9c4480699ecd3~mv2.jpg'), -- 252: Event: 19: Rock Legends Tribute
-    ('https://static.wikia.nocookie.net/marvel_dc/images/5/58/The_Final_Night_1.jpg/revision/latest?cb=20070213182758'), -- 253: Event: 20: Final Night Unverified
+    ('https://i.ebayimg.com/images/g/qGYAAOSwVCdhqsky/s-l1200.jpg'), -- 253: Event: 20: Final Night Unverified
     ('https://static.vecteezy.com/system/resources/thumbnails/036/594/092/small_2x/man-empty-avatar-photo-placeholder-for-social-networks-resumes-forums-and-dating-sites-male-and-female-no-photo-images-for-unfilled-user-profile-free-vector.jpg'); -- 254: User: Default Image
 
 
