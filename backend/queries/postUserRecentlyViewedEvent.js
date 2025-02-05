@@ -1,6 +1,6 @@
 const postUserRecentlyViewedEvent = `
     INSERT INTO UserRecentlyViewedEvent (UserID, EventID, DateTimeViewed)
-    VALUES (?, ?, NOW())
+    VALUES (?, ?, Date('now'))
     ON DUPLICATE KEY UPDATE DateTimeViewed = VALUES(DateTimeViewed);
 `;
 
