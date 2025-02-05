@@ -6,7 +6,7 @@ const singleEventFocusCardDetails = `
         GROUP_CONCAT(
             DISTINCT Artist.Title
             ORDER BY Performance.SetListPosition ASC
-            SEPARATOR ' · '
+            SEPARATOR ', '
         ) AS ArtistList,
         Image.URL AS ImageURL
     FROM
