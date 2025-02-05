@@ -2837,11 +2837,11 @@ INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
 
 -- Banner
 INSERT INTO Banner (BannerID, ImageID, FocusType, FocusID) VALUES
-    (1, 48, 'event', 2),
-    (2, 49, 'event', 4),
-    (3, 50, 'venue', 2),
-    (4, 51, 'artist', 1),
-    (5, 52, 'artist', 2);
+    (1, 48, 'artist', 31),
+    (2, 49, 'event', 8),
+    (3, 50, 'artist', 26),
+    (4, 51, 'artist', 80),
+    (5, 52, 'event', 3);
 
 
 
