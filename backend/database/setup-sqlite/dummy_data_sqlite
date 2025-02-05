@@ -2277,8 +2277,8 @@ INSERT INTO Image (URL) VALUES
     (null), -- 232: Artist: 21: ABIGAIL
     (null), -- 233: Artist: 21: ABIGAIL
     ('https://www.tolucacultural.com/assets/15805-INDIE-ROCK-NIGHT-THE-JAWAS-LES-BASTERDS-CHARACTERS-IN-MOTION-YOUTH-CULTURE-FUNKILLA.jpg'), -- 234: Event: 1: Indie Rock Night
-    ('https://cdn.myportfolio.com/27a1e981ce82b09d5b6a6b0a5437daa8/d61bbded49f97a121ad43375f8e90d29096ebcf3674007d178035090b7a743152dcae1e0001886cc_rw_1920.jpg?h=712bd42e2cc47c9b6d5997732d180679'), -- 234: Event: 2: Acoustic Evening
-    ('https://img.freepik.com/free-photo/psychedelic-music-star-illustration_23-2151876827.jpg'); -- 235: Event: 3: Psychedelic Jam
+    ('https://cdn.myportfolio.com/27a1e981ce82b09d5b6a6b0a5437daa8/d61bbded49f97a121ad43375f8e90d29096ebcf3674007d178035090b7a743152dcae1e0001886cc_rw_1920.jpg?h=712bd42e2cc47c9b6d5997732d180679'), -- 235: Event: 2: Acoustic Evening
+    ('https://img.freepik.com/free-photo/psychedelic-music-star-illustration_23-2151876827.jpg'); -- 236: Event: 3: Psychedelic Jam
 
 
 -- VenueImage
@@ -2760,10 +2760,10 @@ INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
     (1, 234, 1),
 
     -- Event 2
-    (2, 29, 1),
+    (2, 235, 1),
 
     -- Event 3
-    (3, 30, 1),
+    (3, 236, 1),
 
     -- Event 4
     (4, 31, 1),
