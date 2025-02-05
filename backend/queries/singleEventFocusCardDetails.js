@@ -3,12 +3,11 @@ const singleEventFocusCardDetails = `
         Event.Title,
         Event.Date,
         Venue.Title AS VenueTitle,
-        GROUP_CONCAT(
-            DISTINCT Artist.Title
-            ORDER BY Performance.SetListPosition ASC
-            SEPARATOR ', '
+        IFNULL(
+            GROUP_CONCAT(DISTINCT Artist.Title ORDER BY Performance.SetListPosition ASC),
+            'Unknown Artists'
         ) AS ArtistList,
-        Image.URL AS ImageURL
+        COALESCE(Image.URL, '') AS ImageURL
     FROM
         Event
     LEFT JOIN
