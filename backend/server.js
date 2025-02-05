@@ -7,8 +7,11 @@ const PORT = 3000;
 const HOST = 'https://bandwidth-22xp.onrender.com';
 
 // Enable CORS
-app.use(cors());
-
+app.use(cors({
+    origin: 'https://matthewleigh.github.io',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 // Enable JSON Parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
