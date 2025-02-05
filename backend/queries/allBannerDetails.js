@@ -1,6 +1,6 @@
 const allBannerDetails = `
     SELECT
-        Image.Url AS ImgUrl,
+        Image.Url AS ImageURL,
         Banner.FocusType,
         Banner.FocusId
     FROM
@@ -8,7 +8,7 @@ const allBannerDetails = `
     LEFT JOIN
         Image ON Banner.ImageId = Image.ImageId
     ORDER BY
-        RAND();
+        RANDOM();
 `;
 
 module.exports = { allBannerDetails };
