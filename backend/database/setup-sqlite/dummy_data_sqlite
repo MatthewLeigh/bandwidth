@@ -1649,7 +1649,9 @@ INSERT INTO Event (
         1,
         1,
         'Indie Rock Night',
-        'An electrifying night featuring up-and-coming indie rock bands.',
+        "On Indie Rock Night at The Gasometer, get ready for an unforgettable evening featuring Gang of Youths, The Amazing Devil, and Amber Drift. Each of these artists brings their own unique energy to the stage, creating a night that spans from anthemic rock to emotionally charged indie-folk. Expect raw, electrifying performances that will have the crowd singing, dancing, and reflecting on the power of music.
+
+        From Gang of Youths’ soaring anthems to the intense, theatrical performances of The Amazing Devil, and the hauntingly beautiful folk-rock of Amber Drift, this event promises a full spectrum of sound. With The Gasometer’s intimate yet electric vibe, this is the perfect place to experience the next wave of indie rock and discover new favorites. Grab your tickets now for a night filled with passion, energy, and unforgettable moments.",
         '2025-03-15',
         '19:00:00',
         '23:00:00',
@@ -1662,7 +1664,9 @@ INSERT INTO Event (
         2,
         3,
         'Acoustic Evening',
-        'A cozy acoustic session featuring local artists.',
+        "Join us for an unforgettable Acoustic Evening at The Corner Hotel, featuring Courtney Barnett and Tash Sultana. This special event will strip down the electric energy of these two incredible artists, showcasing their raw talent and emotional depth in an intimate acoustic setting. Expect soul-stirring performances filled with powerful lyrics, delicate melodies, and the kind of artistry that only a live acoustic performance can deliver.
+
+        Both Courtney Barnett and Tash Sultana are known for their ability to captivate audiences with their unique sounds, and this acoustic evening promises to offer an entirely new perspective on their music. From Barnett’s deadpan, storytelling style to Sultana’s loop-driven, multi-instrumental prowess, this night will be a rare chance to experience their music in its most personal, stripped-back form.",
         '2025-03-20',
         '18:00:00',
         '21:30:00',
@@ -1675,7 +1679,11 @@ INSERT INTO Event (
         3,
         4,
         'Psychedelic Jam',
-        'A mind-bending psychedelic rock event at The Tote.',
+        "Get ready for an unforgettable night of swirling psychedelia and blues-infused rock as King Gizzard & the Lizard Wizard and The Teskey Brothers take over The Tote for Psychedelic Jam! This once-in-a-lifetime gig brings together two of Australia’s most electrifying live acts for an explosive night of improvisation, heavy riffs, and soulful energy. Whether you're a die-hard psych-rock fan, a blues enthusiast, or just someone craving a mind-expanding sonic journey, this is the show you've been waiting for.
+
+        Brace yourself as King Gizz unleashes their signature whirlwind of microtonal madness, fuzzed-out guitar freakouts, and hypnotic grooves that will transport you to another dimension. Meanwhile, The Teskey Brothers will bring their rich, soulful melodies and raw, heartfelt blues to balance the night with deep, resonant emotion. Expect extended jams, surprise collaborations, and a once-in-a-lifetime fusion of psychedelic rock and blues that will leave you buzzing for days.
+
+        This is more than just a gig—it’s a full sensory experience at one of Melbourne’s most iconic venues. The Tote’s intimate setting guarantees you’ll be up close and personal with the action, soaking in every mind-melting solo and every soulful note. Tickets are limited, and this show is guaranteed to sell out fast. Don't miss your chance to witness history—grab your tickets now and get ready to trip out at Psychedelic Jam!",
         '2025-03-25',
         '20:00:00',
         '01:00:00',
@@ -1688,7 +1696,11 @@ INSERT INTO Event (
         1,
         2,
         'Emerging Artists Showcase',
-        'Discover the next big thing in music with performances by emerging artists.',
+        "The Gasometer Hotel is set to host an unforgettable Emerging Artists Showcase, bringing together some of Australia's most exciting talents alongside established icons. Featuring Tame Impala, Vance Joy, and The Cat Empire, this night is all about celebrating the next wave of artists while enjoying performances from some of the country’s most influential musicians. Expect a night of discovery, innovation, and genre-bending sounds in one of Melbourne’s most legendary live music venues.
+
+        Tame Impala will bring their signature psychedelic textures, proving why they remain one of the most forward-thinking acts in modern music. Vance Joy, with his undeniable storytelling and soaring melodies, will deliver a set that highlights the power of raw, heartfelt songwriting. Rounding out the night, The Cat Empire will bring their high-energy fusion of jazz, funk, and ska, ensuring the crowd is on its feet from start to finish.
+
+        But the real stars of the night are the emerging artists, handpicked for their talent and potential. Whether it’s a rising indie-rock outfit, a soulful singer-songwriter, or a genre-defying new act, this showcase is a chance to witness the future of Australian music before they take the world by storm. With an atmosphere buzzing with creativity and discovery, this is a night for true music lovers. Tickets are limited—secure yours now and be part of the movement.",
         '2025-03-10',
         '17:30:00',
         '22:00:00',
@@ -1701,7 +1713,9 @@ INSERT INTO Event (
         2,
         3,
         'Blues Revival',
-        'A soulful evening celebrating the blues genre.',
+        "Blues Revival at The Corner Hotel will feature The Jungle Giants and Ball Park Music, two bands known for infusing modern sounds with classic roots. Get ready for a night that blends the raw, soulful energy of blues with the upbeat, indie-rock vibes these groups are famous for. Expect foot-tapping grooves, infectious rhythms, and powerful performances that breathe new life into the blues tradition.
+
+        With The Jungle Giants’ punchy, feel-good tunes and Ball Park Music’s signature blend of catchy melodies and soulful undertones, this night will be a celebration of music’s rich heritage and its evolving future. Set in the iconic Corner Hotel, this is a night to immerse yourself in the rhythms of revival and the raw energy of live music. Secure your spot for a blues-infused evening you won’t forget.",
         '2025-03-15',
         '19:00:00',
         '23:00:00',
@@ -1714,7 +1728,9 @@ INSERT INTO Event (
         3,
         5,
         'Underground Metal Fest',
-        'A heavy metal extravaganza at The Tote.',
+        "Step into the depths of raw, unrelenting energy at Underground Metal Fest at The Tote, featuring The Amazing Devil and Amber Drift. This is where metal’s fierce, unapologetic spirit meets the haunting melodies of two unique acts who are redefining the genre. Expect dark, atmospheric riffs, crushing rhythms, and performances that will take you through a range of intense emotions.
+
+        The Amazing Devil will bring their gritty, explosive sound to the stage, fusing metal with theatrical storytelling, while Amber Drift’s blend of atmospheric metal and folk influences adds an eerie depth to the night. It’s a perfect pairing of dark power and intricate musicality, sure to leave an impression long after the last note.",
         '2025-03-20',
         '20:00:00',
         '02:00:00',
@@ -1727,7 +1743,11 @@ INSERT INTO Event (
         1,
         1,
         'Folk Fusion Night',
-        'Experience a blend of traditional and modern folk music.',
+        "On March 5, 2025, The Gasometer Hotel transforms into a haven for poetic lyricism and rich, genre-blending soundscapes with Folk Fusion Night. Featuring the raw storytelling of Courtney Barnett, the ethereal melodies of rising folk artist Amber Drift, and the anthemic power of Gang of Youths, this special event will showcase the limitless potential of folk music when it collides with rock, indie, and soul. If you love music that moves, uplifts, and lingers long after the final note, this is a night you can’t miss.
+
+        Courtney Barnett will bring her signature deadpan delivery and razor-sharp wit, turning everyday observations into songs that hit straight to the heart. Amber Drift, a name quickly making waves in the folk scene, will weave delicate harmonies with haunting storytelling, creating a dreamlike atmosphere. And to top it all off, Gang of Youths will channel their deeply emotional songwriting into a stirring, folk-infused performance, showing a different side of their expansive sound. Expect acoustic sets, reimagined classics, and a few surprise collaborations that will make this a truly unforgettable night.
+
+        With The Gasometer’s iconic open-air mezzanine and an audience of true music lovers, this will be an intimate, soul-stirring experience like no other. Whether you’re here for the folk, the fusion, or just the magic of live music, Folk Fusion Night promises a night of powerful performances and deep connection. Tickets are expected to sell fast—secure yours now and be part of the magic!",
         '2025-03-05',
         '18:30:00',
         '22:30:00',
@@ -1740,7 +1760,11 @@ INSERT INTO Event (
         2,
         3,
         'Jazz & Wine',
-        'An evening of smooth jazz paired with fine wines.',
+        "Indulge in a night of smooth melodies and exquisite flavors at Jazz & Wine at The Corner Hotel, where the finest jazz musicians set the mood while you savor a curated selection of premium wines. Step into the warm, intimate atmosphere of one of Melbourne’s most beloved live music venues and let the rich, velvety tones of live jazz wash over you as you sip on the perfect pour. Whether you’re a longtime jazz aficionado or simply looking for an elegant night out, this event promises an experience of pure sophistication and soul.
+
+        Featuring an all-star lineup of local and international jazz virtuosos, the evening will take you on a journey through classic swing, sultry blues, and contemporary improvisations. Expect spellbinding sax solos, deep double bass grooves, and the kind of hypnotic rhythms that make time stand still. Paired with a thoughtfully selected wine list showcasing the best of regional and international vintages, this is a night where every note and every sip tells a story.
+
+        From the first taste to the last encore, Jazz & Wine at The Corner Hotel is a celebration of music, flavor, and atmosphere. Whether you're here for the tunes, the tannins, or the unbeatable company, this is an event that will linger on your palate and in your soul. Secure your tickets now and prepare to immerse yourself in a night of pure jazz bliss!",
         '2025-03-10',
         '19:00:00',
         '23:30:00',
@@ -1753,7 +1777,9 @@ INSERT INTO Event (
         3,
         6,
         'Open Mic Night',
-        'Showcase your talent or enjoy performances from local artists.',
+        "Join us at The Tote for an Open Mic Night like no other, featuring performances from the legendary The Cat Empire and Tame Impala. This event will showcase the raw energy and creativity that defines both bands, with a twist of spontaneity and audience participation. While these iconic acts will take the stage, the open mic concept allows for a truly unique experience, where every moment could bring something unexpected and exciting.
+
+        Expect a night filled with improvised jams, experimental sounds, and an electric atmosphere. With The Cat Empire’s infectious rhythms and Tame Impala’s psychedelic soundscapes, this open mic will blend the energy of live music with the thrill of discovery. Whether you’re on stage or in the crowd, the unpredictable nature of this event promises an unforgettable night.",
         '2025-03-15',
         '17:00:00',
         '21:00:00',
@@ -1766,7 +1792,9 @@ INSERT INTO Event (
         1,
         2,
         'Electronic Beats',
-        'A high-energy night featuring electronic dance music.',
+        "Electronic Beats at The Gasometer Hotel will light up the night with performances from Ball Park Music and The Jungle Giants, each bringing their own electric vibe to the stage. Expect a seamless blend of indie-pop and electronic-infused rock, creating a danceable atmosphere full of catchy beats and infectious energy. The night will be a celebration of upbeat rhythms and cutting-edge sounds, perfect for those who love to feel the pulse of electronic beats in a live setting.
+
+        With Ball Park Music’s infectious, synth-driven indie pop and The Jungle Giants’ groove-heavy beats and electronic flourishes, this night promises a dynamic, high-energy experience. Both bands have perfected their ability to blend pop sensibilities with electronic influences, making for a unique sonic journey that’ll keep you moving from start to finish.",
         '2025-03-20',
         '20:00:00',
         '02:00:00',
@@ -1779,7 +1807,9 @@ INSERT INTO Event (
         2,
         3,
         'Reggae Rhythms',
-        'Feel the vibes with a night of reggae music.',
+        "Reggae Rhythms at The Corner Hotel will be a celebration of vibrant beats and smooth grooves, featuring The Amazing Devil, King Gizzard & the Lizard Wizard, and Vance Joy. This night promises to blend the laid-back rhythms of reggae with the intensity and creativity of rock, creating a soundscape that is both calming and energizing. Expect an eclectic mix of genres, with reggae’s unmistakable groove setting the tone for the evening.
+
+        King Gizzard & the Lizard Wizard will infuse their eclectic sound with reggae undertones, while Vance Joy adds a touch of folk-rock charm. The Amazing Devil will bring their unique theatrical style, weaving reggae-inspired rhythms into their dramatic storytelling. Together, these acts will offer a night that spans across genres and delivers an unforgettable experience full of soul and rhythm.",
         '2025-03-25',
         '18:00:00',
         '22:00:00',
@@ -1792,7 +1822,11 @@ INSERT INTO Event (
         3,
         4,
         'Alternative Rock Bash',
-        'An alternative rock event featuring top bands.',
+        "On March 1, 2025, The Tote becomes the epicenter of raw energy and musical brilliance as Gang of Youths and Tash Sultana take the stage for Alternative Rock Bash! This electrifying night will bring together soaring anthems, virtuosic guitar work, and deeply emotional performances, all in the intimate, high-voltage setting of one of Melbourne’s most legendary live music venues. If you crave heartfelt storytelling, dynamic instrumentation, and a show that pulses with unfiltered passion, this is the gig you won’t want to miss.
+
+        Gang of Youths will deliver their signature stadium-sized sound, packed with soaring choruses, poetic lyricism, and the kind of cathartic energy that turns every song into an experience. Meanwhile, Tash Sultana, a one-person powerhouse, will stun the crowd with their mesmerizing live-looping mastery, blending rock, reggae, and psychedelic soul into a genre-defying spectacle. Expect jaw-dropping solos, raw emotion, and an atmosphere so electric, it’ll stay with you long after the final encore.
+
+        With a lineup this explosive, Alternative Rock Bash is guaranteed to be one of the year’s most unforgettable shows. The Tote’s legendary atmosphere will put you right in the heart of the action, surrounded by fellow music lovers ready to lose themselves in the moment. Tickets are extremely limited, so don’t wait—grab yours now and get ready for an epic night of alternative rock magic!",
         '2025-03-01',
         '19:30:00',
         '23:30:00',
@@ -1805,7 +1839,11 @@ INSERT INTO Event (
         1,
         1,
         'Singer-Songwriter Showcase',
-        'Intimate performances by talented singer-songwriters.',
+        "On March 5, 2025, The Gasometer Hotel invites you to an intimate evening of raw, heartfelt music with The Teskey Brothers and Amber Drift at the Singer-Songwriter Showcase. This special night is a celebration of pure, unfiltered artistry—where every note carries emotion, and every lyric tells a story. If you’re drawn to music that moves the soul, this is an experience you won’t want to miss.
+
+        The Teskey Brothers will bring their signature blend of blues, folk, and soul, delivering a set filled with rich harmonies, soaring guitar lines, and deeply felt lyricism. Their live performances are known for their warmth and authenticity, drawing audiences in with every heartfelt note. Amber Drift, an emerging singer-songwriter with a knack for weaving delicate melodies and poetic storytelling, will open the night with an intimate performance that promises to captivate.
+
+        With The Gasometer’s iconic mezzanine and warm, intimate atmosphere, this showcase offers the perfect setting to experience music in its most honest form. Whether you're a longtime fan or discovering new artists, Singer-Songwriter Showcase is a chance to immerse yourself in an evening of beautifully crafted songs and unforgettable performances. Secure your tickets now and be part of something truly special.",
         '2025-03-05',
         '18:00:00',
         '21:00:00',
@@ -1818,7 +1856,11 @@ INSERT INTO Event (
         2,
         3,
         'Hip-Hop Night',
-        'Groove to the latest and greatest in hip-hop music.',
+        "The Corner Hotel is set to flip expectations on their head with Hip-Hop Night, featuring none other than Tame Impala and Vance Joy. Blurring the lines between psychedelic rock, indie-folk, and hip-hop influences, this event promises an electrifying fusion of sound, proving that great music knows no boundaries.
+
+        Tame Impala, known for their genre-defying production and hypnotic grooves, have long been embraced by the hip-hop world, with artists like Kendrick Lamar, Travis Scott, and A$AP Rocky drawing inspiration from their work. Expect reimagined versions of their biggest tracks, possibly with some beat-driven surprises. Vance Joy, while rooted in folk, has a knack for melody that transcends genre—don’t be surprised if his signature anthems take on a fresh, rhythm-heavy twist for this special event.
+
+        This isn’t just another hip-hop night—it’s a celebration of musical evolution, where two of Australia’s most celebrated artists explore new sonic territory. Whether you’re a hip-hop purist, an indie devotee, or just a fan of incredible live music, this is a night that promises to challenge expectations and deliver something truly unique. Tickets are moving fast—don’t miss your chance to be part of it.",
         '2025-03-10',
         '20:00:00',
         '00:00:00',
@@ -1831,7 +1873,9 @@ INSERT INTO Event (
         3,
         5,
         'Blues Rock Explosion',
-        'A powerful night blending blues and rock genres.',
+        "Get ready for the ultimate Blues Rock Explosion at The Tote with powerhouse performances from King Gizzard & the Lizard Wizard and The Cat Empire. This explosive night will bring together two of Australia’s most dynamic bands, each known for their genre-defying music and high-energy performances. Expect a sonic journey that fuses the raw intensity of blues with the electrifying force of rock, all within the intimate and legendary setting of The Tote.
+
+        With King Gizzard & the Lizard Wizard’s kaleidoscopic blend of psychedelic rock and blues and The Cat Empire’s infectious mix of jazz, funk, and rock, this night will be a whirlwind of rhythm, riffs, and melodies. It’s a rare opportunity to witness two incredible acts who know how to bring the house down with their unique spins on blues and rock. Don’t miss out on this night of unforgettable music—grab your tickets now.",
         '2025-03-15',
         '19:00:00',
         '23:00:00',
@@ -1844,7 +1888,9 @@ INSERT INTO Event (
         1,
         2,
         'Latin Fiesta',
-        'Dance the night away with vibrant Latin rhythms.',
+        "Get ready for a night of vibrant energy at Latin Fiesta at The Gasometer Hotel, featuring The Jungle Giants, Ball Park Music, and The Amazing Devil. This electrifying evening will blend Latin-inspired rhythms with indie, pop, and rock sounds, creating an atmosphere brimming with movement and heat. Each band brings their own unique flair, infusing their music with the infectious energy that defines Latin fiestas, offering something fresh and exhilarating.
+
+        The Jungle Giants and Ball Park Music will keep the crowd grooving with their fusion of upbeat rhythms and catchy melodies, while The Amazing Devil adds their own theatrical twist to the mix, incorporating dramatic flair into their performances. Together, these acts will bring a burst of global influence and unstoppable energy, making for an unforgettable night where the rhythm never stops.",
         '2025-03-20',
         '19:00:00',
         '23:00:00',
@@ -1857,7 +1903,11 @@ INSERT INTO Event (
         2,
         3,
         'Soulful Sundays',
-        'Relax with soulful tunes every Sunday evening.',
+        "Soulful Sundays at The Corner Hotel – A Night of Raw Emotion and Energy
+
+        Soulful Sundays at The Corner Hotel brings together the mesmerizing talents of Tash Sultana and Gang of Youths for an evening of heartfelt, soul-stirring music. Expect an acoustic-driven journey with Tash's looped layers of sound, where her emotional depth meets her stunning multi-instrumental talent. Alongside her, Gang of Youths will bring their powerful anthems and raw, introspective lyrics, creating a night that combines deep emotion with expansive sound.
+
+        This evening will be one to remember, with both artists known for their ability to captivate audiences and leave a lasting impression. Tash Sultana’s soaring vocals and intricate melodies, combined with Gang of Youths’ dynamic rock sound, create a perfect blend of soul, intensity, and reflection.",
         '2025-03-25',
         '17:00:00',
         '20:00:00',
@@ -1870,7 +1920,11 @@ INSERT INTO Event (
         3,
         6,
         'Karaoke Night',
-        'Sing your heart out at our weekly karaoke event.',
+        "On March 1, 2025, The Tote is turning up the fun with a one-of-a-kind Karaoke Night, and this isn’t just any singalong—Courtney Barnett and The Teskey Brothers are joining in on the action! Whether you’re a seasoned performer or just looking for a night of carefree, beer-fueled belting, this is your chance to share the mic with some of Australia’s finest musicians in the ultimate crowd-powered concert.
+
+        Expect unexpected duets, surprise performances, and all the indie rock, blues, and classic bangers you can handle as the night unfolds. Will Courtney put her deadpan spin on a karaoke classic? Will The Teskey Brothers transform a pop anthem into a soulful masterpiece? One thing’s for sure—you’ll be right in the heart of the action, singing alongside legends in an atmosphere buzzing with pure joy.
+
+        Whether you’re stepping up to the mic or just vibing with the crowd, this is a night to let loose, sing your heart out, and make memories that will last long after the final note. With The Tote’s legendary energy and a setlist driven by your song choices, anything can happen! Tickets are limited, so grab yours now and get ready for the most unforgettable Karaoke Night ever! ",
         '2025-03-01',
         '18:00:00',
         '22:00:00',
@@ -1882,8 +1936,12 @@ INSERT INTO Event (
     (
         1,
         1,
-        'Rock Legends Tribute',
-        'A tribute night honoring the legends of rock music.',
+        "Rock Legends Tribute",
+        "On March 5, 2025, The Gasometer Hotel will come alive with the sounds of the greats at Rock Legends Tribute, featuring the unmistakable talents of Vance Joy and Amber Drift. This special night will see two of Australia’s finest artists reimagining legendary rock anthems, breathing new life into classics that have shaped generations. Whether you're a fan of soaring ballads, electrifying riffs, or the raw emotion of rock's golden eras, this event promises a night of unforgettable performances.
+
+        Vance Joy, known for his heartfelt lyricism and rich, acoustic-driven sound, will put his own spin on some of rock’s most beloved songs, blending nostalgia with fresh energy. Meanwhile, Amber Drift will showcase her unique ability to fuse folk and rock influences, paying tribute to the voices that inspired her musical journey. Expect stripped-back reinterpretations, powerful full-band moments, and maybe even a surprise duet or two.
+
+        With The Gasometer’s intimate yet electric atmosphere, this is more than just a tribute—it’s a celebration of rock’s enduring spirit, brought to life by two incredible artists. Don’t miss your chance to experience history reimagined—secure your tickets now.",
         '2025-03-05',
         '20:00:00',
         '00:00:00',
@@ -1895,8 +1953,12 @@ INSERT INTO Event (
     (
         3,
         5,
-        'Final Night Unverified',
-        'The last event in our series with unverified status.',
+        'Final Night Party',
+        "The Tote is closing out in style with its Final Night Party, a night of atmospheric, electrifying, and deeply immersive performances featuring Tame Impala and The Amazing Devil. As the last echoes of this legendary venue’s latest run fade, this will be a farewell like no other—one that lingers in memory long after the last note is played.
+
+        Tame Impala will bring their signature blend of swirling psychedelia and pulsating beats, transforming The Tote into a hypnotic dreamscape of sound. The Amazing Devil, known for their hauntingly theatrical and emotionally charged performances, will add another layer of depth, crafting a set that swings from intimate whispers to soaring, cathartic crescendos.
+
+        This isn’t just a gig—it’s a celebration of everything The Tote stands for: raw energy, boundary-pushing music, and the unforgettable connection between artist and audience. With an atmosphere thick with nostalgia and excitement, this final night promises to be a powerful, once-in-a-lifetime experience. Don’t miss your chance to be part of history—get your tickets now.",
         '2025-03-10',
         '20:00:00',
         '23:00:00',
@@ -1957,8 +2019,8 @@ VALUES
     (2, 4, 2, '19:45:00'),
 
     -- Event 3
-    (3, 7, 1, '20:00:00'),
-    (3, 6, 2, '21:15:00'),
+    (3, 9, 1, '20:00:00'),
+    (3, 4, 2, '21:15:00'),
 
     -- Event 4
     (4, 9, 1, '19:00:00'),
