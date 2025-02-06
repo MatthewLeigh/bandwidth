@@ -253,31 +253,42 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'United Kingdom',
         'London',
         2013,
-        'The Amazing Devil are a British folk band from London, England. They are known for their dark and haunting music.',
+        'The Amazing Devil are a London-based folk band known for their hauntingly poetic lyricism, theatrical compositions, and emotionally charged storytelling.
+
+        Fronted by actor and musician Joey Batey, alongside Madeleine Hyland, the band weaves intricate tales of love, loss, and human vulnerability, blending folk, indie, and orchestral elements. Their music is often described as raw and cinematic, evoking deep emotions with every note.
+
+        With albums like "The Horror and The Wild" and "Ruin," The Amazing Devil have cultivated a passionate following, drawn to their dramatic soundscapes and lyrical intensity. Their songs often build from delicate whispers to soaring, symphonic climaxes, creating an immersive listening experience. Each track feels like a self-contained story, pulling listeners into a world of myth, memory, and melancholy.',
         'https://open.spotify.com/embed/artist/3cWRLr14V7jBctYNGaSM0S',
         'https://www.youtube.com/embed/p3wFZfpMQmM?si=M61qRBrV1pKOGeHM',
         1
     ),
+
 
     -- 2: Amber Drift
     (
         'Amber Drift',
         'Australia',
         'Victoria',
-        2017,
-        'Amber Drift are an Australian rock band from Melbourne, Victoria. They are known for their energetic live performances.',
+        2019,
+        'Rock band from Melbourne, Australia.
+
+        Amber Drift began as a concept act, unable to find another band that truly represented the curious nature of a banana and peanut butter toasted sandwich. The drums, obviously, provide the energy for the band, hence they are represented by the banana. The bass guitar naturally aligns with peanut butter, not only for the nuttiness of the player, but also the distinct flavour that it permeates throughout the heart of the band. The toasted bread, strange in its double-cooked nature, is best represented by a vocalist carrying a rhythm guitar, played at a questionable standard. Finally, though some might think it unnecessary, the sweetener, often a maple syrup, is best represented by a lead guitar, which provides the finishing touches of something which alone lacks sweetness. Ultimately, these representations extended to a point where we just sounded like a normal rock band, so while the allegory remains it is difficult to fully appreciate.',
         'https://open.spotify.com/embed/artist/063ti2u3HXw80TtW04TMlx',
         'https://www.youtube.com/embed/ZdFut-utlL4?si=yvroxzmFG6p7urf2',
-        0
+        1
     ),
 
-    -- 3: Gand of Youths
+       -- 3: Gang of Youths
     (
         'Gang of Youths',
         'Australia',
         'New South Wales',
         2011,
-        'Gang of Youths are an Australian rock band from Sydney, New South Wales. They are known for their powerful and emotional music.',
+        "Gang of Youths are a Sydney-based alternative rock band known for their grand, emotionally charged anthems and introspective lyricism.
+
+        Formed in 2011, the band, led by frontman David Le’aupepe, blends soaring instrumentals with deeply personal storytelling, touching on themes of love, loss, faith, and resilience. Their music has drawn comparisons to the likes of Bruce Springsteen and The National, combining raw intensity with poetic lyricism.
+
+        Albums like 'Go Farther in Lightness' and 'Angel in Realtime' have earned them critical acclaim, showcasing their ability to craft powerful narratives with cinematic instrumentation. Their live performances are known for their passionate energy, making them one of Australia’s most compelling modern rock acts.",
         'https://open.spotify.com/embed/artist/3YQKmKGau1PzlVlkL1iodx',
         'https://www.youtube.com/embed/6xW3A6d1P0U?si=1',
         1
@@ -289,7 +300,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2013,
-        'Tash Sultana is an Australian singer-songwriter and multi-instrumentalist from Melbourne, Victoria. They are known for their unique blend of genres and live looping performances.',
+        "Tash Sultana is a genre-defying, self-taught multi-instrumentalist and singer-songwriter from Melbourne, Australia.
+
+        Rising to fame through viral bedroom recordings, Tash quickly gained recognition for their mesmerizing live looping performances, layering intricate guitar work, percussion, and ethereal vocals to create lush, immersive soundscapes. Their music fuses elements of reggae, soul, folk, and psychedelic rock, crafting a sound that is both innovative and deeply personal.
+
+        With breakout releases like 'Notion' and 'Flow State,' Tash has captivated global audiences, performing sold-out shows across the world. Their deeply expressive songwriting and one-person-band approach have set them apart as one of Australia's most unique contemporary artists.",
         'https://open.spotify.com/embed/artist/6zVFRTB0Y1whWyH7ZNmywf',
         'https://www.youtube.com/embed/1z8Anr8U92I?si=2',
         1
@@ -301,7 +316,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2012,
-        'Courtney Barnett is an Australian singer-songwriter and guitarist from Melbourne, Victoria. She is known for her witty and introspective lyrics.',
+        "Courtney Barnett is an acclaimed Australian singer-songwriter and guitarist known for her deadpan vocal delivery and sharp, observational lyrics.
+
+        Emerging from Melbourne’s indie scene, she gained international recognition with her witty, stream-of-consciousness songwriting, tackling themes of modern life, anxiety, and self-reflection. Her breakthrough album, 'Sometimes I Sit and Think, and Sometimes I Just Sit,' showcased her knack for transforming the mundane into something profound and relatable.
+
+        Barnett’s garage-rock-inspired sound, infused with fuzzy guitars and raw energy, has earned her a devoted following and critical praise. Her ability to balance humor, vulnerability, and an effortless cool makes her one of the most distinctive voices in contemporary indie rock.",
         'https://open.spotify.com/embed/artist/3gd8FJtBJtkRxdfbTu19U2',
         'https://www.youtube.com/embed/TID0jzGwFYY?si=3',
         0
@@ -313,7 +332,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2010,
-        'King Gizzard & the Lizard Wizard are an Australian rock band from Melbourne, Victoria. They are known for their prolific output and eclectic musical style.',
+        "King Gizzard & the Lizard Wizard are an Australian rock band from Melbourne, Victoria, known for their prolific output and eclectic musical style.
+
+        Formed in 2010, the band has released numerous albums spanning genres such as psychedelic rock, garage rock, jazz fusion, and thrash metal. Their fearless approach to experimentation has earned them a cult following, and their live performances are characterized by high-energy, extended jams and immersive visuals.
+
+        With albums like 'Nonagon Infinity' and 'Infest the Rats’ Nest,' they push the boundaries of rock music, continually reinventing their sound while staying true to their experimental roots.",
         'https://open.spotify.com/embed/artist/6XYvaoDGE0VmRt83Jss9Sn',
         'https://www.youtube.com/embed/6f78_Tf4Tdk?si=4',
         1
@@ -325,7 +348,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2008,
-        'The Teskey Brothers are an Australian blues rock band from Melbourne, Victoria. They are known for their soulful sound and powerful live performances.',
+        "The Teskey Brothers are an Australian blues-rock band from Melbourne, Victoria, known for their vintage sound and soulful performances.
+
+        Drawing inspiration from classic soul and blues legends like Otis Redding and Sam Cooke, the band's music blends warm, analog production with heartfelt storytelling. Their breakout album, 'Half Mile Harvest,' introduced listeners to their rich, emotive sound, while 'Run Home Slow' solidified their reputation as one of Australia's most captivating live acts.
+
+        With Josh Teskey's raspy, soul-infused vocals and the band’s tight instrumentation, The Teskey Brothers bring an old-school charm to modern blues, resonating with audiences worldwide.",
         'https://open.spotify.com/embed/artist/1bqxdqvUtPWZri43cKHac8',
         'https://www.youtube.com/embed/1iAYhQsQhSY?si=5',
         0
@@ -337,7 +364,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2013,
-        'Vance Joy is an Australian singer-songwriter from Melbourne, Victoria. He is known for his hit single "Riptide" and his folk-pop sound.',
+        "Vance Joy is an Australian singer-songwriter known for his folk-pop sound and heartfelt lyricism.
+
+        Best known for his breakout hit 'Riptide,' Vance Joy quickly rose to fame with his blend of acoustic-driven melodies and introspective songwriting. His debut album, 'Dream Your Life Away,' showcased his knack for crafting singalong anthems that resonate on a deeply personal level.
+
+        With a warm vocal style and an affinity for storytelling, Vance Joy has remained a staple in the indie-folk scene, delivering songs that capture themes of love, nostalgia, and personal growth.",
         'https://open.spotify.com/embed/artist/6XyY86QOPPrYVGvF9ch6wz',
         'https://www.youtube.com/embed/uJ_1HMAGb4k?si=6',
         1
@@ -349,33 +380,41 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Western Australia',
         2007,
-        'Tame Impala is an Australian psychedelic music project led by multi-instrumentalist Kevin Parker from Perth, Western Australia. They are known for their innovative sound and production.',
+        "Tame Impala is the psychedelic music project of Kevin Parker, known for its lush soundscapes and innovative production.
+
+        Emerging from Perth, Western Australia, Tame Impala has redefined modern psychedelic rock, blending dreamy synths, hypnotic rhythms, and introspective lyrics. Albums like 'Currents' and 'The Slow Rush' have solidified Parker’s reputation as a visionary, with hits like 'Let It Happen' and 'The Less I Know The Better' receiving global acclaim.
+
+        Parker's meticulous approach to music production and his ability to craft immersive sonic experiences make Tame Impala a defining act of the 21st-century psychedelic revival.",
         'https://open.spotify.com/embed/artist/5INjqkS1o8h1imAzPqGZBb',
         'https://www.youtube.com/embed/wQvM1hZyZ6Y?si=7',
         1
     ),
 
     -- 10: The Cat Empire
-    (
-        'The Cat Empire',
-        'Australia',
-        'Victoria',
-        1999,
-        'The Cat Empire are an Australian ska and jazz band from Melbourne, Victoria. They are known for their energetic live performances and eclectic musical style.',
-        'https://open.spotify.com/embed/artist/4vGrte8FDu062Ntj0RsPiZ',
-        'https://www.youtube.com/embed/4xjPODksI08?si=8',
-        0
-    ),
+(
+    'The Cat Empire',
+    'Australia',
+    'Melbourne',
+    1999,
+    "The Cat Empire is a band known for its energetic live performances and genre-blending sound. Formed in Melbourne in 1999, the band fuses elements of ska, jazz, funk, and Latin influences, creating a unique and infectious style that resonates with audiences. Their dynamic sound is characterized by its uplifting anthems, intricate rhythms, and vibrant energy, which has earned them a dedicated following both locally and internationally. The band's ability to experiment with various genres has made them a standout act in the Melbourne music scene.
+
+    With hits like 'Hello' and 'The Chariot,' The Cat Empire’s music remains a celebration of creativity and inclusivity. The group’s ability to captivate crowds with their live shows, along with their continuously evolving musical style, ensures that they are a force to be reckoned with. Their energetic performances have made them an enduring favorite, and they continue to share their infectious, feel-good music with the world.",
+    null,
+    null,
+    0
+),
 
     -- 11: The Jungle Giants
     (
         'The Jungle Giants',
         'Australia',
-        'Queensland',
+        'Brisbane',
         2011,
-        'The Jungle Giants are an Australian indie rock band from Brisbane, Queensland. They are known for their catchy melodies and energetic live shows.',
-        'https://open.spotify.com/embed/artist/2QsynagSdAqZj3U9HgDzjD',
-        'https://www.youtube.com/embed/8mGZyXqkq1I?si=9',
+        "The Jungle Giants are an indie rock band hailing from Brisbane, known for their catchy melodies and dynamic live shows. They quickly gained attention with their ability to blend indie rock with elements of pop and alternative music. Since their formation in 2011, the band has continually evolved, incorporating fresh influences while maintaining their signature energetic sound. Their music often features uplifting choruses and infectious hooks, making them a staple of the indie scene.
+
+        With a strong presence in the live music circuit, The Jungle Giants have earned a reputation for their high-energy performances that keep crowds engaged and entertained. Their music resonates with a wide audience due to its accessibility and the band’s ability to create memorable, feel-good tracks. The Jungle Giants’ combination of catchy tunes, heartfelt lyrics, and a vibrant stage presence has earned them a loyal following.",
+        null,
+        null,
         1
     ),
 
@@ -383,11 +422,13 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
     (
         'Ball Park Music',
         'Australia',
-        'Queensland',
+        'Brisbane',
         2008,
-        'Ball Park Music are an Australian indie rock band from Brisbane, Queensland. They are known for their quirky and catchy songs.',
-        'https://open.spotify.com/embed/artist/0HlxL5hisLf59ETEPM3lTg',
-        'https://www.youtube.com/embed/5xQF0gerTtM?si=10',
+        'Ball Park Music is an indie rock band from Brisbane known for their quirky and catchy songs that blend alternative rock with pop sensibilities. Since forming in 2008, they have gained a reputation for their fun, upbeat tracks and infectious melodies. Their music often features humorous and relatable lyrics, showcasing the band’s playful and creative approach to songwriting. With their dynamic sound and engaging performances, Ball Park Music has become a beloved part of the indie rock scene.
+
+        Throughout their career, Ball Park Music has proven to be a versatile band, seamlessly mixing genres and experimenting with different musical styles. Their unique approach to songwriting and performance has earned them a loyal following, and they continue to captivate audiences with their energetic live shows and memorable songs. Ball Park Music remains one of Australia’s most exciting indie acts.',
+        null,
+        null,
         0
     ),
 
@@ -397,10 +438,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2020,
-        'When rapper Teether & producer Kuya Neil began to collaborate in late 2020, two powerful forces in the Naarm/Melbourne underground came together to create something rare and special. At 26, Teether already has a deep dive catalogue of solo releases to his name, largely released via the X Amount collective of which he is a founding member. There are also collaborative projects like Too Birds and even atmospheric metal bands stretching back to the early 2010s.
-        Kuya Neil is just as prolific. His CV ranges from membership of NZ “family rap ensemble” Fanau Spa, to collaboration with local heroes Papaphilia and Various Asses, to his work with Melbourne Sound School. Together, Teether & Kuya Neil make future-focused rap informed by modern club styles like footwork, gqom and bass music. Teether’s nonchalant but vivid words infuse Neil’s disorientating, hyper-modern production. As Dave Ruby Howe writes on Unearthed, “brain bending beats all round.',
-        'https://open.spotify.com/embed/artist/4rWywJgjoeVMO8LY87xYZo?utm_source=generator',
-        'https://www.youtube.com/embed/tMvp5NqhyQ8?si=of8ZbKQIaW8Lr4Co',
+        'Teether & Kuya Neil are a collaboration between rapper Teether and producer Kuya Neil, both of whom have deep roots in Melbourne’s underground music scene. Formed in late 2020, their music combines elements of rap with modern club styles, including footwork, gqom, and bass music. Teether brings vivid storytelling and introspective lyrics, while Kuya Neil’s production offers a disorientating yet captivating soundscape that pushes the boundaries of hip hop. Together, they create future-focused rap that is as innovative as it is captivating.
+
+        Teether & Kuya Neil have already made an impact in the local scene, with their unique blend of experimental beats and sharp lyricism gaining attention from underground music enthusiasts. Their collaboration is a fusion of different musical worlds, resulting in a sound that feels both fresh and boundary-pushing. As a collective force, they are helping to redefine modern rap music in Melbourne and beyond.',
+        null,
+        null,
         0
     ),
 
@@ -410,11 +452,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2023,
-        'Dear Matilda, known on stage for their explosive energy and lyrical dynamite, are dropping their new single “Anymore” this October.
-        Front woman, Gabrielle Matilda, with her open and honest lyrics and a dynamic voice bursting with passion says “the song is about reflecting on a broken relationship, being vulnerable and honest enough to yourself to admit that it’s not working, but also, how much it burns to say goodbye to someone you did really care for.”
-        “Anymore” is a marking a thrilling new direction for the band, with previous releases until now leaning towards acoustic punk, or more recently, pop on their self produced “Drive Me Crazy”. The new track “Anymore” pumps you up with thumping kicks, distortion galore and a whole lotta “get out of my face energy”.',
-        'https://open.spotify.com/embed/artist/6Hy5Kaq0jNhO8byILBTr0I?utm_source=generator',
-        'https://www.youtube.com/embed/uEbPrdu1wyc?si=-XdrNIGJSPCn57jL',
+        'Dear Matilda is a band known for their explosive energy and emotionally charged performances. Fronted by Gabrielle Matilda, the band’s music delves into themes of heartbreak, vulnerability, and self-reflection. With their new single “Anymore,” Dear Matilda marks a thrilling new direction, blending acoustic punk influences with more aggressive, distorted sounds. The song explores the emotional complexity of ending a relationship and the pain that comes with saying goodbye to someone once deeply cared for.
+
+        The band’s raw and honest lyrics, combined with their dynamic sound, have resonated deeply with their audience. Dear Matilda’s ability to create music that connects with listeners on an emotional level has made them a standout act in the Melbourne music scene. As they continue to evolve and experiment with new sounds, the band remains committed to producing music that is both powerful and relatable, and “Anymore” signals a bold new chapter in their musical journey.',
+        null,
+        null,
         0
     ),
 
@@ -422,15 +464,13 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
     (
         'Tiarnie',
         'Australia',
-        'Melbounre',
+        'Melbourne',
         2020,
-        "Over-thinker, over-feeler, over-sharer; Tiarnie evokes emotion with her honest and raw lyrics, intricate guitar riffs and punchy percussion.
-        Tiarnie navigates the complications and heartbreaks of this halfway age where you're expected to act like you know what's going on/what you want to do with life/who you are - but the only thing you seem to be good at is writing sad songs in your messy bedroom at 2am.
-        Tiarnie has released two EP’s - ‘Consistently Inconsistent’ (2020) and ‘for Geoff Dyer’ (2021) - garnering the attention of Triple J, FBI radio and EMI Records. Tiarnie has supported reputable artists such as Kingswood, The Vanns, Ali Barter, Eliza and the Delusionals, The Rubens, Debbies and Sputnik Sweetheart.
-        Last year, Tiarnie booked a one-way ticket to a reclusive cabin in Canada, songwriting as a form of therapy & dipping to NYC for open mic nights. Now back home, Tiarnie has just moved to Naarm and is itching to show you her new sound.
-        Sad girl acoustic album soon x",
-        'https://open.spotify.com/embed/artist/1q1h99hjLcsnuG92jaC8Tq?utm_source=generator',
-        'https://www.youtube.com/embed/DfUNgrPnFVI?si=8h_6Zr9yfK123PvP',
+        "Tiarnie is an artist who evokes deep emotion through her raw and honest lyrics, intricate guitar riffs, and punchy percussion. Her music explores the complexities of growing up, dealing with heartbreak, and navigating the uncertain feelings that come with adulthood. With two EPs under her belt—‘Consistently Inconsistent’ (2020) and ‘for Geoff Dyer’ (2021)—Tiarnie has captured the attention of radio stations like Triple J and FBI Radio. Her introspective songwriting style and vulnerability have made her a relatable voice for listeners facing similar challenges.
+
+        Tiarnie’s music has garnered her a loyal following, and she has opened for well-known acts such as Kingswood, The Vanns, and Ali Barter. Her blend of indie rock, acoustic, and alternative elements creates a sound that is as emotive as it is captivating. After spending time writing music in Canada and New York City, Tiarnie is back in Melbourne, ready to introduce her new sound and connect with her fans in fresh and exciting ways.",
+        null,
+        null,
         0
     ),
 
@@ -440,8 +480,8 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2025,
-        'Get Jaxxed',
-        'https://open.spotify.com/embed/artist/3pet0u87jkGKNJJEcTNr1M?utm_source=generator',
+        'Get Jaxxed is a Melbourne-based music project that explores various musical genres with a focus on experimental sounds and high-energy performances. Though details about the project remain limited, Get Jaxxed promises to bring an exciting and fresh approach to the Melbourne music scene. Their music is expected to challenge conventions and experiment with new genres, making them an intriguing addition to the local music landscape. As the project continues to develop, fans can look forward to a unique blend of sounds that reflect the diversity of modern music. ',
+        null,
         null,
         0
     ),
@@ -449,24 +489,28 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
     -- 17: GBH
     (
         'GBH',
-        'England',
+        'Australia',
         'Birmingham',
         1978,
-        "GBH, originally known as Charged GBH, is an influential English punk rock band formed in 1978 in Birmingham. Pioneers of the UK82 street punk movement, GBH is renowned for their aggressive sound and politically charged lyrics. Their debut album, City Baby Attacked by Rats (1982), and its follow-up City Babys Revenge (1983) are considered classics in the punk genre. Over the years, GBH's raw energy and steadfast dedication to their punk roots have earned them a dedicated following worldwide, influencing a wide range of bands from metal to punk. Despite lineup changes, the band continues to tour and release new music, with their latest album Momentum released in 2017 on Hellcat Records.",
-        'https://open.spotify.com/embed/artist/0yqupKw0GMDWXHpsxCPysY?utm_source=generator',
-        'https://www.youtube.com/embed/sX7HqF9wAIE?si=29ul4AsgTMylfVWT',
+        "GBH, originally known as Charged GBH, is a pioneering punk rock band formed in 1978. Known for their aggressive sound and politically charged lyrics, GBH is one of the key bands of the UK82 street punk movement. Their debut album, *City Baby Attacked by Rats* (1982), remains a classic of the punk genre, cementing their place in punk history. Over the years, GBH has maintained their raw energy and dedication to their punk roots, influencing a wide range of bands across genres from metal to punk.
+
+        Despite lineup changes, GBH has continued to tour and release new music, with their latest album, *Momentum* (2017), marking their ongoing commitment to producing high-energy, politically aware punk rock. Their relentless touring schedule and unwavering dedication to their sound have earned them a dedicated following worldwide, and they remain a driving force in the punk rock community. GBH’s influence on the global punk scene is undeniable, and they continue to be a major presence in the genre.",
+        null,
+        null,
         0
     ),
 
     -- 18: Destruktor
     (
         'Destruktor',
-        'Bendigo',
         'Australia',
+        'Bendigo',
         1997,
-        'Description',
-        'https://open.spotify.com/embed/artist/33HNLzoPrvtYiT6LPOHKut?utm_source=generator',
-        'https://www.youtube.com/embed/-2ZDVXcg-Hs?si=n0yAalsQrM25QJgZ',
+        "Destruktor is a metal band that has been delivering intense, high-energy performances since 1997. Known for their relentless sound and aggressive approach, Destruktor has built a dedicated following within the metal community. With heavy influences from thrash and death metal, the band’s music is designed to challenge listeners and push the limits of what is possible within the metal genre. Their ability to blend brutality with technical precision has earned them critical acclaim, and their live shows are a testament to their powerful stage presence.
+
+        Over the years, Destruktor has become synonymous with powerful and aggressive metal music. Their commitment to staying true to the core of metal has earned them the respect of their peers and fans alike. As they continue to evolve and expand their musical repertoire, Destruktor’s influence in the Melbourne metal scene only grows, and their fans eagerly await their next release.",
+        null,
+        null,
         0
     ),
 
@@ -476,9 +520,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2015,
-        'Voidfall is a five-piece old-school death metal band from Melbourne, heavily influenced by early 90s Swedish death metal, with elements of English doom death metal and Scandinavian black metal. Their debut album, "No God But Death," was released in 2023.',
-        'https://open.spotify.com/embed/artist/1k3adcGlmC5WziJPL9lnVV',
-        'https://www.youtube.com/embed/KVRG93RNBeo',
+        "Voidfall is an old-school death metal band from Melbourne, formed in 2015. Heavily influenced by early 90s Swedish death metal, the band incorporates elements of doom death metal and Scandinavian black metal into their sound, resulting in a heavy and atmospheric musical style. Their debut album, *No God But Death* (2023), showcases their ability to blend these influences into a cohesive and powerful sound, with crushing riffs, thunderous drums, and haunting melodies.
+
+        Voidfall’s music appeals to fans of classic death metal, but their unique blend of influences sets them apart from other bands in the genre. The band’s dark and atmospheric sound is complemented by powerful lyrics that explore themes of mortality and existentialism. With their debut album receiving widespread acclaim, Voidfall is poised to become one of the premier death metal acts in Melbourne, and their live performances are sure to leave a lasting impression.",
+        null,
+        null,
         0
     ),
 
@@ -488,9 +534,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2015,
-        'Sufferance is a Melbourne-based metalcore band known for their crushing breakdowns, atmospheric melodies, and emotionally charged lyrics. They have built a strong local following through intense live shows and a dedication to DIY ethics. Their latest album, "Endless Collapse," was released in 2023.',
-        'https://open.spotify.com/embed/artist/4YZABC123DEF',
-        'https://www.youtube.com/embed/ABC98765432',
+        'Sufferance is a band known for its unique blend of metalcore and progressive elements. Formed in Melbourne in 2015, Sufferance’s music often explores themes of inner conflict, existential struggles, and resilience. Their ability to seamlessly combine heavy breakdowns with intricate melodic passages has won them praise from fans and critics alike. Their sound is a fusion of metalcore’s intensity with progressive metal’s technicality, resulting in a captivating and emotionally charged listening experience.
+
+        With a growing following and powerful live performances, Sufferance has become a staple in the Melbourne metalcore scene. The band’s commitment to pushing the boundaries of metalcore while staying true to their roots has earned them a place among the most important acts in the local scene.',
+        null,
+        null,
         0
     ),
 
@@ -500,7 +548,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Japan',
         'Tokyo',
         1992,
-        'ABIGAIL is a Japanese black/thrash metal band formed in Tokyo in 1992. Known as "The Most Evil Band in Japan," they blend raw black metal aggression with speed-thrash intensity. Their underground cult status has grown internationally, with numerous releases showcasing their unfiltered, chaotic sound. Their debut album, "Intercourse & Lust," was released in 1997.',
+        'ABIGAIL is a Japanese black/thrash metal band formed in Tokyo in 1992. Known as "The Most Evil Band in Japan," they blend raw black metal aggression with speed-thrash intensity. Their sound is chaotic, abrasive, and unapologetically unfiltered, drawing influences from both the black metal and thrash scenes. They have earned a cult following within the underground metal community worldwide, known for their relentless energy and extreme performances. The band’s music often tackles taboo and controversial topics, adding to their reputation for pushing boundaries.',
         'https://open.spotify.com/embed/artist/2ABC345XYZ678',
         'https://www.youtube.com/embed/XYZ98765432',
         0
@@ -512,7 +560,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'New Zealand',
         'Wellington',
         2016,
-        'STALKER is a New Zealand-based speed metal band formed in Wellington in 2016. Drawing heavy influence from 80s thrash and traditional heavy metal, they are known for their blistering guitar riffs, high-energy performances, and aggressive vocal delivery. Their debut album, "Shadow of the Sword," was released in 2017.',
+        'STALKER is a New Zealand-based speed metal band formed in Wellington in 2016. They are known for their high-octane sound that fuses the blistering guitar riffs and rapid tempos of 80s thrash with the intensity of traditional heavy metal. Their debut album, "Shadow of the Sword," released in 2017, has received praise for its fierce energy and unapologetic attitude. The band’s music is filled with fiery solos, aggressive vocals, and relentless drumming, evoking the raw spirit of classic speed metal. The band’s live shows are known for their high energy and passion, drawing comparisons to legendary bands from the golden age of thrash.',
         'https://open.spotify.com/embed/artist/5DEF678XYZ123',
         'https://www.youtube.com/embed/XYZ54321098',
         0
@@ -524,7 +572,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'New South Wales',
         2005,
-        'Austere is an Australian black metal band formed in New South Wales in 2005. The band is known for its melancholic and atmospheric sound, combining elements of depressive black metal with emotional, introspective lyrics. They have garnered a loyal following within the underground scene with albums like "To Lay Like Old Ashes" and "Withering Illusions and Desolation."',
+        'Austere is an Australian black metal band formed in New South Wales in 2005. Their music is characterized by a melancholic and atmospheric approach to black metal, blending depressive elements with emotionally charged lyrics. Austere’s sound evokes a deep sense of sorrow, isolation, and introspection, often dealing with themes of existential despair and personal struggle. With albums like "To Lay Like Old Ashes" and "Withering Illusions and Desolation," the band has made a significant impact on the underground black metal scene, earning praise for their raw emotional depth and haunting compositions.',
         'https://open.spotify.com/embed/artist/3UeUAbcvNrd3z7szkhwA4M',
         'https://www.youtube.com/embed/7dyolw-PWOk',
         0
@@ -536,7 +584,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Sweden',
         'Västra Götaland',
         2007,
-        'Skuggor is a Swedish black metal band that formed in 2007 in Västra Götaland. Their music is characterized by raw and atmospheric black metal elements, blending dark melodies with fierce aggression. The band has been noted for its ability to create haunting and immersive soundscapes, with albums such as "Mörka Vägar" showcasing their ability to evoke both despair and intensity.',
+        'Skuggor is a Swedish black metal band that formed in 2007 in Västra Götaland. Their music is defined by a blend of raw and atmospheric black metal elements, using dark melodies to create an intense and haunting atmosphere. The band’s sound is aggressive yet immersive, drawing the listener into a bleak and foreboding world. Skuggor’s music is known for its ability to evoke a wide range of emotions, from despair to fury, and they have earned a reputation for creating powerful, emotive soundscapes. Albums like "Mörka Vägar" showcase their talent for merging bleakness with aggression, making them a standout act in the Swedish black metal scene.',
         'https://open.spotify.com/embed/artist/1Xb0uIz0nv7kKtvfP4z0yR',
         'https://www.youtube.com/embed/K1q16yYp9U0',
         0
@@ -548,7 +596,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'New South Wales',
         2014,
-        'Paroxysmal Descent is an Australian death metal band from New South Wales, formed in 2014. The band blends elements of brutal death metal with technical and atmospheric passages, creating a sound that is both intense and intricate. Their debut album, "Obsidian," released in 2017, established them as a force in the underground death metal scene.',
+        'Paroxysmal Descent is an Australian death metal band from New South Wales, formed in 2014. The band blends brutal death metal with elements of technical and atmospheric passages, creating a sound that is both intense and intricate. Their music is known for its complex song structures, guttural vocals, and relentless rhythm section. Paroxysmal Descent’s debut album, "Obsidian," released in 2017, showcases their ability to craft punishingly heavy riffs alongside moments of atmospheric tension. The band has quickly gained recognition in the underground metal scene for their unique approach to death metal.',
         'https://open.spotify.com/embed/artist/3fE8e9A2kqEgEhp2vV8Qj5',
         'https://www.youtube.com/embed/Mw5RxTk29mI',
         0
@@ -560,7 +608,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'New South Wales',
         2018,
-        'Rum Jungle is a Newcastle-based band known for blending reggae-rock, alt-pop, and psychedelic grooves. Their infectious anthems and laid-back vibes have earned them a dedicated fanbase. Their debut album, "Recency Bias," is set to release on February 21, 2025.',
+        'Rum Jungle is an indie rock band from New South Wales, Australia, that emerged in 2019 with their unique fusion of surf rock, indie, and psychedelic influences. The band’s music is characterized by vibrant guitar riffs, dynamic percussion, and catchy melodies, all wrapped in a laid-back yet energetic sound. Their debut album, "Tides," showcased their ability to blend nostalgic rock elements with modern sensibilities, creating a sound that feels both fresh and familiar. Rum Jungle’s energetic performances and distinctive style quickly earned them a spot in the Australian indie music scene.
+
+        The band’s name, "Rum Jungle," reflects their love for both music and adventure, drawing inspiration from the laid-back coastal vibes of Australia. Lyrically, their songs explore themes of freedom, self-reflection, and the natural world, often accompanied by sweeping instrumental arrangements that capture the essence of the Australian landscape. Over the years, Rum Jungle has been recognized for their ability to evolve their sound, embracing various genres while maintaining a signature style. Their music speaks to a wide audience, with its mix of thought-provoking lyrics and infectious rhythms.
+
+        Since their formation, Rum Jungle has steadily gained recognition for their work, playing major music festivals and earning a loyal following. As they continue to expand their discography, their sound keeps evolving, blending their signature rock influences with experimental sounds. With their raw talent and growing presence in the Australian and international music scenes, Rum Jungle is set to become one of the most exciting indie rock acts of their generation.',
         'https://open.spotify.com/embed/artist/3Pzu17LKdfktc4pVsTk8YS',
         'https://www.youtube.com/embed/XYZ12345678',
         0
@@ -572,7 +624,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'New South Wales',
         2015,
-        'Letters to Lions is an indie rock band from Sydney, known for energetic performances and catchy melodies. Since forming in 2015, they have released several EPs and built a strong following in the Australian music scene.',
+        'Letters to Lions is an indie rock band from Sydney, Australia, known for their energetic performances and catchy melodies. Since their formation in 2015, they have released several EPs that showcase their ability to craft anthemic songs with heartfelt lyrics. The band’s sound blends elements of alternative rock and post-punk, often focusing on themes of self-reflection, personal struggles, and resilience. With a growing following in the Australian music scene, Letters to Lions has become known for their emotionally charged live shows, building a strong connection with fans through their raw, authentic music.',
         'https://open.spotify.com/embed/artist/3fE8e9A2kqEgEhp2vV8Qj5',
         'https://www.youtube.com/embed/ABC98765432',
         0
@@ -584,7 +636,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2020,
-        'Underlay is a Melbourne-based band blending alternative rock and psychedelic influences. Since forming in 2020, they have quickly gained attention for their unique sound and engaging live performances.',
+        'Underlay is a Melbourne-based band that blends alternative rock with psychedelic influences. Since their formation in 2020, they have quickly gained attention for their unique sound and captivating live performances. Underlay’s music features a mix of atmospheric tones, intricate melodies, and thought-provoking lyrics, setting them apart from the typical alternative rock scene. The band’s ability to merge different genres creates a distinctive style that resonates with fans who enjoy both deep introspection and energetic performances.',
         'https://open.spotify.com/embed/artist/4gH8e9A2kqEgEhp2vV8Qj6',
         'https://www.youtube.com/embed/DEF12345678',
         0
@@ -596,7 +648,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2019,
-        'Winter McQuinn is a Melbourne-based singer-songwriter known for his soulful voice and introspective lyrics. Since 2019, he has captivated audiences with his blend of folk and indie music.',
+        'Winter McQuinn is a Melbourne-based singer-songwriter known for his soulful voice and introspective lyrics. His music blends folk, indie, and acoustic elements to create a sound that is both calming and deeply emotional. Since 2019, Winter McQuinn has captivated audiences with his honest and vulnerable songwriting, which often delves into themes of love, loss, and personal growth. His heartfelt performances and ability to connect with listeners on a personal level have helped him carve out a space in the Australian music scene.',
         'https://open.spotify.com/embed/artist/5hI8e9A2kqEgEhp2vV8Qj7',
         'https://www.youtube.com/embed/GHI12345678',
         0
@@ -620,7 +672,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'United States',
         'Montana',
         2017,
-        'Richy Mitch & The Coal Miners is an indie folk band from Montana, known for their heartfelt lyrics and atmospheric sound. Since forming in 2017, they have gained a global following through their self-produced albums and viral online presence.',
+        "Richy Mitch & The Coal Miners is an indie folk band hailing from the rugged landscapes of Montana, USA. Formed in 2017, the band quickly gained attention for their heartfelt lyrics and atmospheric sound that blends folk storytelling with country and Americana influences. Their music reflects the struggles and triumphs of everyday life, with Richy Mitch's evocative lyrics and warm vocal delivery resonating deeply with listeners. The band’s unique sound is characterized by the use of traditional instruments, such as acoustic guitars, banjos, and harmonicas, which help create a rustic, soulful atmosphere.
+
+        Since their formation, Richy Mitch & The Coal Miners have earned a reputation for their compelling live performances and DIY approach to music production. The band has embraced a raw, authentic style, self-producing albums that capture the spirit of their roots. Their tracks often explore themes of love, loss, and personal reflection, with a sense of vulnerability that invites listeners to connect on a deeply emotional level. Their ability to craft melodies that linger in the mind long after the song ends has been a key factor in their growing fanbase.
+
+        With several albums under their belt and a dedicated following, Richy Mitch & The Coal Miners have expanded their reach beyond their hometown of Montana, playing shows and festivals across the United States and internationally. Their authentic, genre-blending style has attracted a diverse audience, from folk purists to those looking for something new in the indie scene. As they continue to evolve musically, the band remains committed to their roots, delivering songs that are both timeless and contemporary, reflecting the diverse experiences of their journey as artists.",
         'https://open.spotify.com/embed/artist/0E39u6czWMiDFjdoqQ2sSH',
         'https://www.youtube.com/embed/XYZ12345678',
         0
@@ -1208,7 +1264,11 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Victoria',
         2016,
-        'Quality Used Cars is a Melbourne-based indie rock band known for their jangly guitar tones and witty, observational lyrics. Their sound is a nostalgic mix of folk, garage rock, and alternative pop.',
+        "Quality Used Cars is an Australian indie rock band known for their storytelling-driven lyrics and raw, nostalgic sound. Hailing from Melbourne, the band blends elements of folk, rock, and alternative music, crafting songs that feel both personal and universally relatable. Their music is characterized by warm, jangly guitars, introspective lyrics, and a laid-back yet emotionally rich delivery. The band's ability to capture everyday moments—whether melancholic, humorous, or bittersweet—has resonated deeply with audiences looking for authenticity in modern indie music.
+
+        Since their emergence, Quality Used Cars have steadily built a reputation for their engaging live performances and distinctively Australian storytelling. Their songs often explore themes of suburban life, fleeting relationships, and the quiet struggles of adulthood, delivered with a mix of sincerity and dry wit. They have drawn comparisons to artists like Courtney Barnett and The Go-Betweens, blending observational lyricism with a warm, lo-fi aesthetic. Their music isn't flashy or overproduced; instead, it thrives on its simplicity, allowing the songwriting to take center stage.
+
+        As their fanbase continues to grow, Quality Used Cars have gained recognition across Australia’s independent music scene, receiving praise from critics and listeners alike. Their albums showcase a consistent evolution in sound, maintaining their signature introspective style while experimenting with new textures and arrangements. With each release, the band solidifies their place as a unique voice in contemporary Australian indie music, proving that sometimes, the most compelling stories are the ones found in the everyday moments of life",
         'https://open.spotify.com/embed/artist/7YtrQG3FtC5wVcN8pTZ9WQ',
         'https://www.youtube.com/embed/PQR98765432',
         0
