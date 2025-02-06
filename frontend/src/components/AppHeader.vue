@@ -115,6 +115,7 @@
 
 <style scoped>
     .v-app-bar {
+        width: 100%;
         background-color: var(--c-bg-header);
         display: flex;
         align-items: center;
@@ -130,7 +131,7 @@
 
     .title-container {
         position: absolute;
-        left: 50%;
+        left: 40px;
         transform: translateX(-50%);
     }
 
