@@ -8,6 +8,15 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Bandwidth</title>
     <base href="https://matthewleigh.github.io/bandwidth/">
+    <script>
+        (function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var redirectPath = urlParams.get("redirect");
+            if (redirectPath) {
+                history.replaceState(null, "", redirectPath);
+            }
+        })();
+    </script>
 </head>
 
 <body>
