@@ -57,6 +57,8 @@
             :label="commentLabel"
             required
             :disabled="!user"
+            aria-label="Comment Input"
+            aria-required="true"
         />
         <v-btn
             class="submit-button"
@@ -65,6 +67,8 @@
             type="submit"
             block
             :disabled="!isFormValid || !user"
+            aria-label="Submit Comment Button"
+            aria-required="true"
         />
     </v-form>
 
