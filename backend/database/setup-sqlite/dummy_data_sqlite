@@ -6,7 +6,19 @@ INSERT INTO User (FirstName, LastName, Email, Password, Country, State) VALUES
 INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Website, Featured) VALUES
     (
         'The Gasometer Hotel',
-        "Located in Collingwood's vibrant northern quarter on Smith Street, The Gasometer is your go-to live music venue. With an eclectic lineup spanning genres and a rich history intertwined with Melbourne's musical fabric, we're the place where unforgettable nights are made. Rock, indie, punk, electronic, folk, dance – our stage hosts it all, making sure there's something for every music lover. As the rhythms fill the air, grab a beer and join the community that knows there's no resisting a show at The Gaso.",
+        "The Gasometer Hotel isn't just one of Melbourne’s best-loved pubs. It’s also a crucial,
+        bluestone pillar of the city’s live music scene, with a diverse weekly program of acts.
+        Whether it’s rock, folk, indie or electronic, you’ll see and hear it at the Gaso.\n
+        Most of the action happens in the downstairs band room, a two-storey venue with room for 350
+        punters across the mezzanine and dance floor. Fitted with a state-of-the-art L’Acousics ARCS
+        sound system, it's one of the city's best sounding rooms of its size.\n
+        Upstairs is an additional 90-person room, where you can reliably catch some of Melbourne's
+        best upcoming talent in an intimate setting. Upstairs and downstairs are occasionally joined
+        together for infrequent (but memorable) full venue events.\n
+        The welcoming public bar is also a magnet for good times any night of the week, with
+        Mountain Goat and Moondog on tap, and a solid list of cocktails. The pub’s in-house
+        restaurant, Wheat’s End, is also a destination for gluten-free dining. Head here for
+        house-made falafel, pizza, loaded fries and soups before the gig.",
         '484 Smith St',
         'Collingwood',
         'VIC',
@@ -16,7 +28,9 @@ INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Web
     ),
     (
         'The Corner Hotel',
-        'The Corner Hotel in the Melbourne suburb of Richmond, Victoria, Australia, is a remodelled 19th-century pub which has been a live music venue since the 1940s and, since 1995, a popular rock music venue and rooftop bar.',
+        'The Corner Hotel in the Melbourne suburb of Richmond, Victoria, Australia, is a remodelled
+        19th-century pub which has been a live music venue since the 1940s and, since 1995, a
+        popular rock music venue and rooftop bar.',
         '57 Swan St',
         'Richmond',
         'VIC',
@@ -26,7 +40,10 @@ INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Web
     ),
     (
         'The Tote',
-        "After 20,000 angry music fans hit the streets to protest new licensing laws that led to The Tote's closure in 2010, this beloved church of punk rock reopened six months later. Now, this crusty jewel in the crown of Melbourne's rock scene is just doing what it does best – beer garden BBQs, hazy late nights and heaving, sweaty rock 'n' roll.",
+        "After 20,000 angry music fans hit the streets to protest new licensing laws that led to The
+        Tote's closure in 2010, this beloved church of punk rock reopened six months later. Now,
+        this crusty jewel in the crown of Melbourne's rock scene is just doing what it does best –
+        beer garden BBQs, hazy late nights and heaving, sweaty rock 'n' roll.",
         '71 Johnston St',
         'Collingwood',
         'VIC',
@@ -36,7 +53,43 @@ INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Web
     ),
     (
         'The Retreat Hotel',
-        "Welcome to The Retreat Hotel, Brunswick's home of live music. You’ll find us at 280 Sydney Rd, Brunswick VIC 3056.\n\nThere's something for everyone at The Retreat!\n\nWe have live music and entertainment playing throughout the pub seven days a week, across the front bar and the band room. Check out all our upcoming gigs here.\n\nWe've also got a huge beer garden that can accommodate big and small groups alike. We have a great range of drinks + tap beers, and a kitchen serving delicious pub meals and weekly specials. \n\nThe Retreat kitchen is open from 12pm Monday - Sunday, with our new snack menu available from 2pm Monday - Wednesday. View the menu here.\n\nOut late? DJs play until 3am every Friday and Saturday night!\n\nUnderage patrons are welcome at the venue as long as they are accompanied by a legal guardian, but must leave the venue by 10pm or after the gig has finished. Please let a member of staff know when you arrive.",
+        "The rest of the country has spent the last decade turning classic hotels into generic neon-lit
+        nightmares, but Melbourne has embraced the old-world charm of its locals.\n
+        LIVE MUSIC is a staple of the Retreat, taking place every day of the week except for Mondays.
+        Swing by to hear indie, folk, blues, electronic, punk and everything in between. For the
+        bigger acts, the cover fee sits around $15, but there are a ton of free gigs as well.\n
+        FAMOUS FOR the massive beer garden out back. Spacious and accommodating, the patio makes for
+        the perfect space for after-work drinks with a big group. It’s half covered and half open air,
+        with umbrellas and heaters to ensure you’re feeling just right.\n
+        INFAMOUS FOR the Sunday roast (and roast sandwich), back and better than ever. While pub roasts
+        are pretty standard, this one is like no other, featuring succulent meat with all the fixings
+        and plated beautifully. Expect to leave stuffed.\n
+        The Retreat embodies this throwback aesthetic. Built in 1846, it hasn’t seen a whole lot of
+        change over the last 150 years. Judging by the decor, the Retreat had its last major renovation
+        sometime in the early ’80s. The vinyl chairs and couches in the main bar are certainly vintage
+        classics. The rest of the decor follows a similar line. It’s like taking a step back in time.
+        Maybe The Retreat is stuck in some sort of space/time warp? One that appears to be inhabited
+        by many bars and hotels located north of the city. But even by Melbourne pub standards, it’s
+        old fashioned – and therein lies the appeal.\n
+        If you’re looking for a no-thrills pub to sink a few beers, eat a pub lunch and reminisce about
+        classic Australian soap operas from the 1980s, this is the place. Judging by the amount of folks
+        in the beer garden each weekend, that seems to be a regular plan. It’s not unlike walking onto
+        the set of Kingswood Country/Richmond Hill, et al. Mind you, the music is much better when the
+        live bands set up shop outside.\n
+        In the reviews for The Retreat, someone wrote “if Brunswick was a pub then this is it.” We
+        wholeheartedly agree. It shares the same essence of our favourite suburb – a little
+        rough-and-tumble to look at, but warm and social when you step inside and not at all lacking
+        when it comes to quality.\n
+        For musos, the Sydney Road joint is a lot more than your average pub – it’s a place to show the
+        community what they’ve got. Over the years, the stage has been graced with many a Melbourne
+        legend. The bandroom is loud and high capacity, so it can make for a big night depending on who’s
+        on. Minors are welcome until 10 pm if accompanied by an adult, and for the big kids, DJs keep the
+        party going ‘til 3 am on Fridays and Saturdays.\n
+        The old-school vibe is a big part of the charm, with a pool table on site, fairy lights twinkling
+        through the courtyard, and a disco ball hanging overhead. On the menu, find elevated pub fare
+        that is made to please everyone, from the vegans to the carnivores.\n
+        From the crafty selection of beers to the ever-changing entertainment, we can’t think of anywhere
+        we’d rather sip away the hours on a lazy afternoon.",
         '280 Sydney Rd',
         'Brunswick',
         'VIC',
@@ -46,7 +99,24 @@ INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Web
     ),
     (
         'Hotel Esplanade (The Espy)',
-        "Whether you want to enjoy a good meal, kick back with some drinks or take in a gig, there’s only one place to be – Hotel Esplanade, the best pub in St Kilda. Fine food, functions, fun gigs and five levels of different bars, Hotel Esplanade has historically been one of the most popular bars in St Kilda.\n\nWhatever bar scene you prefer, whatever tipples you enjoy, you’ll find everything you could desire under one roof at Hotel Esplanade. We operate 12 different bars across 5 levels, with hand-picked wines, classic and custom cocktails, more craft beers than you could ever imagine and spirits from our very own in-house barrel-ageing program. We even show live sports in the Public Bar, with every live AFL kick-off the season show on our TVs.\n\nIt is this widespread range of bars and drinks, coupled with our excellent customer service that has earned us our stellar reputation as one of the leading St Kilda bars.",
+        "An icon if there ever was one, The Espy has been a proud bastion of live music, booze and romantic
+        misunderstandings for eons.\n
+        Located on prime real estate, the hotel looks out over Port Phillip Bay and the St Kilda
+        Esplanade, attracting all sorts of local wildlife plus those who float into the area for a spot
+        of vicarious living.\n
+        “As much as you’ve bought The Espy, you’ll never really own it,” said a message passed on from
+        the previous owners of Hotel Esplanade.\n
+        Your favourite band in the Gershwin Room, pre-gig beers in the Star Wars bar, stumbling in from
+        the seaside… everyone has a story to tell about The Espy. 140 years of stories and secrets are
+        hidden in its walls, from budding romances to celebrations, breakups, and makeups. If the walls
+        could talk, they’d tell some unbelievable tales.\n
+        It’s been a home for many years to Melbourne’s colourful characters, from members of the arts
+        community to musicians looking for their first big break, and the philanthropist, Alfred Felton,
+        who lived and died in The Espy.\n
+        Since reopening its doors in 2018, every square centimetre of The Espy is now open for enjoyment,
+        including the fifth level which has never before been open to the public.\n
+        The reimagined Hotel Esplanade is full of music, arts, cocktails, fun and laughter. To put it
+        simply, there is no pub like it.",
         '11 The Esplanade',
         'St Kilda',
         'VIC',
@@ -56,7 +126,23 @@ INSERT INTO Venue (Title, Description, StreetAddress, City, State, PostCode, Web
     ),
     (
         'The Night Cat',
-        "Established in 1994, The Night Cat is a Fitzroy institution. It has been a genre-focused venue since first opening, specialising in Funk, Soul, Latin, Disco, Hip Hop and R&B.\n\nPresenting artists in a unique 360-degree format, the venue has been the launchpad for several iconic Australian bands including The Cat Empire and The Bamboos. Continuing in this tradition, in recent years the venue has contributed to the development of artists like 30/70 and Allysha Joy, Zeitgeist Freedom Energy Exchange, DubFx and Honey.\n\nTimeless in style, the central performance space allows audiences a clear view of the stage from anywhere in the venue, as well as an up close and intimate experience with performers. With no pillars to obstruct views, huge recent production upgrades and exemplary venue management, The Night Cat offers a seamless audience experience from ticketing, to minimal bar queues and the classic Meyer sound system.\n\nPast performers include: King Gizzard And The Lizard Wizard, Nightmares On Wax (UK), Sister Nancy, Nai Palm, Incognito (UK), Shigeto (USA), Sampa The Great, Azymuth & Marcos Valle (BRZ), Melbourne Ska Orchestra, Mildlife, You Am I, Amyl and The Sniffers, Lonnie Liston Smith (USA), Kylie Auldist, Osaka Monaurail (JPN), The Pharcyde (USA), ZFEX, Mulatu Astatke (ETH), Floating Points (UK), The Teskey Brothers, Dead Prez (USA), DJ Jazzy Jeff (USA), Allen Stone (USA), Victor Wooten (USA), Wet Leg (UK).",
+        "Established in 1994, The Night Cat is a Fitzroy institution. It has been a genre-focused
+        venue since first opening, specialising in Funk, Soul, Latin, Disco, Hip Hop and R&B.\n
+        Presenting artists in a unique 360-degree format, the venue has been the launchpad for
+        several iconic Australian bands including The Cat Empire and The Bamboos. Continuing in this
+        tradition, in recent years the venue has contributed to the development of artists like 30/70
+        and Allysha Joy, Zeitgeist Freedom Energy Exchange, DubFx and Honey.\n
+        Timeless in style, the central performance space allows audiences a clear view of the stage
+        from anywhere in the venue, as well as an up close and intimate experience with performers.
+         With no pillars to obstruct views, huge recent production upgrades and exemplary venue
+         management, The Night Cat offers a seamless audience experience from ticketing, to minimal
+         bar queues and the classic Meyer sound system.\nPast performers include: King Gizzard And
+         The Lizard Wizard, Nightmares On Wax (UK), Sister Nancy, Nai Palm, Incognito (UK), Shigeto
+         (USA), Sampa The Great, Azymuth & Marcos Valle (BRZ), Melbourne Ska Orchestra, Mildlife,
+         You Am I, Amyl and The Sniffers, Lonnie Liston Smith (USA), Kylie Auldist, Osaka Monaurail
+         (JPN), The Pharcyde (USA), ZFEX, Mulatu Astatke (ETH), Floating Points (UK), The Teskey
+         Brothers, Dead Prez (USA), DJ Jazzy Jeff (USA), Allen Stone (USA), Victor Wooten (USA),
+         Wet Leg (UK).",
         '137-141 Johnston St',
         'Fitzroy',
         'VIC',
@@ -356,7 +442,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2020,
-        'When rapper Teether & producer Kuya Neil began to collaborate in late 2020, two powerful forces in the Naarm/Melbourne underground came together to create something rare and special. At 26, Teether already has a deep dive catalogue of solo releases to his name, largely released via the X Amount collective of which he is a founding member. There are also collaborative projects like Too Birds and even atmospheric metal bands stretching back to the early 2010s.\n\nKuya Neil is just as prolific. His CV ranges from membership of NZ “family rap ensemble” Fanau Spa, to collaboration with local heroes Papaphilia and Various Asses, to his work with Melbourne Sound School. Together, Teether & Kuya Neil make future-focused rap informed by modern club styles like footwork, gqom and bass music. Teether’s nonchalant but vivid words infuse Neil’s disorientating, hyper-modern production. As Dave Ruby Howe writes on Unearthed, “brain bending beats all round.',
+        'When rapper Teether & producer Kuya Neil began to collaborate in late 2020, two powerful forces in the Naarm/Melbourne underground came together to create something rare and special. At 26, Teether already has a deep dive catalogue of solo releases to his name, largely released via the X Amount collective of which he is a founding member. There are also collaborative projects like Too Birds and even atmospheric metal bands stretching back to the early 2010s.\nKuya Neil is just as prolific. His CV ranges from membership of NZ “family rap ensemble” Fanau Spa, to collaboration with local heroes Papaphilia and Various Asses, to his work with Melbourne Sound School. Together, Teether & Kuya Neil make future-focused rap informed by modern club styles like footwork, gqom and bass music. Teether’s nonchalant but vivid words infuse Neil’s disorientating, hyper-modern production. As Dave Ruby Howe writes on Unearthed, “brain bending beats all round.',
         'https://open.spotify.com/embed/artist/4rWywJgjoeVMO8LY87xYZo?utm_source=generator',
         'https://www.youtube.com/embed/tMvp5NqhyQ8?si=of8ZbKQIaW8Lr4Co',
         0
@@ -368,7 +454,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbourne',
         2023,
-        'Dear Matilda, known on stage for their explosive energy and lyrical dynamite, are dropping their new single “Anymore” this October.\n\nFront woman, Gabrielle Matilda, with her open and honest lyrics and a dynamic voice bursting with passion says “the song is about reflecting on a broken relationship, being vulnerable and honest enough to yourself to admit that it’s not working, but also, how much it burns to say goodbye to someone you did really care for.”\n\n“Anymore” is a marking a thrilling new direction for the band, with previous releases until now leaning towards acoustic punk, or more recently, pop on their self produced “Drive Me Crazy”. The new track “Anymore” pumps you up with thumping kicks, distortion galore and a whole lotta “get out of my face energy”.',
+        'Dear Matilda, known on stage for their explosive energy and lyrical dynamite, are dropping their new single “Anymore” this October.\nFront woman, Gabrielle Matilda, with her open and honest lyrics and a dynamic voice bursting with passion says “the song is about reflecting on a broken relationship, being vulnerable and honest enough to yourself to admit that it’s not working, but also, how much it burns to say goodbye to someone you did really care for.”\n“Anymore” is a marking a thrilling new direction for the band, with previous releases until now leaning towards acoustic punk, or more recently, pop on their self produced “Drive Me Crazy”. The new track “Anymore” pumps you up with thumping kicks, distortion galore and a whole lotta “get out of my face energy”.',
         'https://open.spotify.com/embed/artist/6Hy5Kaq0jNhO8byILBTr0I?utm_source=generator',
         'https://www.youtube.com/embed/uEbPrdu1wyc?si=-XdrNIGJSPCn57jL',
         0
@@ -380,7 +466,7 @@ INSERT INTO Artist (Title, Country, State, YearFounded, Description, SpotifyEmbe
         'Australia',
         'Melbounre',
         2020,
-        "Over-thinker, over-feeler, over-sharer; Tiarnie evokes emotion with her honest and raw lyrics, intricate guitar riffs and punchy percussion.\n\nTiarnie navigates the complications and heartbreaks of this halfway age where you're expected to act like you know what's going on/what you want to do with life/who you are - but the only thing you seem to be good at is writing sad songs in your messy bedroom at 2am.\n\nTiarnie has released two EP’s - ‘Consistently Inconsistent’ (2020) and ‘for Geoff Dyer’ (2021) - garnering the attention of Triple J, FBI radio and EMI Records. Tiarnie has supported reputable artists such as Kingswood, The Vanns, Ali Barter, Eliza and the Delusionals, The Rubens, Debbies and Sputnik Sweetheart.\n\nLast year, Tiarnie booked a one-way ticket to a reclusive cabin in Canada, songwriting as a form of therapy & dipping to NYC for open mic nights. Now back home, Tiarnie has just moved to Naarm and is itching to show you her new sound.\n\nSad girl acoustic album soon x",
+        "Over-thinker, over-feeler, over-sharer; Tiarnie evokes emotion with her honest and raw lyrics, intricate guitar riffs and punchy percussion.\nTiarnie navigates the complications and heartbreaks of this halfway age where you're expected to act like you know what's going on/what you want to do with life/who you are - but the only thing you seem to be good at is writing sad songs in your messy bedroom at 2am.\nTiarnie has released two EP’s - ‘Consistently Inconsistent’ (2020) and ‘for Geoff Dyer’ (2021) - garnering the attention of Triple J, FBI radio and EMI Records. Tiarnie has supported reputable artists such as Kingswood, The Vanns, Ali Barter, Eliza and the Delusionals, The Rubens, Debbies and Sputnik Sweetheart.\nLast year, Tiarnie booked a one-way ticket to a reclusive cabin in Canada, songwriting as a form of therapy & dipping to NYC for open mic nights. Now back home, Tiarnie has just moved to Naarm and is itching to show you her new sound.\nSad girl acoustic album soon x",
         'https://open.spotify.com/embed/artist/1q1h99hjLcsnuG92jaC8Tq?utm_source=generator',
         'https://www.youtube.com/embed/DfUNgrPnFVI?si=8h_6Zr9yfK123PvP',
         0
@@ -1862,9 +1948,9 @@ INSERT INTO Event (
 -- EventPrice
 INSERT INTO EventPrice (EventID, TicketType, Price)
 VALUES
-    (1, 'General Admission', 25.00),
+    (1, 'General Admission', 0.00),
     (1, 'VIP', 50.00),
-    (2, 'General Admission', 20.00),
+    (2, 'General Admission', 0.00),
     (2, 'Early Bird', 15.00),
     (3, 'General Admission', 30.00),
     (3, 'VIP', 70.00),
@@ -1872,27 +1958,27 @@ VALUES
     (4, 'VIP', 100.00),
     (5, 'General Admission', 10.00),
     (5, 'Early Bird', 5.00),
-    (6, 'General Admission', 35.00),
-    (7, 'General Admission', 25.00),
+    (6, 'General Admission', 0.00),
+    (7, 'General Admission', 0.00),
     (7, 'VIP', 60.00),
     (8, 'General Admission', 20.00),
     (8, 'VIP', 45.00),
     (9, 'General Admission', 50.00),
     (9, 'VIP', 120.00),
-    (10, 'General Admission', 30.00),
-    (11, 'General Admission', 15.00),
+    (10, 'General Admission', 0.00),
+    (11, 'General Admission', 0.00),
     (11, 'Early Bird', 10.00),
-    (12, 'General Admission', 40.00),
-    (13, 'General Admission', 20.00),
+    (12, 'General Admission', 0.00),
+    (13, 'General Admission', 0.00),
     (14, 'General Admission', 30.00),
-    (15, 'General Admission', 25.00),
+    (15, 'General Admission', 0.00),
     (15, 'VIP', 60.00),
     (16, 'General Admission', 20.00),
     (16, 'VIP', 45.00),
     (17, 'General Admission', 10.00),
     (17, 'Early Bird', 5.00),
     (18, 'General Admission', 35.00),
-    (19, 'General Admission', 25.00),
+    (19, 'General Admission', 0.00),
     (20, 'General Admission', 30.00),
     (20, 'VIP', 70.00);
 
