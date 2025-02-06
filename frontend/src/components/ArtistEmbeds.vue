@@ -77,6 +77,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
     .wrapper {
         width: 100%;
         margin-top: 60px;
@@ -92,7 +93,7 @@ export default defineComponent({
     @media (max-width: 722px) {
 
         .iframe {
-            height: 40vh;
+            height: auto;
             aspect-ratio: none;
         }
 
