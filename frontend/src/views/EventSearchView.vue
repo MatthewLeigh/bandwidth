@@ -15,17 +15,18 @@
             </div>
             <div class="hero-subtext">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusamus autem
-                    eveniet omnis magnam aliquid natus numquam qui ipsam quibusdam magni, neque
-                    architecto, nostrum assumenda impedit excepturi facere, atque ea? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Aspernatur voluptatibus ad, iure repudiandae
-                    eum ipsa facilis nemo quidem magnam ullam eos impedit dicta cupiditate aliquam
-                    perferendis qui est mollitia quibusdam.
+                    Whether you're looking for a specific event or just browsing for something new,
+                    our powerful search makes it effortless to find the perfect gig. Filter by date,
+                    price, and your personal favourites to tailor your experience, ensuring you
+                    never miss a show that matches your vibe. From underground indie acts to
+                    festival headliners, every event is just a click away.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorem aliquam
-                    commodi sint minus modi sed necessitatibus, dolores ut quidem recusandae corporis
-                    suscipit earum nostrum, ducimus similique qui, ullam nemo.
+                    With constant updates and an intuitive design, Bandwidth helps you plan your
+                    nights out with confidence. Save events, share them with friends, and stay in
+                    the loop with Melbourne’s ever-evolving music scene. No more scrolling through
+                    every site on google — just clear, concise, and up-to-date gig info at your
+                    fingertips. Start your search now and let the music guide your next adventure.
                 </p>
             </div>
         </div>

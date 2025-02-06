@@ -15,12 +15,17 @@
             </div>
             <div class="hero-subtext">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusamus autem
-                    eveniet omnis magnam aliquid natus numquam qui ipsam quibusdam magni, neque
-                    architecto, nostrum assumenda impedit excepturi facere, atque ea? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Aspernatur voluptatibus ad, iure repudiandae
-                    eum ipsa facilis nemo quidem magnam ullam eos impedit dicta cupiditate aliquam
-                    perferendis qui est mollitia quibusdam.
+                    Find the best spots for live music in Melbourne here! Whether you're searching
+                    for an intimate bar with acoustic sets, a legendary club hosting your favorite
+                    band, or a unique venue with a one-of-a-kind atmosphere, our search tool helps
+                    you find the perfect place to catch a show. Filter by location, name, or
+                    upcoming events to discover the venues that suit your style.
+                </p>
+                <p>
+                    From iconic hotspots to hidden gems, Melbourne is home to a diverse range of
+                    music venues, each with its own charm. Dive into the city's rich live music
+                    culture, plan your next night out, and find the perfect venue to enjoy the
+                    sounds you love. Start exploring today and let Melbourne’s music scene unfold.
                 </p>
             </div>
         </div>

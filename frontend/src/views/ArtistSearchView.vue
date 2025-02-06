@@ -15,9 +15,17 @@
             </div>
             <div class="hero-subtext">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorem aliquam
-                    commodi sint minus modi sed necessitatibus, dolores ut quidem recusandae corporis
-                    suscipit earum nostrum, ducimus similique qui, ullam nemo.
+                    Welcome to Bandwidth’s Artist Search, your gateway to Melbourne’s vibrant music
+                    scene. Whether you're looking for a favorite local act, exploring new talent, or
+                    ollowing an artist’s upcoming gigs, our search tool makes it easy. Browse by
+                    name, genre, or venue to discover who’s playing where, and never miss a chance
+                    to see incredible live performances.
+                </p>
+                <p>
+                    Stay connected with the artists that matter to you and uncover fresh sounds
+                    along the way. From indie newcomers to seasoned headliners, Melbourne’s diverse
+                    music landscape is waiting to be explored. Start your search today and let the
+                    city’s best live acts take center stage.
                 </p>
             </div>
         </div>

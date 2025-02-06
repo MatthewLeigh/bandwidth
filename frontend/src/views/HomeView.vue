@@ -21,12 +21,21 @@
                 </div>
                 <div class="hero-subtext">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusamus autem
-                        eveniet omnis magnam aliquid natus numquam qui ipsam quibusdam magni, neque
-                        architecto, nostrum assumenda impedit excepturi facere, atque ea? Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Aspernatur voluptatibus ad, iure repudiandae
-                        eum ipsa facilis nemo quidem magnam ullam eos impedit dicta cupiditate aliquam
-                        perferendis qui est mollitia quibusdam.
+                        Welcome to Bandwidth – Melbourne’s ultimate gig guide, where music lovers
+                        can explore the city’s electrifying live scene with ease. Whether you're
+                        hunting for a last-minute gig, planning your weekend, or discovering your
+                        next favorite artist, Bandwidth keeps you in tune with everything happening
+                        across Melbourne’s best venues. From intimate acoustic sets in hidden
+                        laneways to pulsating sold-out shows at iconic clubs, our guide connects you
+                        to the heartbeat of the city’s diverse music culture.
+                    </p>
+                    <p>
+                        With constant updates, featured events, and an easy-to-navigate interface,
+                        Bandwidth makes it effortless to find gigs, follow artists, and never miss a
+                        beat. Whether you’re a die-hard fan, a casual listener, or a musician
+                        looking to promote your next show, Bandwidth is your go-to platform for all
+                        things live music in Melbourne. Let’s turn up the volume and explore the
+                        city’s thriving soundscape—one gig at a time.
                     </p>
                 </div>
             </div>
