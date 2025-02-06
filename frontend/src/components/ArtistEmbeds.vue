@@ -6,13 +6,13 @@
     >
 
         <!-- Divider Bar -->
-        <DividerBar text="Check them out"/>
+        <DividerBar text="Check them out" class="mb-4"/>
 
         <!-- Embeds Wrapper -->
         <v-row>
 
             <!-- Embed -->
-            <v-col v-for="(embed, index) in embeds" :key="index" cols="12" lg="6" class="mt-4">
+            <v-col v-for="(embed, index) in embeds" :key="index" cols="12" lg="6">
                 <iframe
                     class="iframe"
                     :src="embed"

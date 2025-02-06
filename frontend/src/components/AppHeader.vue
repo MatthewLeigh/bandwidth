@@ -1,22 +1,22 @@
 <template>
     <v-app-bar app>
-
         <!-- Menu Icon -->
         <v-btn icon @click="$emit('toggle-drawer')">
             <v-icon>mdi-menu</v-icon>
         </v-btn>
 
-        <!-- Title -->
-        <v-toolbar-title
-            @click="goTo('home', undefined, $event)"
-            class="d-flex flex-column cursor-pointer"
-        >
-            <h1 :class="['title', { 'active': isHomePath() }]">Bandwidth</h1>
-            <h2 class="subtitle">Melbourne Gig Guide</h2>
-        </v-toolbar-title>
+        <!-- Title Container -->
+        <div class="title-container">
+            <v-toolbar-title
+                @click="goTo('home', undefined, $event)"
+                class="d-flex flex-column cursor-pointer"
+            >
+                <h1 :class="['title', { 'active': isHomePath() }]">Bandwidth</h1>
+                <h2 class="subtitle">Melbourne Gig Guide</h2>
+            </v-toolbar-title>
+        </div>
 
         <template v-if="!$isTablet.value">
-
             <!-- Main Routes -->
             <v-btn-group>
                 <v-btn
@@ -36,9 +36,7 @@
                 </v-avatar>
                 <v-icon v-else>mdi-account-circle</v-icon>
             </v-btn>
-
         </template>
-
     </v-app-bar>
 </template>
 
@@ -72,11 +70,10 @@
         data() {
             return {
                 userImg: '',
-            }
+            };
         },
 
         methods: {
-
             isActivePath(path: string): boolean {
                 return this.$route.path.includes(path);
             },
@@ -95,11 +92,9 @@
                     const userImgData = await userImgResponse.json();
 
                     this.userImg = userImgData[0].ImageURL;
-
                 } catch (error) {
                     console.error(error);
                     this.clearUserDetails();
-
                 }
             }
         },
@@ -115,21 +110,28 @@
                 this.fetchUserDetails();
             }
         }
-
     });
-
 </script>
 
 <style scoped>
-
     .v-app-bar {
         background-color: var(--c-bg-header);
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
     }
 
     .v-btn {
         font-family: 'Poppins-SemiBold', sans-serif;
         border-radius: 4px;
         background-color: transparent;
+    }
+
+    .title-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .title {
@@ -154,15 +156,11 @@
     }
 
     @media (max-width: 1200px) {
-        .title {
-            text-align: center;
-            transform: translateX(-38px) translateY(8px);
+
+        .title-container {
+            left: 50%;
+            transform: translateX(-50%);
         }
 
-        .subtitle {
-            text-align: center;
-            transform: translateX(-38px) translateY(-2px);
-        }
     }
-
 </style>
