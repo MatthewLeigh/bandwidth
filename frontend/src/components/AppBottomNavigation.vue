@@ -82,11 +82,20 @@
 
     .bottom-navigation {
         height: 80px;
-        z-index: 1000;
+        z-index: 1000;display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .bottom-navigation .v-btn {
+        flex: 1 1 auto;
+        min-width: none;
     }
 
     .active {
         color: var(--c-text-featured);
     }
+
+
 
 </style>
