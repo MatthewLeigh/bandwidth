@@ -110,6 +110,7 @@
 
             </section>
 
+            <!-- Accessibility Support -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
@@ -124,7 +125,17 @@
                     tables are usable and accessible. This includes the use of labels, placeholders,
                     and aria attributes to help users navigate the website using assistive technologies.
                 </p>
-
+                <p>
+                    Below is a screenshot of the WAVE Web Accessibility Evaluation Tool showing the
+                    accessibility of the
+                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/LoginForm.vue">Login Form</a>
+                    on the website. The form has been designed with
+                    accessibility in mind, and all input fields have labels, placeholders, and aria
+                    attributes to help users navigate the form using assistive technologies.
+                    Additionally, forms on the website are crated using Vuetify components, which
+                    are designed to be accessible out of the box.
+                </p>
+                <img :src="require('../assets/login-form-wave-check.png')" alt="Login Form WAVE Check">
             </section>
 
             <section>
