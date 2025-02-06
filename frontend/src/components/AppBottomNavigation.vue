@@ -90,10 +90,18 @@
     .bottom-navigation .v-btn {
         flex: 1 1 auto;
         min-width: none;
+        padding: 0;
     }
 
     .active {
         color: var(--c-text-featured);
+    }
+
+    @media (min-width: 500px) {
+
+        .bottom-navigation .v-btn {
+            font-size: .8rem;
+        }
     }
 
 
