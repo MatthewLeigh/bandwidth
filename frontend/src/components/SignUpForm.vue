@@ -9,11 +9,13 @@
         >
 
             <div>
-                <p class="form-title">Welcome!</p>
+                <h1 class="form-title">Welcome!</h1>
                 <p class="form-description">Sign up to unlock the guides full potential.</p>
             </div>
 
             <fieldset>
+
+                <legend class="sr-only" aria-label="Sign Up Form">Sign Up Form</legend>
 
                 <!-- First Name -->
                 <v-text-field

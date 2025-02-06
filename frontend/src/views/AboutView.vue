@@ -116,6 +116,14 @@
                     <span>Accessibility Support</span>
                 </h2>
                 <h3>Demonstrate accessibility support more specifically on input forms and tables</h3>
+                <p>
+                    Accessibility support in forms helps to ensure that users with disabilities or
+                    impairments are able to use the website with the help of assistive technologies.
+                    This includes screen readers, magnifiers, and voice recognition software. The
+                    website has been designed with accessibility in mind, and all input forms and
+                    tables are usable and accessible. This includes the use of labels, placeholders,
+                    and aria attributes to help users navigate the website using assistive technologies.
+                </p>
 
             </section>
 

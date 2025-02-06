@@ -17,6 +17,7 @@
             </div>
 
             <fieldset>
+                <legend class="sr-only" aria-label="Login Form">Login Form</legend>
 
                 <!-- Email -->
                 <v-text-field
