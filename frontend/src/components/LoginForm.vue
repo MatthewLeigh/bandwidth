@@ -3,13 +3,13 @@
 
         <!-- Form Filler -->
         <div class="form-filler">
-            <v-icon>mdi-account-circle</v-icon>
-            <p>Don't have an account yet?</p>
-            <v-btn flat @click="toggleCurrentForm">Create Account</v-btn>
+            <v-icon aria-hidden="true">mdi-account-circle</v-icon>
+            <p id="signup-prompt">Don't have an account yet?</p>
+            <v-btn flat @click="toggleCurrentForm" aria-labelledby="signup-prompt">Create Account</v-btn>
         </div>
 
         <!-- Form -->
-        <v-form>
+        <v-form @submit.prevent="submitForm">
 
             <div>
                 <p class="form-title">Welcome Back!</p>
@@ -24,6 +24,9 @@
                     label="Email"
                     type="email"
                     required
+                    autocomplete="email"
+                    aria-label="Email"
+                    aria-required="true"
                 />
                 <!-- Password -->
                 <v-text-field
@@ -31,15 +34,34 @@
                     label="Password"
                     type="password"
                     required
+                    autocomplete="current-password"
+                    aria-label="Password"
+                    aria-required="true"
                 />
 
             </fieldset>
 
             <div class="form-buttons">
+
                 <!-- Clear Button -->
-                <v-btn class="clear-button" @click="clearForm" flat>Clear</v-btn>
+                <v-btn
+                    class="clear-button"
+                    @click="clearForm"
+                    aria-label="Clear Form Button"
+                    flat
+                >
+                    Clear
+                </v-btn>
+
                 <!-- Submit Button -->
-                <v-btn class="submit-button" @click="submitForm" flat>Sign In</v-btn>
+                <v-btn
+                    class="submit-button"
+                    @click="submitForm"
+                    aria-label="Submit Form Button"
+                    flat
+                >
+                    Sign In
+                </v-btn>
             </div>
 
         </v-form>
@@ -117,6 +139,3 @@
 
     });
 </script>
-
-<style scoped>
-</style>

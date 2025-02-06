@@ -21,6 +21,9 @@
                     label="First Name"
                     type="text"
                     :rules="firstNameRules"
+                    auto-complete="given-name"
+                    aria-label="First Name"
+                    aria-required="true"
                     required
                 />
 
@@ -30,6 +33,9 @@
                     label="Last Name"
                     type="text"
                     :rules="lastNameRules"
+                    auto-complete="family-name"
+                    aria-label="Last Name"
+                    aria-required="true"
                     required
                 />
 
@@ -42,6 +48,8 @@
                     required
                     :rules="countryRules"
                     @update:modelValue="fetchStates(selectedCountry)"
+                    aria-label="Country"
+                    aria-required="true"
                 />
 
                 <!-- State (Depends on Selected Country) -->
@@ -53,6 +61,8 @@
                     required
                     :rules="stateRules"
                     :disabled="!selectedCountry"
+                    aria-label="State"
+                    aria-required="true"
                 />
 
                 <!-- Email -->
@@ -62,6 +72,9 @@
                     type="email"
                     :rules="emailRules"
                     required
+                    aria-label="Email"
+                    aria-required="true"
+                    autocomplete="email"
                 />
 
                 <!-- Password -->
@@ -71,6 +84,8 @@
                     type="password"
                     :rules="passwordRules"
                     required
+                    aria-label="Password"
+                    aria-required="true"
                 />
 
                 <!-- Confirm Password -->
@@ -80,6 +95,8 @@
                     type="password"
                     :rules="confirmPasswordRules"
                     required
+                    aria-label="Confirm Password"
+                    aria-required="true"
                 />
 
             </fieldset>
@@ -92,11 +109,12 @@
             </div>
 
         </v-form>
+
         <!-- Form Filler -->
         <div class="form-filler">
-            <v-icon>mdi-account-circle</v-icon>
-            <p>Already have an account?</p>
-            <v-btn flat @click="toggleCurrentForm">Log In</v-btn>
+            <v-icon aria-hidden="true">mdi-account-circle</v-icon>
+            <p id="login-prompt">Already have an account?</p>
+            <v-btn flat @click="toggleCurrentForm" aria-labelledby="login-prompt">Log In</v-btn>
         </div>
 
     </div>
