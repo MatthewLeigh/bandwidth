@@ -2275,8 +2275,8 @@ INSERT INTO Image (URL) VALUES
     ('https://www.metal-archives.com/images/3/5/4/0/3540497300_photo.jpg?2537'), -- 230: Artist: 20: Sufferance
     ('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvsmvvGsHnVLh3sLQ60OZ5JaK-znfFGuVKQqMU_w70lkPcEvsC_it5kT3hEt7X4PaJwk&usqp=CAU'), -- 231: Artist: 20: Sufferance
     (null), -- 232: Artist: 21: ABIGAIL
-    (null); -- 233: Artist: 21: ABIGAIL
-
+    (null), -- 233: Artist: 21: ABIGAIL
+    ('https://avatar.iran.liara.run/public/34'); -- 234: User Image Matthew
 
 -- VenueImage
 INSERT INTO VenueImage (VenueID, ImageID, DisplayOrder) VALUES
@@ -2753,7 +2753,7 @@ INSERT INTO ArtistImage (ArtistID, ImageID, DisplayOrder) VALUES
 INSERT INTO UserImage (UserID, ImageID) VALUES
 
     -- User 1
-    (1, 26);
+    (1, 234);
 
 -- EventImage
 INSERT INTO EventImage (EventID, ImageID, DisplayOrder) VALUES
