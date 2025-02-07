@@ -2,7 +2,7 @@
     <v-app-bar app>
 
         <!-- Menu Icon -->
-        <v-btn icon @click="$emit('toggle-drawer')">
+        <v-btn icon @click="$emit('toggle-drawer')" class="menu-icon">
             <v-icon>mdi-menu</v-icon>
         </v-btn>
 
@@ -155,10 +155,23 @@
 
     @media (max-width: 1200px) {
 
+        .v-app-bar {
+            position: relative;
+        }
+
         .title-container {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+            z-index: 998;
+        }
+
+        .menu-icon {
+            z-index: 999;
+        }
+
+        .subtitle {
+            transform: translateX(12px);
         }
 
     }
