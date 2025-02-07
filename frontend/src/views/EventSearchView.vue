@@ -258,36 +258,36 @@
             // Filtered events by selected dates
             filterEventsBySelectedDates(): Record<string, EventSearchItem[]> {
 
-            // Return the grouped events based on selected dates
-            if (this.selectedDatesStore.selectedDates.length === 0) return this.allEventsGroupedByDate;
+                // Return the grouped events based on selected dates
+                if (this.selectedDatesStore.selectedDates.length === 0) return this.allEventsGroupedByDate;
 
-            // Convert selectedDates to a Set for faster lookup, ensuring only the date part is used
-            const selectedDatesSet = new Set(
-                this.selectedDatesStore.selectedDates.map(date => {
+                // Convert selectedDates to a Set for faster lookup, ensuring only the date part is used
+                const selectedDatesSet = new Set(
+                    this.selectedDatesStore.selectedDates.map(date => {
 
-                    // Adjust the date to the local time zone
-                    const localDate = new Date(date);
+                        // Adjust the date to the local time zone
+                        const localDate = new Date(date);
 
-                    // Get only the date part in YYYY-MM-DD format
-                    return localDate.toLocaleDateString('en-CA');
-                })
-            );
+                        // Get only the date part in YYYY-MM-DD format
+                        return localDate.toLocaleDateString('en-CA');
+                    })
+                );
 
-            // Create array to store filtered dates
-            const filteredEvents = {} as Record<string, EventSearchItem[]>;
+                // Create array to store filtered dates
+                const filteredEvents = {} as Record<string, EventSearchItem[]>;
 
-            // Iterate over each date in allEventsGroupedByDate
-            for (const date in this.allEventsGroupedByDate) {
+                // Iterate over each date in allEventsGroupedByDate
+                for (const date in this.allEventsGroupedByDate) {
 
-                // Check if the date is in the selectedDatesSet (ensure date is in YYYY-MM-DD format)
-                if (selectedDatesSet.has(date)) {
+                    // Check if the date is in the selectedDatesSet (ensure date is in YYYY-MM-DD format)
+                    if (selectedDatesSet.has(date)) {
 
-                    // Add the events for this date to the filteredEvents object
-                    filteredEvents[date] = this.allEventsGroupedByDate[date];
+                        // Add the events for this date to the filteredEvents object
+                        filteredEvents[date] = this.allEventsGroupedByDate[date];
+                    }
                 }
-            }
 
-            return filteredEvents;
+                return filteredEvents;
             },
 
 

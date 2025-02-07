@@ -74,12 +74,56 @@
 
             <DividerBar :text="'6.2 Distinction Criteria'" class="divider-bar"/>
 
+            <!-- Context View Grouping -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>Context View Grouping</span>
                 </h2>
-                <h3>Demonstrate the use of context view grouping - implement the web application with a structure of row-column grid system.</h3>
+                <h3>
+                    Demonstrate the use of context view grouping - implement the web application
+                    with a structure of row-column grid system.
+                </h3>
+                <p>
+                    This website is fully responsive and supports mobile, tablet, and desktop
+                    devices. In places where they offer great sizing functionality out of the box,
+                    I have used Vuetify components to create this dynamic layout. The most prominent
+                    example of this the v-container which neatly wraps all main views and adjusts
+                    the padding and margins based on the device size. This is a great example of
+                    context view grouping as it groups all the main views together and adjusts the
+                    layout based on the device size.
+                </p>
+                <p>
+                    For each view and component, I have created dynamic layouts that adjust the size,
+                    position, padding and visibility based on the device size. I won't point you
+                    towards a specific example here, but rather I encourage you to resize the
+                    browser (or open <a href="https://matthewleigh.github.io/bandwidth/">Bandwidth</a>
+                    on your phone) and see how the layout changes based on the device size.
+                </p>
+                <p>
+                    The specific requirement for this criteria was to make use of the row-column
+                    grid system. This is a core feature of Vuetify that offers a simplistic way of
+                    dynamically adjusting layouts to the screen size. To be honest with you, I hate
+                    the row-column grid system. I find it very limiting and frustrating to work with.
+                    I find that it significantly bloats the markup for each template, while
+                    simultaneously limiting the flexibility by forcing you to use a specific number
+                    of columns. I have made use of the row-column grid system in the
+                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/AppFooter.vue">footer</a>
+                    component of the website, and sprinkled it in here-and-there where it made sense,
+                    but I have tended to avoid it in most places.
+                </p>
+                <p>
+                    Instead, I have demonstrated the use of context view grouping by creating dynamic
+                    layouts using flexbox and CSS grid. This has allowed me to create more flexible
+                    and responsive layouts that adjust based on the device size. I have used media
+                    queries to adjust the layout based on the device size, and have created layouts
+                    that are mobile-first. This approach has allowed me to create a website that is
+                    fully responsive and supports mobile, tablet, and desktop devices. I encourage
+                    you to check out the
+                    <a href="https://matthewleigh.github.io/bandwidth/event/3">Psychedelic Jam</a>
+                    event, which is a great example of a dynamic layout that adjusts based on the
+                    device size.
+                </p>
 
             </section>
 
@@ -88,7 +132,10 @@
                     <v-icon icon="mdi-check" />
                     <span>Modules</span>
                 </h2>
-                <h3>Demonstrate the use of modules - implement the web application with a number of controllers and config. (Maybe even custom directives and filters - optional but nice)</h3>
+                <h3>Demonstrate the use of modules - implement the web application with a number of
+                    controllers and config. (Maybe even custom directives and filters - optional but
+                    nice)
+                </h3>
 
             </section>
 
@@ -297,8 +344,13 @@ export default defineComponent({
         margin-left: 36px;
     }
 
-    section p {
+    section p,
+    section img {
         margin: 12px 0 12px 36px;
+    }
+
+    section img {
+        max-width: 100%;
     }
 
     ul {
