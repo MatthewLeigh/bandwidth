@@ -155,23 +155,19 @@
 
     @media (max-width: 1200px) {
 
-        .v-app-bar {
-            position: relative;
-        }
-
         .title-container {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 998;
+            margin-right: 48px;
         }
 
         .menu-icon {
-            z-index: 999;
+            width: 48px;
         }
 
         .subtitle {
-            transform: translateX(12px);
+            transform: translateX(16px);
         }
 
     }
