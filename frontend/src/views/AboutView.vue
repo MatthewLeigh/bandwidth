@@ -97,7 +97,7 @@
                     For each view and component, I have created dynamic layouts that adjust the size,
                     position, padding and visibility based on the device size. I won't point you
                     towards a specific example here, but rather I encourage you to resize the
-                    browser (or open <a href="https://matthewleigh.github.io/bandwidth/">Bandwidth</a>
+                    browser (or open <a target="_blank" href="https://matthewleigh.github.io/bandwidth/">Bandwidth</a>
                     on your phone) and see how the layout changes based on the device size.
                 </p>
                 <p>
@@ -108,7 +108,7 @@
                     I find that it significantly bloats the markup for each template, while
                     simultaneously limiting the flexibility by forcing you to use a specific number
                     of columns. I have made use of the row-column grid system in the
-                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/AppFooter.vue">footer</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/AppFooter.vue">footer</a>
                     component of the website, and sprinkled it in here-and-there where it made sense,
                     but I have tended to avoid it in most places.
                 </p>
@@ -120,7 +120,7 @@
                     that are mobile-first. This approach has allowed me to create a website that is
                     fully responsive and supports mobile, tablet, and desktop devices. I encourage
                     you to check out the
-                    <a href="https://matthewleigh.github.io/bandwidth/event/3">Psychedelic Jam</a>
+                    <a target="_blank" href="https://matthewleigh.github.io/bandwidth/event/3">Psychedelic Jam</a>
                     event, which is a great example of a dynamic layout that adjusts based on the
                     device size.
                 </p>
@@ -140,9 +140,9 @@
                 </h3>
                 <p>
                     This website was made with Vue 3, and takes advantage of modules in the form of its
-                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/components">23 Components</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/components">23 Components</a>
                     and
-                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/views">10 Views</a>.
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/views">10 Views</a>.
                     Each component and view is a module that encapsulates a specific piece of
                     functionality, such as a header, footer, event list, or event details. This
                     modular approach makes the codebase easier to manage and maintain, as each module
@@ -151,9 +151,9 @@
                 <p>
                     Additionally, the website uses a number of controllers and config files to manage
                     the application state and configuration. The
-                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/session.js">Session Store</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/session.js">Session Store</a>
                     is used to manage the user's session and authentication state, while the
-                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/useSelectedDatesStore.ts">Selected Dates Store</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/useSelectedDatesStore.ts">Selected Dates Store</a>
                     retains the selected dates for the event filter when the user navigates between
                     different views.
                 </p>
@@ -171,7 +171,7 @@
                     Arrays are used throughout the website to store and manage data. I think anyway
                     website that can't demonstrate the use of arrays is going to be a pretty boring
                     website. One of the most prominent examples of the use of arrays on the website is
-                    the <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/FocusCardRow.vue">FocusCardRow Component</a>
+                    the <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/FocusCardRow.vue">FocusCardRow Component</a>
                     which accepts an array of focus objects and displays them in a row.
                 </p>
 
@@ -216,7 +216,7 @@
                 <p>
                     Below is a screenshot of the WAVE Web Accessibility Evaluation Tool showing the
                     accessibility of the
-                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/LoginForm.vue">Login Form</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/LoginForm.vue">Login Form</a>
                     on the website. The form has been designed with
                     accessibility in mind, and all input fields have labels, placeholders, and aria
                     attributes to help users navigate the form using assistive technologies.
@@ -240,7 +240,7 @@
                     abstractions and how they work. Additionally, the JavaScript code adheres to JSLint
                     rules, which helps to ensure that the code is clean, readable, and maintainable.
                     Please check out any files in the
-                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend">Frontend Repository</a>
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend">Frontend Repository</a>
                     to verify this.
                 </p>
             </section>
