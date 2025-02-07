@@ -262,7 +262,16 @@
             if (this.selectedDatesStore.selectedDates.length === 0) return this.allEventsGroupedByDate;
 
             // Convert selectedDates to a Set for faster lookup, ensuring only the date part is used
-            const selectedDatesSet = new Set(this.selectedDatesStore.selectedDates.map(date => new Date(date).toISOString().split('T')[0]));
+            const selectedDatesSet = new Set(
+                this.selectedDatesStore.selectedDates.map(date => {
+
+                    // Adjust the date to the local time zone
+                    const localDate = new Date(date);
+
+                    // Get only the date part in YYYY-MM-DD format
+                    return localDate.toLocaleDateString('en-CA');
+                })
+            );
 
             // Create array to store filtered dates
             const filteredEvents = {} as Record<string, EventSearchItem[]>;
