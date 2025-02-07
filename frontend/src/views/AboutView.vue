@@ -30,7 +30,7 @@
 
             <section>
                 <h2>
-                    <v-icon icon="mdi-account" />
+                    <v-icon icon="mdi-hexagon-multiple" />
                     <span>Introduction</span>
                 </h2>
                 <p>
@@ -59,16 +59,39 @@
                     <v-icon icon="mdi-vector-link" />
                     <span>Links</span>
                 </h2>
+                <p>
+                    The following links will take you to Lucidchart and Canva where you can view the
+                    Entity Relationship Diagram and the Mobile and Desktop Design Prototypes for the
+                    website. Please note that these links will open in a new tab.
+                </p>
                 <ul>
                     <li><a class="clickable" target="_blank" href="https://lucid.app/lucidchart/ef106a66-2b21-4603-b0e8-a0b71c9e5a8b/edit?invitationId=inv_84152621-20af-4d14-9ab8-9f0afbfa1df9&page=0_0#">ERD</a></li>
                     <li><a class="clickable" target="_blank" href="https://www.canva.com/design/DAGZTNcubuY/R9hzY4d9h-509wLeaN4RMA/edit?utm_content=DAGZTNcubuY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mobile Design Prototype</a></li>
                     <li><a class="clickable" target="_blank" href="https://www.canva.com/design/DAGZbU7cMz0/K4GXh9dyRNEHzH6VxZi8CA/edit?utm_content=DAGZbU7cMz0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ">Desktop Design Prototype</a></li>
                 </ul>
             </section>
+
+            <section>
+                <h2>
+                    <v-icon icon="mdi-format-list-bulleted-type" />
+                    <span>What is a Focus?</span>
+                </h2>
+                <p>
+                    You'll see the idea of a Focus everywhere in the code for this website, so it
+                    is important to understand what a Focus is. A Focus is a way of grouping together
+                    a type of entity - an event, venue, or artist - and the corresponding ID for
+                    that entity. This is used to create a consistent way of interacting with the
+                    entities in the database, and to make it easier to create reusable components
+                    that can be used across different parts of the website. For example, the
+                    FocusCard component is a single component that can be used to will display different
+                    types of information based on the Focus Type that it is given. This makes it
+                    easier to create reusable components that can be used across different parts of
+                    the website, and to create a consistent way of interacting with the entities in
+                    the database.
+                </p>
+            </section>
+
         </article>
-
-
-
 
         <article>
 
@@ -298,10 +321,22 @@
                     <span>Effective Use of Decomposition</span>
                 </h2>
                 <ul>
-                    <li>The web application consists of custom filter, custom directive, and config with little code duplication.</li>
+                    <li>
+                        The web application consists of custom filter, custom directive, and config
+                        with little code duplication.
+                    </li>
                 </ul>
-                <p style="color: red">TBC!!!!!!!!!!!!!!!!!!</p>
-
+                <p>
+                    The website is built using Vue 3, which allows for the creation of custom filters,
+                    directives, and config files. Most of the data used in the website is stored in
+                    a SQLite database and accessed via a REST API. The website uses a number of custom
+                    filters to format the data, such as the date filter in the event search view,
+                    and the csv filter in the focus card component. Additionally, the website uses
+                    custom directives to manage the application state, such as the v-focus directive
+                    in the event search view. Finally, the website uses a number of config files to
+                    manage the application configuration, such as the vuetify config file in the
+                    main.js file.
+                </p>
                 <ul>
                     <li>
                         Data from external sources or data APIs is used intelligently to minimise
