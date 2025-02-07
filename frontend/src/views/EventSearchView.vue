@@ -256,30 +256,31 @@
         computed: {
 
             // Filtered events by selected dates
-            filterEventsBySelectedDates() : Record<string, EventSearchItem[]> {
+            filterEventsBySelectedDates(): Record<string, EventSearchItem[]> {
 
-                // Return the grouped events based on selected dates
-                if (this.selectedDatesStore.selectedDates.length === 0) return this.allEventsGroupedByDate;
+            // Return the grouped events based on selected dates
+            if (this.selectedDatesStore.selectedDates.length === 0) return this.allEventsGroupedByDate;
 
-                // Convert selectedDates to a Set for faster lookup
-                const selectedDatesSet = new Set(this.selectedDatesStore.selectedDates.map(date => new Date(date).toISOString()));
+            // Convert selectedDates to a Set for faster lookup, ensuring only the date part is used
+            const selectedDatesSet = new Set(this.selectedDatesStore.selectedDates.map(date => new Date(date).toISOString().split('T')[0]));
 
-                // Create array to store filtered dates
-                const filteredEvents = {} as Record<string, EventSearchItem[]>;
+            // Create array to store filtered dates
+            const filteredEvents = {} as Record<string, EventSearchItem[]>;
 
-                // Iterate over each date in allEventsGroupedByDate
-                for (const date in this.allEventsGroupedByDate) {
+            // Iterate over each date in allEventsGroupedByDate
+            for (const date in this.allEventsGroupedByDate) {
 
-                    // Check if the date is in the selectedDatesSet
-                    if (selectedDatesSet.has(date)) {
+                // Check if the date is in the selectedDatesSet (ensure date is in YYYY-MM-DD format)
+                if (selectedDatesSet.has(date)) {
 
-                        // Add the events for this date to the filteredEvents object
-                        filteredEvents[date] = this.allEventsGroupedByDate[date];
-                    }
+                    // Add the events for this date to the filteredEvents object
+                    filteredEvents[date] = this.allEventsGroupedByDate[date];
                 }
+            }
 
-                return filteredEvents;
+            return filteredEvents;
             },
+
 
             // Filter events by price, favourite artists, and favourite venues
             filteredEventsGroupedByDate() : Record<string, EventSearchItem[]> {
