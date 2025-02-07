@@ -375,7 +375,6 @@ export default defineComponent({
     }
 
     section:hover {
-        cursor: pointer;
         background-color: var(--c-bg-subtle-highlight);
     }
 
