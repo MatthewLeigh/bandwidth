@@ -249,6 +249,7 @@
         <article>
             <DividerBar :text="'6.3 High Distinction Criteria'" class="divider-bar"/>
 
+            <!-- Reasonable Complexity -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
@@ -256,11 +257,41 @@
                 </h2>
                 <h3>Ability to design and implement a web application of reasonable complexity.</h3>
                 <ul>
-                    <li>Web application does more than have the user respond to random data (e.g. number guessing game), or simply manipulate data (e.g. calculator, units and units2).</li>
-                    <li>The web application must demonstrate the need to think about its view structure, model and module implementation.</li>
+                    <li>
+                        Web application does more than have the user respond to random data (e.g.
+                        number guessing game), or simply manipulate data (e.g. calculator, units and
+                        units2).
+                    </li>
+                    <li>
+                        The web application must demonstrate the need to think about its view
+                        structure, model and module implementation.
+                    </li>
                 </ul>
+                <p>
+                    I would hope that this website pretty clearly demonstrates the ability to design
+                    and implement a web application of reasonable complexity.
+                </p>
+                <p>
+                    The website is a single page application that uses the Vue Router to navigate
+                    between different views. The website supports filtering and searching for
+                    events, venues, and artists. User's can create an account and login to save
+                    their favourite events, venues, and artists, as well as comment on each of these.
+                    Data is stored in a sqlite database and accessed via a REST API. The website is
+                    fully responsive and supports mobile, tablet, and desktop devices. The website
+                    is hosted on GitHub Pages, while the server and database are hosted on Render.
+                    Advanced Vuetify components such as the v-calander and navigation drawer are
+                    used to create a modern and engaging user experience. Finally, the website uses
+                    a number of features not covered in this unit, such as state management and
+                    TypeScript data models to manage the application state and data.
+                </p>
+                <p>
+                    Please also see the reasonably complex
+                    <a target="_blank" href="https://lucid.app/lucidchart/ef106a66-2b21-4603-b0e8-a0b71c9e5a8b/edit?invitationId=inv_84152621-20af-4d14-9ab8-9f0afbfa1df9&page=0_0#">Entity Relationship Diagram</a>
+                    for the database schema.
+                </p>
             </section>
 
+            <!-- Effective Use of Decomposition -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
@@ -268,23 +299,58 @@
                 </h2>
                 <ul>
                     <li>The web application consists of custom filter, custom directive, and config with little code duplication.</li>
-                    <li>Data from external sources or data APIs is used intelligently to minimise the amount of code required.</li>
                 </ul>
+                <p style="color: red">TBC!!!!!!!!!!!!!!!!!!</p>
+
+                <ul>
+                    <li>
+                        Data from external sources or data APIs is used intelligently to minimise
+                        the amount of code required.
+                    </li>
+                </ul>
+                <p>
+                    This website is built to serve the Melbourne music scene, but I wanted to make
+                    it accessible to people visiting Melbourne as well by letting them specify their
+                    home Country and State in the
+                    <a target="_blank" href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/SignUpForm.vue">Sign Up Form</a>.
+                    However, I didn't want to have to manually enter every country and state in the
+                    world into the database. Instead, I used the
+                    <a target="_blank" href="https://restcountries.com/">Rest Countries API</a>
+                    to get a list of all countries and their states. This allowed me to minimise the
+                    amount of code required to create the sign up form, and also made it easier to
+                    maintain the website in the future.
+                </p>
+                <p>
+                    Similarly, I used the
+                    <a target="_blank" href="https://countriesnow.space">Countries Now</a> API
+                    to get a list of all states for the selected country.
+                </p>
 
             </section>
 
+            <!-- Effective Use of Structure Design -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>Effective Use of Structure Design</span>
                 </h2>
                 <ul>
-                    <li>HTML structure elements represent meaningful context grouping and row-column system that supports at least three device sizes.</li>
-                    <li>Input forms and tables are usable and accessible.</li>
+                    <li>
+                        HTML structure elements represent meaningful context grouping and row-column
+                        system that supports at least three device sizes.
+                    </li>
+                    <li>
+                        Input forms and tables are usable and accessible.
+                    </li>
                 </ul>
+                <p>
+                    Please see above sections where I have provided detailed justifications for each
+                    of these criteria.
+                </p>
 
             </section>
 
+            <!-- User of Good Programming Practices -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
@@ -295,7 +361,10 @@
                     <li>Code is commented to help the reader understand the abstractions and how they work.</li>
                     <li>HTML code is HTML 5 compliant, JavaScript code adhere to JSLint rules.</li>
                 </ul>
-
+                <p>
+                    Again, please see above sections where I have provided detailed justifications for
+                    each of these criteria.
+                </p>
             </section>
 
         </article>
@@ -304,6 +373,7 @@
 
             <DividerBar :text="'What\'s Next?'" class="divider-bar"/>
 
+            <!-- Admin Site -->
             <section>
                 <h2>
                     <v-icon icon="mdi-badminton" />
@@ -313,12 +383,37 @@
                     The next stage of this project will be the development of a secondary admin
                     website where events, artists, and venues can be added, updated, and deleted. My
                     initial thoughts for this next stage was to develop web scrappers for each venue
-                    listed that could update the database directly, but research into similar sites
-                    has indicated that data cleaning can be a very involved process for this type of
-                    data.
+                    and have them add data to a temporary repository for editing / approval on an
+                    admin site, but research into similar sites has indicated that data cleaning can
+                    be a very involved process for this type of data, and that a more manual process
+                    might even prove more efficient.
+                </p>
+                <p>
+                    Additionally, local venue sites are notoriously bad, and navigating each of them
+                    to find the relevant information would be a very time consuming process. I am
+                    currently considering the best way to get this admin site up and running.
                 </p>
             </section>
 
+            <!-- Security -->
+            <section>
+                <h2>
+                    <v-icon icon="mdi-security" />
+                    <span>Security</span>
+                </h2>
+                <p>
+                    My APIs are currently open to the public, and I have not implemented any security
+                    measures to protect the data. I don't use JWS tokens, hash my passwords, or attempt
+                    to protect the data in any way. The next stage of this project will be to implement
+                    security measures to protect the data and the users of the website. I ignored this
+                    stage for the initial version of the website as I wanted to focus on the
+                    functionality and design of the website in the limited time that I had, but I am
+                    aware that this is a critical part of any website and will be a priority for the
+                    next stage of this project.
+                </p>
+            </section>
+
+            <!-- Improved Design -->
             <section>
                 <h2>
                     <v-icon icon="mdi-pencil-ruler" />
@@ -335,8 +430,6 @@
 
         </article>
 
-
-
         <!-- Random Banner -->
         <RandomBanner />
 
@@ -344,19 +437,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import RandomBanner from '@/components/RandomBanner.vue';
-import DividerBar from '@/components/DividerBar.vue';
+    import { defineComponent } from 'vue'
+    import RandomBanner from '@/components/RandomBanner.vue';
+    import DividerBar from '@/components/DividerBar.vue';
 
-export default defineComponent({
-  name: 'AboutView',
+    export default defineComponent({
+        name: 'AboutView',
 
-  components: {
-    RandomBanner,
-    DividerBar
-  }
+        components: {
+            RandomBanner,
+            DividerBar
+        }
 
-});
+    });
 </script>
 
 <style>
