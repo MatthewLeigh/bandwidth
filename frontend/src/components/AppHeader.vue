@@ -155,19 +155,9 @@
 
     @media (max-width: 1200px) {
 
-        .title-container {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-right: 48px;
-        }
-
-        .menu-icon {
-            width: 48px;
-        }
-
-        .subtitle {
-            transform: translateX(16px);
+        .v-toolbar-title {
+            margin-right: 72px;
+            text-align: center;
         }
 
     }
