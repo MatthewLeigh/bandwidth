@@ -127,34 +127,75 @@
 
             </section>
 
+            <!-- Modules -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>Modules</span>
                 </h2>
-                <h3>Demonstrate the use of modules - implement the web application with a number of
+                <h3>
+                    Demonstrate the use of modules - implement the web application with a number of
                     controllers and config. (Maybe even custom directives and filters - optional but
                     nice)
                 </h3>
+                <p>
+                    This website was made with Vue 3, and takes advantage of modules in the form of its
+                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/components">23 Components</a>
+                    and
+                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend/src/views">10 Views</a>.
+                    Each component and view is a module that encapsulates a specific piece of
+                    functionality, such as a header, footer, event list, or event details. This
+                    modular approach makes the codebase easier to manage and maintain, as each module
+                    is self-contained and can be reused across different parts of the website.
+                </p>
+                <p>
+                    Additionally, the website uses a number of controllers and config files to manage
+                    the application state and configuration. The
+                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/session.js">Session Store</a>
+                    is used to manage the user's session and authentication state, while the
+                    <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/stores/useSelectedDatesStore.ts">Selected Dates Store</a>
+                    retains the selected dates for the event filter when the user navigates between
+                    different views.
+                </p>
 
             </section>
 
+            <!-- Arrays -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>Arrays</span>
                 </h2>
                 <h3>Demonstrate the use of arrays</h3>
+                <p>
+                    Arrays are used throughout the website to store and manage data. I think anyway
+                    website that can't demonstrate the use of arrays is going to be a pretty boring
+                    website. One of the most prominent examples of the use of arrays on the website is
+                    the <a href="https://github.com/MatthewLeigh/bandwidth/blob/main/frontend/src/components/FocusCardRow.vue">FocusCardRow Component</a>
+                    which accepts an array of focus objects and displays them in a row.
+                </p>
 
             </section>
 
+            <!-- Prototyping and Design -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>Prototyping and Design</span>
                 </h2>
-                <h3>Demonstrate the mobile first design concept supporting mobile portrait, mobile landscape and desktop</h3>
-
+                <h3>
+                    Demonstrate the mobile first design concept supporting mobile portrait, mobile
+                    landscape and desktop
+                </h3>
+                <p>
+                    I am not a designer, as evidenced by the fact that I made the prototypes for this
+                    website in Canva. However, as a non-designer, I am very proud of the design of this
+                    website. I think it is clean, modern, and easy to use. The
+                    <a target="_blank" href="https://www.canva.com/design/DAGZTNcubuY/R9hzY4d9h-509wLeaN4RMA/edit?utm_content=DAGZTNcubuY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mobile Design Prototype</a>
+                    and
+                    <a target="_blank" href="https://www.canva.com/design/DAGZbU7cMz0/K4GXh9dyRNEHzH6VxZi8CA/edit?utm_content=DAGZbU7cMz0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Desktop Design Prototype</a>
+                    can be seen at these links.
+                </p>
             </section>
 
             <!-- Accessibility Support -->
@@ -185,13 +226,23 @@
                 <img :src="require('../assets/login-form-wave-check.png')" alt="Login Form WAVE Check">
             </section>
 
+            <!-- HTML 5 Coding Conventions -->
             <section>
                 <h2>
                     <v-icon icon="mdi-check" />
                     <span>HTML 5 Coding Conventions</span>
                 </h2>
                 <h3>Demonstrate appropriate use HTML 5 coding conventions - case, indentation</h3>
-
+                <p>
+                    The website is built using Vue 3, which generates HTML 5 compliant code out of
+                    the box. The HTML code is correctly indented, with meaningful names assigned to
+                    all model identifiers. The code is commented to help the reader understand the
+                    abstractions and how they work. Additionally, the JavaScript code adheres to JSLint
+                    rules, which helps to ensure that the code is clean, readable, and maintainable.
+                    Please check out any files in the
+                    <a href="https://github.com/MatthewLeigh/bandwidth/tree/main/frontend">Frontend Repository</a>
+                    to verify this.
+                </p>
             </section>
         </article>
 
