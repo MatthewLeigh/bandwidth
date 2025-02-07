@@ -144,9 +144,9 @@
                     { icon: 'mdi-github', url: 'https://github.com/MatthewLeigh/bandwidth/tree/main' }
                 ],
                 faqs: [
-                    { title: 'What is Bandwidth?', text: 'Bandwidth is a Melbourne Gig Guide website.' },
-                    { title: 'How do I use Bandwidth?', text: 'You can use Bandwidth to find events, artists, and venues in Melbourne.' },
-                    { title: 'How do you decide which Artists to include?', text: 'Artists are added to our database when they are first identified as performing a gig at a venue in Melbourne. If your favourite artist isn\'t on the site, tell them to get their butts to Melbourne asap!' }
+                    { title: 'What is Bandwidth?', text: 'Bandwidth is the definitive Melbourne Gig Guide website that let\'s you search for upcoming events, local venues, and your favourite artists.' },
+                    { title: 'Why should I sign up?', text: 'Signing up let\'s you save upcoming events, add favourite artists and venues to make filtering events easier, and even leave comments on the site' },
+                    { title: 'How do you decide which Artists to include?', text: 'Artists are added to our database when they are first identified as performing a gig at a venue in Melbourne. If your favourite artist isn\'t on the site yet, tell them to start playing some gigs in Melbourne!' }
                 ]
             }
         },
