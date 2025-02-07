@@ -179,9 +179,6 @@
                         throw new Error("Failed to update favorite status.");
                     }
 
-                    const result = await response.json();
-                    console.log("Favorite status updated:", result);
-
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Venue added to favourites!');
 
@@ -208,9 +205,6 @@
                         throw new Error("Failed to delete favorite status.");
                     }
 
-                    const result = await response.json();
-                    console.log("Favorite status deleted:", result);
-
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Venue removed from favourites');
 
@@ -234,9 +228,6 @@
                     if (!response.ok) {
                         throw new Error("Failed to update favorite status.");
                     }
-
-                    const result = await response.json();
-                    console.log("Favorite status updated:", result);
 
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Artist added to favourites!');
@@ -262,9 +253,6 @@
                         throw new Error("Failed to delete favorite status.");
                     }
 
-                    const result = await response.json();
-                    console.log("Favorite status deleted:", result);
-
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Artist removed from favourites');
 
@@ -289,9 +277,6 @@
                         throw new Error("Failed to update favorite status.");
                     }
 
-                    const result = await response.json();
-                    console.log("Favorite status updated:", result);
-
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Event added to saved events!');
 
@@ -315,9 +300,6 @@
                     if (!response.ok) {
                         throw new Error("Failed to delete favorite status.");
                     }
-
-                    const result = await response.json();
-                    console.log("Favorite status deleted:", result);
 
                     this.isSavedOrFavourite = !this.isSavedOrFavourite;
                     this.snackbar.showSnackbar('Event removed from saved events');
