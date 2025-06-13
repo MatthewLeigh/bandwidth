@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+
+# Docusaurus build output
+build/
+
+# Docusaurus cache
+.docusaurus/
+
+# npm package-lock or yarn.lock
+package-lock.json
+yarn.lock
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variable files
+.env
+
+# Docker files
+.docker/
+docker-compose.override.yml
